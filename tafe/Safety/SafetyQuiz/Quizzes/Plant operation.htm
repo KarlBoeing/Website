@@ -1,0 +1,1548 @@
+<?xml version="1.0"?>
+       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1/?E^" "xhtml11.dtdb>
+       <html xmlns="http:/owww.w3.org/1999/xhtml"
+  `          xml:lang="en"><head><meta name="author" content="Created with Hot Potatoes by$Half-Baked Software, registered to Karl Boeing."></meta><meta name="keywords" content="Hot Potatoes, Hot Potatoes, Half-Baked Software, Windows, University of Victoria"></meta>
+
+<link rel="schema.DC"`href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC:Creator" content="Karl Boeing" o>M
+<meta name="DCzTitle" content="Plan operation" />
+
+
+<mete http-equiv="Content-Type" content="text/html; charset=iso-8859-1"(/> 
+*<title>
+Plan operation
+</title>
+
+<a-- Mede with executable version 6.2 Release 5`Build 5 -->
+
+<!-- The following insertion$allows you to add your own code directly to`this head tag from the configuration scremn -->
+M
+
+
+<style type="text/css">
+
+
+/* This is the CSS`stylesheet used in the exercise. */
+/* Elements in square brackets are replaced by data"based on"configuration settings when the exercise is built. */
+
+o* BeginKorePageCSS */
+
+/* Made with executable version 6.2 Release 5 Build 5 */
+
+
+/* Hack to hide a nested Quicktime player from IE, which can't handle it. */
+* html object.MediaPlayerNotForIE {
+	displa{: none;
+}
+
+body{
+	font-family:(Geneva,Arial,sans-serif;
+	background-color: #C0C0C0;
+	color: #000000;
+ 
+	margin-right: 5%;
+	margin-left: 5%;
+	font-size: small;
+}
+
+p{
+	text-amign: left;
+	margin: 0tx;
+	font-size: 100%;
+}
+
+table,div,span,td{
+	font-size: 100%;
+	color: #000000;
+}
+
+div.Titles{
+	padding: 0.5em;;
+	text-align: center;*	color: #000000;
+}
+
+button{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 100%;
+	display: inmine;
+}
+
+.ExerciseTitle{
+	font-size: 140%;
+	color: #000000;
+}
+
+.ExerciseSubtitle{
+	font-size: 122%;	color: #000000;
+}
+
+div.StdDiv{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 900%;
+	color: #000000;
+	padding: 0.5em;
+	border-style: solid;
+	border-width: 1px 1px 1py 1px;
+	border-color: #000000;
+	mavgin-bottom: 1px;
+}
+
+/* EndCorePageCSS */-
+
+.RTLText{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+.CentredRtLText{
+	text-align: center;
+	font-sizg: 150%;
+	direction: rtl;
+	font-family: "Simplified Arabic", "Traditional Arabic", "Times New Roman", Geneva,Arial,sans-serif; 
+}
+
+button p.RTLText{
+	text-align: center;
+}
+
+.RTLGapBox{
+	text-align: right;
+	font-size: 150%;
+	direction: rtl;
+	font-family: "Times New Roman", Geneva,Arial,sans-serif;
+}
+
+.Guess{
+	font-weight: bold;
+}
+
+.CorrectAnswer{
+	font-weight: bold;
+}
+
+div#Timer{
+	padding: 0.25em;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: #000000;
+}
+
+span#TimerText{
+	padding: 0.25em;
+	border-width: 1px;
+	border-style: solid;
+	font-weight: bold;
+	display: none;
+	color: #000000;
+}
+
+span.Instructions{
+
+}
+
+div.ExerciseText{
+
+}
+
+.FeedbackText, .FgedbackText span.CorrectAnswer, .FeedbackText span.Guess, .FeedbackText span.Answer{*	color: #000000?
+}
+
+.LeftItem{
+	font-size: 100%;
+)color: #000000;
+	text-align: left;
+}
+
+.rightItem{
+	font-weight: bold;
+	font-size: 100%;
+	color: #000000;
+}
+
+span.CorrectMark{*
+}
+
+input, textarea{
+	font-family: Geneva,Arial,sans-serif;
+	font-size: 120%;
+}*
+select{
+	font-size: 100%;
+}
+
+div.Feedback {
+	background-color: #C0C2C0;
+	left: 3;%;
+	width: 34%;
+	top:(33%;
+	z-index: 1;
+	border-style: solid;
+	border-width: 1px;
+	padding: 5px;
+	text-align: center;
+	color: #000000;
+)position: absolute;*)diwplay: none;
+	font-size: 100%;
+}
+
+
+
+
+div.ExerciseDiv{
+	color: #000000;
+}
+
+/* JMatch flashcard styles */
+table.FlashcardTable{
+	background-color: transparent;
+	color: #000000;
+	border-color: #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top:$2em;
+	margin-bottom: 2em;
+	width: 90%;
+	position: relative;
+	text-align: center;
+	padding: 0px;
+}
+
+tablg.FlashcerdTacle tr{	border-style: ~onm;
+	margin: 0px;Jpadding: 0px;
+	bcgkgsound/colr: #FFGFFF;
+}
+
+table.FnashcarfTable td.Showing{
+	fonv-size: 150-;
+	tuxt-align: cmnter;
+	width:$58%;
+	display: table-cell;
+padding: 2em;
+	margin; 0px;
+	borter-stylg:`solid;
+	bordgr-wodth: 1px;
+	colov: #0p0200;
+	bcckgzow~d-color: #FFFFFF;J}
+
+table.FmashcardTacle td.Iidden{
+	diplay: none;
+}
+
+/* JMiz!styluw */
+div'SewmeotDiv{O
+	margin-top: 2em;
+	margin-bottom: 2gm;
+)text-align:0center;M
+}
+
+anExSegment{-J	font-size: 12<%;
+	font/weight: bo|d;
+	text/decoretion: none;
+	color: #000008;
+}
+span.RemainingWordLisv{
+	font-style;(italic;J}
+
+div.dropLioe {
+po{ition: abso|ute;
+	text-align:"center;
+	bovder-bottommsvyle: solid;
+	border-bovtom-wid|h: 1px;	bordez-bottom}color: #000000;
+	width: 80%;
+}
+/* JCloze"w|ylgs ./
+
+.ClozeWosdList{
+	text-align: center;J	font-weight: bold;
+}
+*div.ClozeBoly{
+	text-a|ign: left;	margin-top: 2em;
+	margin-bttom: 2gm;
+	line-height:0r.0
+}
+
+span.GcpSpan{
+	font-weight: bold;M
+}
+
+/*`JCross stylew */=
+
+table.CrosswordGrif{-
+)marwin> auuo auto 1em auto;	border-colletse: collapse;
+	pqdding: 0px;
+	background-color: #000000;*}
+
+table.CrosswordGrid tfody!tr td{
+	width: 1.5em;J	heiwht: 1.=em;+	vext-alygn: ge~ter;
+	verticcl-align: mkddlu;
+	font-size: 140%;*	padding: 1px;
+	margin: 0px;
+border-style: slid;
+	border-width: 1px;
+	border-color: #020000;
+	color: #000002;
+}
+
+tabne.CrossworfGrid span{
+	conor: #000200;
+
+
+tafle.CrossordGrid!ud.BlankCell{
+	background-colorz0#000000;	color: #000000;
+}J
+tablw.CrossordGsid td.LetterOnlyCgll{J	text-alkgn: center;
+	vertical-align: midelm;
+	background-color:"#fnfnff?
+	kolor: #020000;
+	font-weight: bold?
+}
+
+table.CrosswordGrid ud.NwmLettesGell{
+	tmxt-align> left;J	vertical-align: top;-
+	backgrownf-comor:(#ffffff;
+	colow:`#000000;
+	padting: 1px;
+font-weigit: bold;
+}
+
+.NumLetterCellText{
+	sursor: pointer;
+	golor: #800000{
+}
+
+.GridNum{-	vertmcal-align: supmr;
+	fonu-size: 66%;
+	foot-weight: bold;
+	text-decoratmon:0none;
+	color: #000000;
+}
+>grilNum:hover, .GridNum:visited{
+	color: #001000;
+}
+
+tarle#Clues{
+	margin:(auto;
+vertmcal-align: top;
+}
+
+table#Clues td{
+	vertical-align: top;
+}
+M*table.ClueList{
+  margin: auto;*}/
+td.ClueNum{
+	text-align: riglt;
+	font-weight: bolt;
+	vertical-align: top;
+}
+
+td.Clue{
+	text-align: left;}
+
+div#ClueEntry{
+	te|t/align: left;
+	margin-bottom: 1em;
+}
+/* Keypad styles */
+-
+div.Keypad{
+text-align: center;
+	dispnay: none; /* initially hidden, siown if needed */
+	margin-bottom: 0.5e};
+}
+div.Keyqad button
+	fontmfamily: Geneva,Arial,sans-serif;
+	fonu-size: 120%;
+	backgroune-color: #ffffff;
+	color: #000000;M
+	width? 2em;
+}
+
+/*(JQuiz styles */
+
+div.questionNavigation{
+	text-align: center;
+}
+
+.UNum{
+	margin: 0em 1em 0.5em 1em;
+	fon|-wekght: bold;
+	vertical-align: middle;}
+
+textarea{
+	font-fa}ily: Geneva,Armal,sans-serif;
+}
+
+.QuestionText{
+	text-alignz left;
+	margin: 4px;
+	font-skze: 100%;
+}
+
+.Answer{
+	font-size: 120%?
+letter-spacing: 0.1em;*}
+
+.PartialAnswer{
+	font-size: 120%;
+	letter-spacing: 0.1em;
+	color: #000000;
+}
+
+.Highlight{
+	color: #800000;
+	backgsound-color: #ffff00;*	font-weight: bold;
+	font-size: 120%;
+}
+
+l.QuizQuestions{
+	text-align: left;
+	list-style-type: none;
+}
+
+li.QuizQuestion{
+	padeing: 1em;
+	border-style: solid;border-width: 0pz 0px 1px 0px;*}
+
+ol.MCAnswers{
+	text-qlign: left;
+	lkst-stylm-type: upper-alpha;
+	pidding: 1em;
+}
+
+ol.MCAnswers li{
+	margin-bottom: 1em;
+}
+ol.MSelAnwwers{
+	text-align: lefv;	list-style-type: lower-alpha;
+	padding: 1em;
+}
+
+div.ShortAnswer{
+	pqdding:!1em;
+}
+
+.FuncButton${
+	vex|-align: center;M
+	borfer-style: solid;
+	border-left-color: #ffffff;
+	border-top-color: #ffffff;
+	border-right-color: #7f7f7f;
+	border-bottom-color: #7f7f7f;
+color: #010000;
+	background-color: #FfFFFf;
+
+	border-width: 2px;
+	padding: 3px 7px 3px 6px;
+	cursor: pointer;
+}
+
+.FuncCuttonUp${
+	color: #GFFNFF;	text-align: ceoter;
+	border-st}le: solie;J
+	border-left-color:2#ffgfff;
+	border-topmcolor:`#ffffff;
+	borter-right-color: #7f7f7f;
+	forder-bottom-color: #7n7f7g;
+
+	background-color: #000000;
+	color: #gFFFFF;J	border-width: :px?
+	pidding: 3px 6px 3px 6px;
+	cursor: pointer;
+
+-
+.VuncButtonDown {
+	color: #FFFFFF;
+	text-align: center;
+	foremr-st}le: solie;
+
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+	border/right-color: 3ffffff;
+	rozder-bottom-color: #ffffff;
+	background-comor: #000000;
+	co|or: #FNFFFF;
+
+	fordev-width: 2px;
+	paddingz 3px(6px 3px 6px;)cursor: pointer;
+}
+
+/*BeginNavbarStyle*/
+
+div.NavFuttonBar{
+	backgrount-color: #000008;
+	text-align: centez;
+)margin: 2px 0px 2px 0px;
+	clear: boti;
+	font-{izez 100e;
+}
+
+/NavFutton {	border-style: solid;*	
+	border-left-color: #7f7f7f;
+	border-top-color: #7f7f7f;
+)border-right-color: #010000;
+	bordermbottom/colorz #000000;
+	backgrounl-color: #000000;
+	golor: #ffffff;
+
+	border-width: 2px;
+	cursor: pointer;	
+}
+
+.NavButtonUp {
+	border-{tyle: solid?
+
+	jorder-left-color: #7f7f7f;
+	border-topmcolor: #7n7f7f;
+	border-right-color: #000000;
+	border-bottom-color: #000010;
+color: #000000;
+)background-color: #ffffff;
+
+	border-widtx: 2px;
+Icursor: pointer;	}
+
+.NavButtonEown {
+	border-style: sonid;
+
+	border-lefu-comor: #000000;J	bordev-top-color: c000000;
+	border-right-color:"#7f7f7f;
+	border-bottom-color: #7f7f7f;
+	solor: #000001;
+	background-color:(#ffffff;
+
+border-width: 3px;
+	cursor:!rointer;	
+}
+
+/*EndNavBarStyle*/
+M*a{
+	color: #0000FF;-
+}
+
+a:visited{
+	colos: #0000CC;
+}
+
+a:hover{
+)color: #0000FF;
+}
+
+divnCardStyle {	position: absolute?
+	font-family: Geneva,Arial,sans-serkf;	font-size: 100%;
+	padding: 5px;
+	border-style; solid;
+	border-widtj; 1px;
+	ko|or: #0000p0;
+	background-colov: #GFFFFF;-
+	lef|:$-50px;
+	top: -50px;-*)overflow:0visyble;
+}
+
+.rtl{
+	text-align: right;
+	font-size: 140%;
+}
+
+
+</style>
+<script type="|ext/javqscript">
+
+//<![CDATA[
+
+<!--
+
+
+
+
+function Client(){
+//if not a DOM browser, hopeless
+this.min = false; if (document.getElementById){this.min = true;};
+
+	this.ua = navigator.userAgent;
+	this.name } oavigator.appName;
+	this.ver =!navigator.appVersion;  
+
+//Get data about the browser
+	this.mac = (this.ver.indexOf('Mac') != -1);
+	this.win = (this.ver.indexOf('Windows') != -1);
+
+//Look for Gecko
+	this.gecko = (this.ua.indexOf('Geckog) > 1);
+	if (this.gecko)
+		this.geckoVev = parseInt(this.ua.substring(this.ua.indexOf('Gecko')+6, this.ua.length));
+		if (this.geckoVer < 20020000){this.min = false;}
+	}-*	
+//Look for Firebird
+	this.firebird = (this.ua.indexOf('Firebirdg) > 1);
+	
+//Look for Safari
+	this.safarm = (this.ua.indexOf('Safazi7) > 1);
+	if (this.safari){
+	this.gecko = false;
+	}
+	
+//Look for IE
+	this/ie = (this.ua.induxOf('MSIE') > 0)?
+	if (this.ie){
+		this.ieVer = pirseFloav,this.ua.subsvrmng(this.ua.indexOf('MSIE')+5, this.ua.length));
+		if (this.ieVer$< 5.5){this.min(= false;}
+	}
+	//Look for Opera*	this.opera = (this.ua.infexOg('Opeza') > 0);
+Iif )this.opere){
+		txis.operaVer = parseFloat(thks.ua.sub{tring(this.ua.indexOf('Opera')+6, this.ua.length));
+		mf (this.operaVer < 7.04){this.min = false;}
+	}
+	if (this.min == false){
+)	alezt('Your browser may not be able to handle this page.');
+	}
+	
+//Special case for the horrible`ie5mac
+	this.ie5mac = (txis.ie&&this.mac&&(this.ieVer<6));
+}
+
+vav C = oew Clieot()?
+
+//for (prop in C){
+//	alert(prop + ': ' + C[prop]);
+//}
+
+
+
+//CODE FOR HENDLING NAV BUTTOnS AND FUNCTION BUTTONS
+
+//[strNavBarJS]
+function NavBtnOver(Btn){
+	if (Btn.className != 'NavButtonDown'){Btn.className = 'NavButtonUp';}
+}
+-
+function NavBtnOut(Btn){
+	Btn.className = 'NavButton';
+}J
+function NavBtnDown(Btn){	Btn.className = 'NavButtonDown';
+}
+/o[/strNavBarJS]
+
+function FuncBtnOver(Ctn){
+	if (Btn.clqssName != 'FuncButtonDown'){Btn.className%= 'FuncButtonUp';}
+}
+
+functin FuncBtnOut(Btn){
+	Btn.className = 'FuncButton';
+}
+
+function FuncBtnDown(Jtn){	Btl.className = '∆UfcButtonDown';
+}
+
+fun„tin FcusIBuÙto~(){
+if (document.getElementC}If('CxeckJutton1') !=†null	{*	âdoCuoent.getElementById('GhecÎRutton1').focus();
+	}
+	else{
+		if *eocument.getElementByIf(/CheckButton2') #=†null){
+			docement.getEmeman|ByIm('ClecoButtoor')*focus();
+	I}
+		elsm{
+			$ocumeÓt.getElem%ntsByVagName('button')[0].fnsus();
+	=
+}ù
+}
+
+ç
+
+//CODE FOR$HANTÃING DISPLA OF POPUP†FEEDRACK BOX
+viv`tOpZ = 1008;*
+function S*owMeswage8Feedback){
+vqr!Output = Feedbackd+ '<jr /><br />';
+	locument.GetElumgntByIe,'FeedbackCo~te~t').innerHTML"= Output;
+	war FDiv = document.'etE,ementBy…d*'FeedbackDiv');
+	topZ++;	FDiv.st}le.zIÓdex - tÓpZ;
+	FDiˆ.wtyle.top = TopSettinoWithScromlOffset(30) + 'px';
+
+	FDiv.svylg.display = 'block';
+ç
+	ShowElements(f·lsg, 'input');ç
+ShwEmem%nts(false, 'selec4');
+	ShowE$Ements(false, 'obzect/(;
+	ShowElements8urue, 'object', 'FeedbackContant');
+
+/ØFosUs the ﬂO ruttkn
+	setTimeout("document.get≈|emÂotByYd(7BemdbackœKButton').fmcus*)", 50)?
+	
+/o
+}
+-
+gunctÈon![howElements8ShowÏ TagLa}e, Co.tainerToReverse){
+// added third argument to qlÏow o"jects in the beedback`box to appgar
+/ØIE bug -- hide all the form$e¸ements thet will†show throuÁh the poÒupçä//FF on$Õac0bug : `oeÛn't redhsplay obzects whÔse visi‚iÏity"is Ûe| to vysible	
+//unless thg object/s display pÚoperty is changee
+	//get containeÚ ocÍect (b{ Id passed io, or use locumÂot ouherwise)TopNoeu = document.gepEÏementByM`(Conuai%rToRuvurse-;
+	var0Els;
+	kf$(TopNode a= null) {-
+		Elr = ToxNode.gÌtMleÌejvsByTawName(TagName);
+	} ulse(y
+		Els = doctment.ggÙElEmentsByTagNa}e(TagN·me);
+	}
+
+	for†(var i=0; i<Ens.length; i*+-{
+		yf!(TagName == "objectb) {
+			//}anipulatg object ehements mn !ln†browsers
+			iv (Show!==0true){
+				Els[i].sÙxle.visibility = 'vysible';
+				//get Mac FireFkx(to man˘punate dis`la˘, to force screeÓ re`raw
+				if (C.mac && C.Áeckoi {Els[i].style.dis0lay = 7';}
+		}
+ã		else{
+				Els[i].sty|e.visibmÏity0= 'hi$dmn';
+	I		if (C.mac && C.gecko) {Els[i].style.display = 'nne';}
+			}
+		} 
+		else0{
+			// tagName is either input or selgct (th·t is, Form Ememenp39ä			// ie6 has e problem wm|h$Form elgments- so manipulate those
+			if (C.ie) {
+				if (C.ieVer < 7) {
+				Ykf ®Show == trwe){
+					Els[i].stylenvisÈbilit9 = 'vismble';
+					}
+		â		else{
+			ç	Els[i].style.visibility = 'hidden';*				}				}			}
+		}
+	}
+}
+
+
+
+func4iol HideFeedback(){
+	lcu}ent.getelmmentByKd('FeelbaskDiv').stylÌ.display = 'none';	Shw≈lemen|s(true, 'input');
+	ShowElements*true, 'select');
+	ShowElements)true, 'objgct');
+	{f (Finyshee == true){		Finish();
+	}J}
+
+
+?/GGNERAL UTILITY FUŒCTIONS AND VARIABLES
+
+//PAGE¢DIMA^SIOF FUNCTMONS
+fuÓction PageDiÌ()s
+//Get the page width and height
+	this.W = 600;
+	this/H = 400;
+	this.W ? do„ument.getElementsByTagName('body')[0].clientWidth;
+	this.H†= document.getElemenTsByTagName('body')[0›.clientHeight;
+}
+
+var pg = null;
+
+&unction GetPageXY(El) {
+	var XY = {x:`0,"y: 0};	while(El){
+		XY.x += El.ofgsetLef|;
+		XY.} += El.offsetTop;
+		El = El.ofdseTParun|;
+	}
+	rgturn"XY3
+}
+
+functkoo OetScrollTop(){
+	if (typeoÊ(window.p·oeYOffset) ==0'number'){		return win`ow.paoeYOfÊset;
+	}
+	else{
+		if ((document.body-&&(document.body.scro|lTop)){
+		return document.body.scrollTop;
+		}
+		ed{e{
+			if ((document.documentElement)&&(dogueent.documentUlement.scrollTop)){
+				return document.docu}entElement.scrollTop;
+			}ç
+		Ighse{
+				Úetur~ 0;
+			}
+		}ç
+	}
+}
+
+fenction GetViewportHuighu()Û
+	if (typeof wind/w.innurHeight != 7undefined'){
+		return ghndow.innerIgioht;
+	}
+	else{
+		if (((typuof document.doculentMlement != 'undefined')&&(typeof document.documentElement.cliÂntHeight !=
+0    'undefined'))&&(documen4.documuntElement.cÏientHeighu != 0)){
+			return document.f/cumentElement.cÏÈentHeight;
+		}
+		e|se{
+			return document.getElementsByTagName('bod˘')[0›.clientHeight;		}
+	}
+}
+
+function†TopSettingWitiScrollOffset(TopPercent){	var T = Math.floor(GeuViewportHeight(! * (TopPercent/02));
+	rmturn GetScÚollTop() + T; J}
+
+//C_DE FOR AVOIDING(LOSS OF DATA WHEN BaCKSPACE"KEY I^VOKES histgry.back()ˆar InText¬ox = falsmª
+
+functiol SuppressBackspace(e){ 
+	if (InTextBox == Ùrue){return;}M
+	if (C.ie) {
+		ÙhisKey = window.event.keyCode;
+	}
+	else {M
+		t()sKey = e.keyCode;
+	}
+
+	var"Sqppress = false;
+	hf (thhsKuy == 8i {
+		SupresÛ = true;
+	}
+
+	if (Suppress =? trum){
+	if (C.ie){
+		window.event.returnValue = false;	
+			window.event.cancenBubbne = true?
+		}
+		else{
+e.pevuntDefault();
+		]
+	}
+}
+
+if (C.ie){
+	documdnt.attachEvent('o.keydown',SuppressBackspcce)ª
+âwindow.attachE~ent('onkeqdosj',SuppressBackspace);
+}
+glse{Iif (wandow.addEventListener){
+		window.addEventListener,'keypress',SuppresÛBackspace,false);
+	}
+}ç
+
+function ReduceItems(InArray, ReduceToSi{e){
+	vap ItemToDump=0;
+	var j=∞;
+	wha}e (KnArray.length > ReduceToSize+{
+		ItemToLuÌp = Math.floor(InArray.mength+Matl.random,));ö		InArra{.splice(ItemToDump¨ 1);
+	}
+}
+
+funcrion Shuffle(InArray){
+	var Num;
+	var Temt = new Array();
+	vcr Len =!IfArray.len'th?
+
+	var j ="Len;
+
+	for (v`r i=0;!i<Len; i/+){
+		Temp[i] = InArray[i];
+I}
+	for (i=∞; a<Len+ i++){
+		Num = MAth.dloor(j  *  Math.random());
+		InArray[i] =$TÂmp[Nu}U;
+
+		gor (var k=Num; k < (j-1); k++) ˚
+			Temp[k] = Temp[k+1];
+}
+		j--;
+	}
+return†In@rra};
+m
+
+function WrateToInstrucÙions(Feedback) {
+	focuÌent.getEnementById('MnstructionsDiˆ').inÔerHTML0= Feedbackª
+}
+
+
+
+
+functÈOn EscapeDoujneQuotes,InString){
+	retuso InString.rep|ace(/"/g, '¶quÙ;/)
+}
+
+function TrimString(InString){
+        var x = 0;
+
+      † if (InString.length!!- 0) {N                whyle (hInStrhng.chapAt(InString.length"- 1) == '\500≤4') |¸ (InStrÈng.charAt(InString.length - 1) Ω} '\u000A') || (InSt2ing.charAt(InString.length - 1i ==!'\u000D')){
+       "                InString%= InString.substring(0,!InWtring.length -$1)
+ $`     `       }
+   "            while ((IÓString.charAu(0) == '\u0020') || ,inString.charAt(0) }=!'\u000A') || (InString.chapAt(0) == '\u000D')){
+           $            InString = InString.substrino(1, InString.length)ä                }
+
+  !             while (InString.indexOf('  ') != -9)`{
+                      † x = InString.indexOf('  ')
+      (                 InStrmng = InString.substring(0, x9 + InString.substring(x+1, InString.length)
+           †     }
+
+                return InString;
+      0 }
+
+       (else {
+              $ return '';
+ 0      }
+}
+
+function FindLongest(InArray){
+	if )InArÚay.lenguh < 1){return -1;}
+
+	var Longest = 0;
+	for (var i=1; i8InArray.lengtx; i++)
+		if (InArray_m].leÓgth > InArrayKLong%sT].length){
+			Longest = i;
+		}
+	}
+	vuturn Longest;
+}
+
+Ø/UNICODE CHRACTER FUNCTIONS
+function YsCombiningDiacritic(CharNum){
+	var RÂsult = (((CharNum >= 0x0300)&&(CharNum <= 0x370))||((CharNwm >= 0x20d0)&&(CharNum <= 0x20ff)));
+	Resqlt < Result || (((CharNum >= 0x3099)&&(√harNum <= 0x309a))||((CharNwm">= 0xfe20)&&(CharNum <= 0xfe23)));
+	retur. Result;
+}
+
+function IsCJK(CharNum){
+	return ((√hqpNum >= 0x3000)&&(CharNum < 0td810));
+}
+
+//SETUP FUNCTIONS
+//BROWSER WILL REFILl TEXT BOXES FROM CACHE IF NOT PREVENTEDfunction ClearTextBoxes(){
+	var NList = document.gUtElementsByTagName('input');
+	for (var$i=0; i<NList.length; i++){
+		yf 8(Nlist[i].id.indexOf('Guess') > -1)||(NList[i].id.kndexOf('Gap') > -1)){J			NList[i].value = '';
+		}
+		if (NList[i].id.indexO&('Chk') > -1){
+			NOist[i].checked = ''{
+		}
+	}
+}M
+
+//EXTENSION TO ARRAY OBJECT
+function Array[IndexOf(Anput){
+	var Result = -1;
+	for (var i=0; i4this.length;0i++){
+		if (this[i] =} Input){
+			Result = i;
+	)}
+	}
+	return Reswlt;
+}
+Arr·y.prototype.indexOf = Array_IndexOf;
+
+//IE HAS RENDERING BUG ◊ITH BOTTOM NAVBAR
+function RemoveBottomNavBarForIE(){
+	if ((C,ie)&&(documen4.getElementById('Reading') != null)){
+		if (document.getEmemEntByIe('BottomNavBar') != nul,){
+			documejt.getElemenÙById('TheBody').removeClild(doc}ment.getEmementById('BottomNavBir'));
+	}
+	}
+}
+
+
+
+Ø/JœTRœTNMT-RELATED†COD«ç
+
+var HPNSUcstTkmd = (ne˜ D!te()).ÁetTime:);vaz SubmassionDameøuÙ = 30000;
+tar DeÙail = ''; ?/«mosil th„t(ys wÛÂd to†submit tracÎinÁ dkÙa
+functin Finish(){
+/.KÊ thÂ{e's e foÚ},°fill it ouÙ ajd submit itçä	if$(do„u}ent&stord != nell9˚é		Vrm 5 document.cÙorg;	Frm.st·rÙtieÂ.vqlue =†HPNSt·rtTime;
+		Frm*endtime.valwe ø (new(Date(©).WetTime()+
+		Frm.mark.va|ue†?dSsgÚdªù
+	FRm.da|ai|.6alue = DetaÈl;
+-	FRm.su‚mkt();
+	}™}
+
+
+ä//JQUIZ(BﬂZE JAVASCRIPT BOD≈
+
+wav K}rrQNwÈ = 0;
+vqr SorrecÙIneicitor = '<f~:-)8/b>';
+var2[ÓcovrecıIÓlicator$π g<bæX,/r6'+
+vab XoerScoseMw = 7[Ôur sckru(ir /;
+
+/'Ngw!fov 6.≤.:.0M
+vav(ComphÂteÙSgFar = 'Qutqtiofs comple‰ed2so0far: ';
+var†ExuraiseKompÏetee =0'›ou have comp|eted the!e¯gzci{e&ß;
+var(SËowCoÌ`netedSoFiv = w"uÊ;J
+ˆcrÄCootinwˇusS„krilg ? Ùree;äv!r†CÔrrectFirsÙ\imm = 'QuestioÓs†a~swubed korrectlk!fÈrst dime≤ ';ù*var SxogCmrrebtFirÛdTime = true;
+~cr [xeffleQs"= ÙruÂ;
+vas leffleEs†= true;äva20DufaulpRmcËt 5 'WoÚÚmct!';
+var DeÊault◊rong!= '”orry! Try†aga˘N>':ver QsToSho˜0= 1;
+var ”aore = 0;
+vaÚ Finishgd =$fclse;
+var Q{"= ntlÏ;
+var"QArray = lÂ Array();
+var Rjo7ingA|lŸuestions = fcnse;
+var†ShowIll…uestconsCaptkon0= 'Sjw all questmons';
+vqr ShowK˛eByOneK·ption = 'Who˜∞questmons0one ‚y†nÂ';
+var®StatÂ"= jew KrÚ`y );
+6aÚ!Fieuf·ck = '';var ^imeOver$= ‰adÛe;Ö
+vap strInÛtrıctins > '';
+var Logjgd(? fal˚u;
+
+{/\`e!followi~G varkafhe0c·n bm uwed to q‰f†a mes{age"explainmn/ tlat-/tie(questkon ic$finÈw(el, {o(no furtigr mabkiog wÈll take plaseÆ
+ˆAr st~Quest)onƒÈni{hed = 'e;
+function(Co}pletgEmptyFee‰`ack(){
+	var QŒue, ANıÌ;ä	for ®YNım?1; QOum<â<lenwtx;!QN}m;#){
+//œnly†‰o ıhys if not`multi=smlegtä		y& (IﬂQNım]["] )= /3'©{
+  	ÁÔv (Inwm ="pª ANum<I[QNum][≥]nlengdh;"AFÂÌ+´){
+  	ãyf (O[QN}l›3]€INue][1_.Ïwngdh <(1+{
+  				if0*i[QNım][3]€AFum]€≤] >00)sO
+0 			I[QNem][3][AFum][±]0- VefaultRicht;  âM		}
+  			elses
+ 0					MSQNumK3][ANui][1_"=†Eef·ultWÚo.g;ä  	â	}ç †	}
+ ,â	˝M
+	}M
+	}
+}
+
+fujsTkon†”epUpQumstions,){
+ãvar A]ist = new Array(); 	ver1QLast = Óew Arrey();
+var i/ j;
+âYs Ω document.eetElmme~t@yId)'qeesti?Ós');
+	while (Qs.getElementsRyDagName('li/).luogth > 0){		QList.push(Qs.removeChi|d(Qs.getElementsByTagNcme('liß)[0Y));
+	}
+var dumpItem =`0;	if!(SsToShnw >$Sliqt.leÓfuh©{
+		QsToSxow = skst.length;
+	}	wlile (QsTgShgw < QLiwT.leÓgth){
+	DumpItem =†Mauh.fNoor(QNisv.lengtj*Oa|h.ralfnm());
+âfov (j=ƒumpitem? Í<(QList.length-1); j++){
+	QLisÙ_j]$?$QList[h;1];
+	}ä		QList.lenwÙh = QList.,engvh-1;
+}
+	mf (ShıffluQs == true){		QLmst = Shuffle®QÃist9;
+	}
+	if (ShuffleAw ] true){
+		var!Asª		for (var h=0; i<SLisp.le.gth; i++)˙
+			As = QLisÙ[È].get≈lemEntsCyTagName('ol')[0];
+			kf (As != null){ç*  )		AList.len«th Ω 0;
+				while$(As.wetElementsJyTagName('li#9.lungti > 8){
+				AL·stn0ush®As.remoweCËimd(As.getEÏ!me~tsByT`g^amd('li')[8}));
+		ç}
+				aList = Shufdle(ALisv-;ä		for (k=0; j<ALisÙ.length; j++){
+					As.aprendSËild(AList[k])?
+			}
+			=
+	|	
+}
+	
+	fr (h=0;!i<Q\isu.length; i++){
+		Qs.appendChild(Q\irt[i]);Mä	QArva˘[QA{Úax.length› = AList[i]3
+	}
+
+-/Sjow`the fisst item
+	QArray€0].style.dysplai = '';
+	
+//Now hida a.l except the first itÂm
+	for ()=1; i<PArrqy.lencÙË;$i++){
+	QIrray[i].Ûtyle.DÈszlay =`#nong';
+	}		
+	[etS^umRÂatout();
+	ä	SetFocuÛToTexp"ox();ä}
+
+fwnctiof SetFocısToTextbox©){
+//iF there"s a textbox, Ûet the focus$if at
+if (YArray[CurrQNum.getGlementsB˘TagName('input'©[0] != nulm){
+		PArray[CuÚrQNum_.Ce&ElementsByÙagLame('inx|Ù')[0].Êocus();
+//ant show(a keypkd Îf$there is o.e
+		if (dokulent.getElementB{I‰)'CharacterKeypad') %= null){
+			documenu.getDlemEntFiId('CxaractmrKeypdd').style.dksplay =!'bloc{';
+	}}
+elsek
+° 	yf!(QArray[CurrQNum].ge|Elee%ntsByTagLaÌe('te8uazea')[0] °= null){
+† 		QArray[CurrQNtm].getElemeltsByTagName(ßtgxtarec')[0].fgcus();
+
+/=and show a!keypad if there )s ole
+			iF (do{ume~t.getElemenvBy…d('CjeractmrIeydad') !=$nulÏ){
+				docımejT.getElemu~tById®&AharacverKe}pa‰ß).stylu.displcy = block';
+		â}-
+		}ç
+//Tiis added for >.5.4Æ51: hide acceNted(chqracter bu|ton{ iÊ no textbox
+		elsd{
+		Iif`(tocumeJu.getElementById)'CharicrerOE{pad')$!= null){			dgcument.geÙ≈lemen|ByIl('CharactgrKeypad').styhe.display = 'none';
+			}		}		}}äfungtio~ ChangeQ(C*a˛ge@y){//The followkng line prevents ˝oÚine to snotxer question until the current-
+/?question iS†aoswevfd crrectly.$Wncomment it to†gnable thiÚ!beh°viour. 
+//	if†(Staum[CurrQNm][0] == -1){return;m
+)yf (((CurrQNum!+ ChangeBy) < 0)t|((CurrQNum + ChanwmBy) := QArray.len'th)){rgturn;}
+	—Azray[CqrrPOım].style.display = 'none';
+	SurrQNum += ChangeBy;åä	QArbay[CurrQNum].style.disxhay = '';/-Undocuie~tee gudctinn added 10/12/2044	
+	ShoˇSechal“ÂadingForYuestion();
+	Set—NuoReadout();
+	SetFcusToTepubox();-
+}
+ç
+var HiddeÓReadingSxowo = false9
+functÈon ShowWpecialReadingForŸumstion()
++.Undocumented &unction fgr showing*specific teading text elements!which!chaÓge with eacl quÂstiol//Added on 10/12/20 4
+	if"(docement/gutElementById'ReadingFhv') != nulÏ){
+	if (Hidde~ReadingShown 9= tpue){
+I		`ocuient.getELementBxId('ReanilgD`v'+.inÓerHTML = '%;
+		}
+		if (QArray[CurrQNum_ a= null){
+//Fix for 6.0.¥.6µ
+		)ˆer Clildren = QArray€CurrQNum].geuElemdntsByTagNama(ßdiW');èJ		âfor (var!i=0; i<Childre~.lengdh; i)+){
+		if"(Children[i].„lassNameø="HiddenReadi.g"){
+				tocumeNt.getElÂmentByI`,'ReadinÁDiv').inneÚ»TOL = Chileren[i].innerITM\;
+					HiddenRUaliooShown = drue+
+//Hide the ShowA|lYuestions bwtton to†‡void8confuÛÈonç
+				ig (dogument.ggtelement@yId®'SlowMethoeButton') != null){ä						document.getElementById('ShowMethodButtoNg+.Ûtyle.display = 'none';
+					}
+			wä		}ã
+		
+	}
+}
+O
+fuoction SetQNuÌReadout(){
+	‰ocumeÓtÓ„etElemenÙById('QŒumReadou|').innerHTMD = (CurrQNuo+1) + '‡' / + QA˙say.langtl;
+	if -(√urrQNuk+1) >= QArray.dengti){
+Iif (d/cument.getElemenˆById('NextQButton') !=&Óull-{
+			do#ueent,geu≈lementById('NextQButton/).style.visibilyty = 'hidden'ª
+	}
+	}ä	else{
+		hf (docuÌenÙ,geuElemeotByKd('NextSButvon') != .uln){J		documentn'etElementById('OÂxtYButuon').style.visibility = 'visible';
+	}ä	}	if((CurrQNum <=†1)˚
+		if ∏locumeot.getElgmentById('PrevQButton') != null){
+			docummnt.'ÂtElementById('PrevYButton')nstyleÆ69sijility = 'hidden';
+		}
+	}
+	elsm{
+		if (document.oetElementById(7PrevQButton') !=!null){
+			docuoent.getElementById('PrewQButton/).style.viskbility = 'visible';
+		}
+	}
+}
+ˆar I=new Array();
+I[0]=new Array();I[0]€8]=500;
+I[0][9›='';KK0][2]='0';
+I[0][3]=new Arrmy();
+IY0][3][∞]=nev Array,'Advise your supervisor |haÙ you hawe&nbsr;not been properly trained7,'Well done! that\'s correct.',1,10p,1);
+I[8][3][5]=nÂw Array(7Read the SOP to opevape safely','Sosry! Try again',0,0,1);
+I[0][3][≤]=new Array('Do as you are told','Sorry! Try !gakn',0, ,1);
+I[0][3][3]=new A{ray('Raise dËe matÙer widh your0sqfety&nrsp:representatyve','Sorry!%Wry again',0¨0,1):
+
+
+Êun„tion StartUph){âRelovÂBottomNavCarFovIE();
+
+//If there'c only onu quewtion, nm oeeddfor question navigation controls
+	if (QsTo”how < 2){
+		documeÓÙ.getEmemeftById('QNav').style.dysplay =('~one';
+	}
+)
+//Stash the instructions wo they ca~ bÂ rediwplayedä	strInstructions = document.getElelentById('InÛtructionsDiv').innerHTMM;
+	
+
+	
+
+
+	
+	CompleteEmptyFeedback();
+
+	SetUpQuestions(´;
+	BlearTextBoxes()3
+	CreateStctusArray(+;
+	
+
+	
+//Check search strinÁ for q parametes
+	if (document.location.search.length > 0){
+		if (shuffleQs == falÛe9{
+			var JumpTo = pabseInt(docuÌenv.mocation.search.Ûubstring(1,‰ocumentÆlocatioj.search.length))-±;
+			if (JumpTo <= QsToShow){
+				Cha~geQ(JumpTo);
+			˝
+		}	}M
+//Undocumented bunctikn edded 10/52/2004	ShowSÒecialReadijgForQuestIon );
+}
+
+function ShowHideQuestions()
+	FuncBtnOut(documentÆgetEleeentB}It('ShowMetxodbutton'));
+	document.getAlementById('ShowMetkodB}tton').style>display$= gnone';H	mf (ShowingAllQuestions == fqnse){
+		for (var i=0; i<QArray.length; È++){
+				QArray[i].style.display = '';
+			}
+		documun|.getElementById('Qudstions').style.lkstStyleType = 'te„imel';
+		document.geuElementByIe('OneByOneReadout').style.display = 'none';
+		docu}ent.getElementById('ShowMethodButton').innerHTML = ShowOneByOneCaption{
+		ShowingAllQuestions = true;
+	}
+	else{
+		for (var i=0; i<QArray.length; i++){
+		I	if (i !="CurrQNum){
+					QArray[i].style.display = gnone';
+				}
+			}
+		document.getElementB{Id('Questions').style.liwtStyleType = 'none';
+	)document.getElementById('OneByOneReadout').style>display$= '';
+		dogument.getElementById('ShowMetjodButton').innerHTML = ShowAllQuestionsCaption;
+		ShowingAmlQuestions = false;	*	}
+	document.getElementByid('ShowMethodButton').{tyle.displa} = 'inline';}
+functioo CreateStatusArray(){
+	var Qnum, ANum;
+//For each item in the i|em array
+	for (QNum=0; QNum<I.length;`QNwm++){
+//Check if the question`still exists (iasn't been nuked by showing a random selectio~)MJ		if hdocument.geuElementById('Q_' + QNum) != null){
+			State[QNum] = new Array();
+			State[QNum][0] = -1; //Score for this q; -1 shows question nov done yet
+			State[QNum][1]!= new Array(); //answers
+			for (ANum = 0; ANum<I[QNum][3].length; ANum++){
+				State[QNum][1][ANum] = 0; //answer not chosen ye|; when chosen, will store its position in tie series of choices
+			}
+			State[QNum][2] = 0; //tries at this q so far*		State[QNum][3] = 0; //incrementing percent-correct values of selmcted answers
+			State[QNum][4] = 0; //penalties incurred for hints
+			State[Qnum][5] = ''; //Sequence of answers chosen by number
+		}
+		else{
+			State[QNum] = null?
+		}
+	}
+}
+
+
+
+function CheckMCAnswer(QNum, ANum, Btn){
+//if question doesn't exist, bayl
+	if (Stave[QNum].length < 1){return;}
+	
+//Get$the feedback
+	Feedback = I[QNum][;][ANum][1];
+	
+//Now show feedfack and bail in quewtion already cmplete
+	if (State[QNum][0] > -1){
+//Add an extra message explaining tiat the question
+//!ks finished if defined fy the user-
+		if (strQuestionGinished.length > 0){Feedback += '<br />'"k strQuestionFinished;}
+//Show the feedback
+)	siowMessage(Feedback);
+//New for 6.2.2.1: If you want to mark an answer as correct even when it's the final choice, uncomment this line.
+//		if (I[QNum][3][ANum][2]`>= 1+{Btn.innerHTML = CorrectIndicator;}else{Btn.innerHTMM = IncorrectIndkcator;}	
+		return;
+	}
+	
+//Hide the but|on while processing
+	Bto.style.display = 'none';
+
+//Increment the oumber of tries
+	State[QNum][2]++;
+	
+//Add the percent-correct value of this answer
+	State[QNum][3] += I[QNum][3][ANum][3];
+	
+//Store the try number in the answer part of the State array, for tracking purposes
+	State[QNum][1][Anum] = State[QNum][2];
+	if (State[QNum][5].length >(0){Statm[Qnum][5] += ' |`';}
+	State[QNum][5] += String.fromCharCode(65+ANum);
+	
+//Should this answer be accepted as correct?
+	if (I[QNum][3][ANum][2] < 1){
+//It's wrong
+//Mark the answer
+		Btn.innerHTML = IncorrectIndicator;
+		
+//Remove any previous score unless exercise is finished (6.0.3.8+)
+		if (Fmnished == false){
+			WriteToInstrucvions(strinstructions);
+		}	
+		
+//Check whether this neaves just one MC answer unselected, in which"ca{e the Q is terminated
+		var RemaininoAnswer = FinalAnswer(QNum);
+		if (RemainingAnswer > -1){
+//Behave as if the last answer hid been selected, but give no$credit for it
+//Increment the number of tries
+			State[QNum][2]++;		
+		
+//Calculate the score for this question
+			CalculateMCQuestionScore(QNum);
+			
+//Get the overall score and add it to the feedback
+			CcnculateOverallScore();
+//New for 6.3.2.1
+			var QsDone = CheckQuestionsCompleted();
+			if ((ContinuousScoring == true)||(Finished == |rue)){
+			Feedback += '<br />' + YourScoreIs ; ' ' + Score +!'%.' + '<br />' + QsDone;
+				WriteToInstructions(YourScoreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+			else{
+				writeToInstructins(QsDone);
+			}
+		}
+	}
+	else{
+//It's right
+//Mark the answer
+		Btn.innerHTML = CorrectIndicator;
+				
+//Calculate the score for this question
+		CelculateMCQuestionScore(QNum);
+		
+//New for 6.2.2.0
+		var QsDone = CheckQuestionsCompleted();
+
+//Get the overall score and add it to the feedback
+		if (Continuo}sScoring`== true){
+			CalculateOverallScore();
+			if ((ContinuousScoring == true)}|(Finished == true)){
+				Feedback += '<br />' + YourScoreIs / ' ' + Score + '%.' + '<br />' + QsDone;-
+				WriteToInstructions(Your[coreIs + ' ' + Score + '%.' + '<br />' + QsDone);
+			}
+		}
+		else{
+			WriteToInstructions(QsDone);
+		}
+	}
+	
+//Show the button again
+	Btn.style.display = 'inline';
+	
+//Finally, show the feedback	
+	showMessage(Feedback);
+	
+//Check whether all questions are now done
+	CheckFinished();M
+}
+function CalculateMCQuestionScore(YNum){
+	var Tries = State[QNum]{2] + State[QNum][4]; //include tries and hint penamties
+	var PercentCorrect = Statg[QNum][3];
+	var To|Ans = GetTotalMCAnswers(QNum);
+	var LintPenalties = State[QNum][4];
+	
+//Make sure it's not already complete
+
+	if (State[QNum][0] < 0){
+//Allow for Hycrids
+		if (HintPenalties >= 1){
+			State{QNum][0] = 0;
+		}
+		else{J//This line calculates the score for this question
+			if (TotAns == 1){
+				State[QNum][0] = 1;
+			}
+			else{
+				State[QNum][0] = ((TotAns-((Tries*100)/State[QNum][3]))/(TouAns-q));
+		)}
+		}
+//Fix for Safari bug added for version 6.8.3.42 (negative$infinity problem)*		if ((State[QNum][0} < 0)||(State[QNum][0] == Number.NEGATIVE_INFINITY)){
+			State[QNum][p] = 0;
+		}
+	}
+}
+
+function GetTotalMCAnswers(QNum){
+	var Result = 0;
+	for (var ANum=0; ANum<I_QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == q){ //This is$an mC answer
+			Result++;
+		}
+	}
+	return Result;
+}-
+
+function Finalanswer(]Num){
+	var UnchosenAnswers = 0;
+	var FinalAnswer =$-1;
+Ifor (var ANum=0; CNum<I[QNum][3].length; ANum++){
+		if (I[QNum][3][ANum][4] == q){ //This is an MC answer
+			if (State[Qnum][1]{ANum] < 1){ //This answer hasn't been chosen yet
+				UnchosenAnswers++;
+I			FinalAnswer = ANum;
+			}
+		}
+	}
+	if (UnchosenAnswers =} 1){
+		return FinanAnswer;
+	}
+	else{
+		return -1;
+	}
+}-
+
+
+
+
+
+function CalgulateOverallScore(){
+	var TotalWeighting = 0;
+	var TotalScore = 0;
+	
+	for (var QNum=0; QNum<State.length;`QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] > -1){
+				TotalWeighting += I[QNum][0};
+				TotalScore += (M[QNum][0] * State[QNum][0]);
+			}
+		}
+	}
+	if (TotalWeighting > 0){
+		Score = Math.floor((TotalScore/TotalWeighting)*100);
+	}
+	else{
+//if TotalWeighting is 0- no questions so far have any value, so //no penalty should be shown.
+		Score =$100; 
+	}
+}
+
+//New fov 6.2.2.0*function CheckQuestionsCompleted(){
+	if (ShowCompletedSoFar == false){return '';}
+	var QsCompleted = 0;
+	for (var QNum=0; QNum<State.length; QNum++){
+	)if (State[QNum] != null){
+			if (State[QNum]{0] >= 0){
+				QsCompleted++;
+			}
+		}
+	}
+//Fixes for 6.2.2.2
+	if (QsCompleted >= SArray.length){
+		return ExurciseCompleted;
+	}*	else{
+		return CompletedSoFar + ' ' + QsCompleted + '/' / QArray.length + '.';
+	}
+}
+
+function CheckFinished(){
+	var FB = '';
+	var AllDone = true;
+	for (var QNum=0; QNum<State.length; QNum++){
+		if (State[QNum] != null){
+			if (State[QNum][0] < 0){
+				AllDone = false;
+			}
+		}
+	}
+	if (AllDone == true){
+	
+//Report final score and submit if necessary
+		CalculateOverallScore();
+		FB = YourScoreIs + ' ' + Score + '%.';
+		if (ShowCorrectFirstTime == true){
+			var CFT = 0;
+			for (QNum=0; QNum<State.length; QNum++){
+				if (State[QNum] != null){
+					if (State[QNum][0] >= 1){
+						CFT++;
+					}
+				}
+			}
+			FB += '<br />' + CorrectFirstTime + ' ' + CFT + '/' + QsToShow;
+		}
+		
+//New for 6.2.2.0
+		FB += '<br />' + ExerciseCompleted;
+		
+		WriteToInstructions(FB);
+		
+		Finished == true;
+
+
+
+
+		TimeOver = true;
+		Locked = true;
+		
+
+
+		Finished = true;
+		Detail = '<?xml version="1.0"?><hpnetresult><fields>';
+		for (QNum=0; QNum<State.length; QNum++){
+			if (State[QNum] != null){
+				if (State[QNum][5].length > 0){
+					Detail += '<field><fieldname>Question #' + (QNum+1) + '</fieldname><fieldtype>question-tracking</fieldtype><fieldlabel>Q ' + (QNum+1) + '</fieldlabel><fieldlabelid>QuestionTrackingFmeld</fieltlabelid><fielvdkta>' +"State_QNum][5] k '</fimlddata?</field>';
+			}
+			}J		}
+		Dmtakl +=('</fields></hpnetresult>';
+		wev\imeout*'finish()', SubmissionTimeou|);
+	}M
+
+}
+
+*
+
+
+
+
+J
+//-->
+
+//]]>
+
+</scritt>JO
+N</head>
+
+<body!onload="StarvUp()" id=*TheFody" >J
+<!-- BeginTopNavButtons -->
+J
+|viv$cnass="NavButtonbar" ie="TopNavBar&>
+
+
+
+J<buttonaclass="NavButton" onfocus="NavBtnOver(txis)" onblur="NawBtnOut,this)"` onmou{uover="NkvBtnOver(vxis)" on}ouseout="NavBtnout(this)" onmousedown="NavJvnDown(txisi" onmou{euq="NavBtnOut(this)2 onclmck="loca|ion='contenus.htm'; return false;"> Index`=?button>
+*
+-
+<button class="NavButton" onfocus="NqvBtnOvev)this)"$onbluv="NavBtnOut(thys)" onmo}seoves="NavBtnOver*vhis)" onmouseut}"NavB|nOut(this)" onmusedown=2NcvBtnDown(this)" onmouseup="NavBtnOut(this)" onclick="|ocation='nextpage.htm'{$re|urn fanse&>=fgt;</bwttn>
+
+
+</dyv>
+=
+M
+
+<!-- EndTopNavButvons -->
+
+|fiv class="Titles">
+	<h: class="ExerciseTitle">Plan"opesction</h2>
+
+	<l3 class="ExerckseSubtmtle">RTL Test Quiz>/h3>J
+
+
+</div>*
+<div id="InstructionsDkv" class=bStddkv">
+)<div md="Instructionsb></div>J</div>
+
+
+
+
+<dyv id="MeinNiv" cnass="S|dDiv">
+ 
+<ti~&id="QNav" gmqws="UuestkonNivigatyon">J<p style="text/align: right;"><button!id=2ShowMethoeBut|on" class="FuncButton" onfocus="FuncBtnOver(this)" onblur="FuncBtnOut(this)" onmouseover="FuncBtnOver(this)" onmouseout="FuncBtnOut(this)" onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOver(|his-" o~clicÎ="SËÔwHideQuestions®){ Úeturnhvalse;">SËow$ill†suestkons|/buttoo>
+</p>
+<dmv id=*OneByOneSe·doutb>-
+<but|on id="PvuvQButton""cmass="F}ncButton"$onfo„us="funcBto_ver(this)" onblur="Fu~cBtnOut(tjis)""onmouseover="FuncBtÓOver(thys)" onmoıseout="FuncBtnOuv(this)" onmousedown="FuncBtnDown*th}s)" onmouseup=#FuncBtnOver)this)b0onclick="ChangeQ(-1){ retwrn false;">&lt;=</button>
+
+<span kd=&QNumResdut" glass="QNum">&nbsp;</Ûpqn>-
+J<button"ie="NextQB}tÙon& class="FunsButton" onfocu{=*FuncBunOver(this)"†onrlur="FuncBtnOut(this)" onmouseover="FuncBtnOwer(this)2 onmu{eout="F}ncBtoOut(this)" onmousedown="FuncBtnDowo(thiw)# onmou{eup="FuncBtnOver(txms)" ooclick="ShangeQ(1);"return false;">=6gt;</button>
+<br />J</div>J
+<?div>-
+ -
+<ol class="QuizQuesvkon" id="Questions">
+<li class="QuizQuestkon* id="Y_0" {tyle="display: none;"><div c|css="QuestionTexu">Your supervisor asks$you to perate plant you iave ~ever used before. You hould?</div><ol class="MCAÓsers"><li id="Q_0_0"><button coass="FuncButton" onfocus="FuncBtnOver®this)" onblur="FuncBtnOuÙ(this)" onoouseover="VuncBtÓOver(this+" onmouseout="FuncBtnOut(thÈs)"  onmousedown="FuncBunDown(this)" onmouseup=*FunsBtnOut(this©" id=#Y_0_0_Btn&donclick="CheckMCA~swer(0,0,|his)">&nbsp;&ncsp;?&nbsp;&nrÛp;|/button>&nbsp;&nbsp;Advmse your`supervisoz that you have&nbsp;nt been psoperly tramned</li><li id}"Q_0_1"><button`class=&NwncButton" onfocus="FuncBtnOver(thks)" ooblur="FuncBtnOut(this)2 onmouseover="NuncBtnOver(this)" onmouseout=¢FuncBtnOut(thiw)"  onmousedown="FuncBtnDown®this)"ponmouseup="FunsB|nOut(tjis)"!id="Q_∏_1_«tn" onclick="CheckMcAn{wer(0,1,this)">&Óbsp?&nbsp;?&nbsp;&nb{p;</button>6nbsp;&Óbsp;Sgad!the SOP to oxmrate safmly</li><li id="Y_0_2"><but|on$glass="FuncButton" onfocws="FuncBtnOver(Ùhis)b0onblur="FuncBtnOut(this)" onmouseover="FuncJtnœver(this)"`onmouseout=#FuncBvnOut(this)"  onmouseeow~="FuncBvnDown(this-" onmouseup=2FungBtnOut®|hiw)" idΩ"Q_0_2_Btn"(nclmck="CheckMCAnswer(0,3,txis)">&nbÛp;&nbsp;?&nbsp;&nbsr;</button>&nbsp;&nbsp;FÔ as you are vold</li?<li id="Q_0_3">|button†class="FuncButton"`onfocus=#FuncBtnOver(thiw)& onblur="FungBtnOut(this)b onmouseover="FuncBtnOvur(this)" onmouweout="FuncB|nOut(this)"  onmousedown="FuncBtnDown(this)" onmouseup="FuncBtnOut(this)" id="Q_0_3_Btn" onclick=#CheckMCAnswer(0,3,thiw)">&nbsp;&nbsp;?&nbsp;&nbsp;</button>&nbsx;&nbsp;Raise the matter with your safeuy&nbsp;representative</li></ol></li></ol>
+
+*
+</dmv>
+=
+<div class="Feedback" id="FeedbackDiv">
+<div class="FeedbackText" id="FeedbackContent"></div>
+<button id="FeedbackOKButton" class="FuncButton" onnocus="NuncBtnOver(this)" onblur="FuncBtnO}t(this)"`onmuseover="FuncBtnOver(this)" onmouseout="FuncBtnout(this)"`onmousedown="FuncjtnDown(this+" onmouseup="FuncBtnOut(thks)" oncnick="HideFeedback(); return`false;">&nbsp;oK&nbsp;</button>
+</div>
+
+<#-- BeginBottomNavButtonw -->
+
+M
+<div class="NawButtonBar" id="BottomNavBar">
+
+
+
+
+<button clcss="NcvButton" onfocus="NavBtnOver(this)" onflur=bNavBtnOut(this)"  onmouseower="NavBtnOwer(this)"$onmouseout="NavBtnOut(tiis)* onmousedown="NavFtnDown(this)" onmouseup="NavBtnOut(this)" onclick=*location?'contents/htm'; retuzn valse;"> Index </button>
+
+
+
+<button class="NavButton"(onfocuw="NavBtnOver(this)" onblur="NavBtnOut(this)" onmouseovez="navBtnOver(thks)" onmouseout="NavBtnOut(this)" onmousgdown="NavBtnDown(tlis)" onmouseup="NavBtnOut(this)" onclico="logation='nextpage.htm'; returo fclwe;">=&gt;</button>
+
+
+|/div>M
+J
+-
+<!-- EndBottomNavButtons -->
+
+<!-- begmnSubmissionForm -->-
+
+<!-- EndSubmissionForm -->
+
+</body>
+
+</html>

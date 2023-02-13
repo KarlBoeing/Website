@@ -1,0 +1,582 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0063)http://www.boeingconsult.com/tafe/bcg5013/MacroMicroClimate.htm -->
+<HTML xmlns="http://www.w3.org/TR/REC-html40" xmlns:v = 
+"urn:schemas-microsoft-com:vml" xmlns:o = 
+"urn:schemas-microsoft-com:office:office" xmlns:w = 
+"urn:schemas-microsoft-com:office:word"><HEAD><TITLE>Macro and Micro Climate</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content=Word.Document name=ProgId>
+<META content="MSHTML 6.00.2900.2627" name=GENERATOR>
+<META content="Microsoft Word 10" name=Originator><LINK 
+href="MacroMicroClimate_files/filelist.xml" rel=File-List><LINK 
+href="MacroMicroClimate_files/editdata.mso" rel=Edit-Time-Data>
+<STYLE>@page Section1 {size: 612.0pt 792.0pt; margin: 1.0cm 1.0cm 1.0cm 1.0cm; mso-header-margin: 35.45pt; mso-footer-margin: 35.45pt; mso-paper-source: 0; }
+P.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+LI.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+DIV.MsoNormal {
+	FONT-SIZE: 12pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: "Times New Roman"; mso-style-parent: ""; mso-pagination: widow-orphan; mso-fareast-font-family: "Times New Roman"
+}
+SPAN.SpellE {
+	mso-style-name: ""; mso-spl-e: yes
+}
+SPAN.GramE {
+	mso-style-name: ""; mso-gram-e: yes
+}
+DIV.Section1 {
+	page: Section1
+}
+</STYLE>
+</HEAD>
+<BODY onmove=qMZ2() onresize=qMZ2() onscroll=qMZ2() text=#000000 bgColor=#eff8ad 
+onload=qMZ1()>
+<SCRIPT>
+<!--
+var qMZ3=0;
+var qMZ4=62;
+var qMZ5=470;
+var qMZ6=12;
+var qMZ7=200;
+var qMZ8=0;
+var qMZ9=0;
+var qMZ0,qMZ10;
+var qMZ11,qMZ12,qMZ13,qMZ8,qMZ14;
+var qMZ15,qMZ16,qMZ17=500;
+function qMZ1()
+{
+if(qMZ8==1)
+return true;
+if(document.all)
+{
+qMZ11=document.all("qMZ18").style;
+qMZ12=document.all("qMZ19").style;
+qMZ20=qMZ4+qMZ3+0;
+qMZ21=qMZ5+qMZ6+qMZ3;
+qMZ22='visible';
+qMZ23='hidden';
+}
+else
+{
+qMZ22='show';
+qMZ23='hide';
+qMZ11=document.qMZ18;
+qMZ12=document.qMZ19;
+qMZ20=qMZ4+qMZ3+15;
+qMZ21=qMZ5+qMZ6+qMZ3+15;
+}
+if(qMZ0=="00318552")
+{
+if(document.all)
+{
+qMZ12.display='none';
+qMZ11.display='none';
+}
+return true;
+}
+if(document.all)
+{
+if(document.body.clientHeight<qMZ7||document.body.clientWidth<qMZ7)
+return true;
+}
+else if(document.layers)
+{
+if(window.innerHeight<qMZ7||window.innerWidth<qMZ7)
+return true;
+}
+qMZ8=1;
+qMZ2();
+qMZ11.visibility=qMZ22;
+qMZ14=setTimeout("qMZ24()",30000);
+if(document.layers)
+qMZ25();
+}
+function qMZ25()
+{
+if(pageXOffset!=qMZ15||pageYOffset!=qMZ16)
+{
+qMZ15=pageXOffset;
+qMZ16=pageYOffset;
+qMZ2();
+if(qMZ17>=500)
+{
+qMZ17=20;
+setTimeout("checkTime=500",1000);
+}
+}
+qMZ10=setTimeout("qMZ25()",qMZ17);
+}
+function qMZ2()
+{
+if(!qMZ8)
+return true;
+if(document.all)
+{
+if(document.body.scrollHeight<document.body.clientHeight
+||document.body.scrollTop<((document.body.scrollHeight-document.body.clientHeight)/2))
+{
+qMZ11.top=document.body.scrollTop+document.body.clientHeight-qMZ20;
+qMZ12.top=document.body.scrollTop+document.body.clientHeight-qMZ20;
+}
+else
+{
+qMZ11.top=document.body.scrollTop+qMZ3;
+qMZ12.top=document.body.scrollTop+qMZ3;
+}
+qMZ11.left=document.body.scrollLeft+document.body.clientWidth-qMZ21;
+qMZ12.left=document.body.scrollLeft+document.body.clientWidth-qMZ21+qMZ5;
+}
+else if(document.layers)
+{
+if(window.pageYOffset<((window.outerHeight-window.innerHeight)/2))
+{
+qMZ11.top=window.pageYOffset+window.innerHeight-qMZ20;
+qMZ12.top=window.pageYOffset+window.innerHeight-qMZ20;
+}
+else
+{
+qMZ11.top=window.pageYOffset+qMZ3;
+qMZ12.top=window.pageYOffset+qMZ3;
+}
+qMZ11.left=window.pageXOffset+window.innerWidth-qMZ21;
+qMZ12.left=window.pageXOffset+window.innerWidth-qMZ21+qMZ5;
+}
+}
+function qMZ24()
+{
+qMZ9=1;
+qMZ12.visibility=qMZ22;
+qMZ11.visibility=qMZ23;
+clearTimeout(qMZ14);
+}
+function qMZ26()
+{
+qMZ9=0;
+qMZ12.visibility=qMZ23;
+qMZ11.visibility=qMZ22;
+}
+//-->
+</SCRIPT>
+
+<DIV id=qMZ19 
+style="Z-INDEX: 2147483632; LEFT: 0px; VISIBILITY: hidden; POSITION: absolute; TOP: 0px">
+<TABLE height=62 cellSpacing=0 cellPadding=0 bgColor=#eeeeee border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top><A title="Click here to expand banner" 
+      onclick="qMZ26(); return false;" 
+      href="http://www.boeingconsult.com/tafe/bcg5013/"><IMG height=12 
+      src="Macro and Micro Climate_files/left.gif" width=12 border=0></A></TD></TR>
+  <TR>
+    <TD vAlign=bottom><A href="http://www.easyspace.com/" target=_blank><IMG 
+      src="Macro and Micro Climate_files/littlelogo.gif" 
+  border=0></A></TD></TR></TBODY></TABLE></DIV>
+<DIV id=qMZ18 
+style="Z-INDEX: 2147483647; LEFT: 0px; VISIBILITY: hidden; POSITION: absolute; TOP: 0px">
+<TABLE height=62 cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD vAlign=top rowSpan=2><A 
+      href="http://www.easyspace.com/cgi-bin/redirect.cgi?type=BNR-468_easyspace_4.gif&amp;url=http://www.easyspace.com" 
+      target=_new><IMG height=60 
+      alt="Easyspace-your perfect partner for the web" 
+      src="Macro and Micro Climate_files/468_easyspace_4.gif" width=468 
+      border=0></A></TD>
+    <TD vAlign=top bgColor=#eeeeee><A title="Click here to shrink banner" 
+      onclick="qMZ24(); return false;" 
+      href="http://www.boeingconsult.com/tafe/bcg5013/"><IMG height=12 
+      src="Macro and Micro Climate_files/right.gif" width=12 border=0></A></TD></TR>
+  <TR>
+    <TD vAlign=bottom bgColor=#eeeeee><A href="http://www.easyspace.com/" 
+      target=_blank><IMG src="Macro and Micro Climate_files/littlelogo.gif" 
+      border=0></A></TD></TR></TBODY></TABLE></DIV>
+<TABLE width=620 align=center>
+  <TBODY>
+  <TR>
+    <TD>
+      <P class=MsoNormal style="mso-layout-grid-align: none" align=center><FONT 
+      face="Arial, Helvetica, sans-serif" size=-1>The following text is taken 
+      from University of Strathclyde's Energy Systems Research Unit ESRU's web 
+      site (file type '16-Climate.pdf')</FONT><BR><BR></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none" 
+      align=center><B><FONT size=5>Macro and Micro 
+      Climate</FONT><o:p></o:p></B></P>
+      <P class=MsoNormal 
+      style="mso-layout-grid-align: none"><B>Climate<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The climate of the 
+      earth consists of a series of interlinked physical systems powered by the 
+      sun.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">In the built 
+      environment we are generally concerned with local climatic systems in 
+      particular:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN><B>Macro-climate </B>the climate of a larger area such as a region 
+      or a country<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN><B>Micro-climate </B>the variations in <SPAN 
+      class=SpellE>localised</SPAN> climate around a building<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The macro and micro 
+      climate has a very important effect on both the energy performance and 
+      environmental performance of buildings, both in the heating season and in 
+      summer.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The site and design 
+      of a building can have a profound effect upon the interaction between a 
+      building and its environment.</P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><img height=246 
+      src="image002.jpg" width=389><o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The building site 
+      affects exposure to the prevailing wind, the solar radiation the building 
+      receives, pollution levels, temperatures and rain 
+      penetration.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Site and macro 
+      climate<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The orientation of 
+      the building affects solar gains and exposure to the prevailing wind 
+      (ventilation).<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The location of 
+      <SPAN class=SpellE>neighbouring</SPAN> trees and buildings affects the 
+      solar gains (shading) and wind patterns.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      class=SpellE>Neighbouring</SPAN> trees and buildings also protect the 
+      building from driving rain.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Macro 
+      Climate<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The macro climate 
+      around a building cannot be affected by any design <SPAN 
+      class=GramE>changes,</SPAN> however the building design can be developed 
+      with a knowledge of the macro climate in which the building is located. 
+      General climatic data give an idea of the local climatic 
+      severity:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Seasonal accumulated temperature difference (degree day) are a 
+      measure of the outside air temperature, though do not <SPAN 
+      class=SpellE>acount</SPAN> for available solar<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Typical 
+      wind speeds and direction<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Annual 
+      totals of Global Horizontal Solar Radiation<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>The 
+      driving rain index (DRI) relates to the amount of moisture contained in 
+      exposed surfaces and will affect thermal conductivity of external 
+      surfaces.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">This <SPAN 
+      class=SpellE>Metereological</SPAN> data gives a general impression of the 
+      climate at the site of a building and the building design can be planned 
+      accordingly. However the building itself and surrounding geography will 
+      affect the local climate.<o:p></o:p></P>
+      <P class=MsoNormal 
+      style="mso-layout-grid-align: none"><B>Micro-Climate<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The site of a 
+      building may have a many micro climates caused by the presence of hills 
+      valleys, slopes, streams and other buildings.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Micro Climate – 
+      Effect of Local Terrain<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Surrounding slopes 
+      have important effects on air movement, especially at the bottom of a 
+      hollow. <SPAN class=GramE>In hollows air warmed by the rises upwards due 
+      to buoyancy effects (anabatic flow), to be replaced by cooler air drifting 
+      down the slope (<SPAN class=SpellE>katabatic</SPAN> 
+      flow).</SPAN><o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The result is that 
+      <SPAN class=SpellE>valey</SPAN> floors are significantly colder than 
+      locations part way up the slope. <SPAN class=SpellE>Katabatic</SPAN> flows 
+      often result in frosts persisting for longer in low lying locations. The 
+      most favourable location in a valley is known as the thermal belt, lying 
+      just above the level to which pools of cold air build up, but below the 
+      height at which exposure to wind increases.</P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><img height=246 
+      src="image004.jpg" width=395><o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The crests of hills 
+      and ridges have <SPAN class=SpellE>unfavourable</SPAN> wind velocity 
+      profiles, the wind flow is compressed (as happens with an aerofoil) 
+      leading to high wind velocities.</P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><IMG height=189 
+      src="image006.jpg" width=371><o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Micro-Climate – 
+      Effects of Buildings<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Buildings 
+      themselves create further micro-climates by shading the ground, changing 
+      wind flow patterns.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">One example of how 
+      buildings affect the local climate is the heat island effect in large 
+      cities where the average temperature is higher than the surrounding 
+      area:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Solar energy 
+      absorbed and re-emitted from building surfaces, pavements roads etc. 
+      creates a warming effect on the surrounding air. Also the large quantities 
+      of buildings break up the wind flow, reducing wind speeds and causing the 
+      warm air to remain stagnant in the city. This also causes increased 
+      pollution as well as temperatures.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The presence of 
+      local high rise buildings can degrade the local climate as wind speed at 
+      ground level can be significantly increased, while extensive shadows block 
+      access to sunlight for long periods, increasing space heating costs in 
+      surrounding buildings.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Improving Micro 
+      Climate through Design<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The aims of 
+      enhancing Micro-Climate around Buildings:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Reduce 
+      costs of winter heating<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Reduce 
+      summer overheating and the need for cooling<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN><SPAN 
+      class=SpellE>Maximise</SPAN> outdoor comfort in summer and 
+      winter<o:p></o:p></P>
+      <P class=MsoNormal 
+style="mso-layout-grid-align: none">Also:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Improve 
+      durability of building material (reduced rain penetration)<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Provide 
+      a better visual environment in spaces around buildings<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Encourage growth of plants<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Discourage growth of mosses and algae<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Facilitate open air drying of clothes<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Means of enhancing 
+      the micro climate around a building include:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Solar 
+      Access:<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Allow maximum 
+      daylight into space and buildings<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Allow maximum solar 
+      radiation into space and buildings<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Shade space and 
+      windows from prolonged exposure to summer sun<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Protect space and 
+      windows from glare<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Wind 
+      Protection<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Protect space and 
+      buildings from prevailing winds and cold (e.g. North/East) 
+      winds.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Prevent buildings 
+      and terrain features from generating turbulence<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Protect spaces and 
+      buildings from driving rain and snow<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Protect space and 
+      buildings from <SPAN class=SpellE>katabatic</SPAN> flows, while retaining 
+      enough air<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      class=GramE>movement</SPAN> to disperse pollutants<o:p></o:p></P>
+      <P class=MsoNormal 
+      style="mso-layout-grid-align: none"><B>Features<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Provide thermal 
+      mass to moderate extreme temperatures<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Use vegetation for 
+      sun shading and wind protection (transpiration helps moderate high 
+      temperatures).<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Provide surfaces 
+      that drain readily.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Provide water for 
+      cooling be evaporation (pools and fountains)<o:p><BR><BR></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B><SPAN 
+      style="FONT-FAMILY: Arial">Factors Affecting Micro 
+      Climate<o:p></o:p></SPAN></B></P>
+      <TABLE class=MsoTableGrid 
+      style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid windowtext .5pt; mso-yfti-tbllook: 480; mso-padding-alt: 0cm 5.4pt 0cm 5.4pt; mso-border-insideh: .5pt solid windowtext; mso-border-insidev: .5pt solid windowtext" 
+      cellSpacing=0 cellPadding=0 border=1>
+        <TBODY>
+        <TR style="mso-yfti-irow: 0">
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Outside Designers 
+            Control<B><o:p></o:p></B></SPAN></P></TD>
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: windowtext 1pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Within Designer’s 
+            Remit<o:p></o:p></SPAN></P></TD></TR>
+        <TR style="mso-yfti-irow: 1">
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Area and local 
+            climate<B><o:p></o:p></B></SPAN></P></TD>
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Spacing and orientation 
+            of buildings<o:p></o:p></SPAN></P></TD></TR>
+        <TR style="mso-yfti-irow: 2">
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Site 
+            surroundings<B><o:p></o:p></B></SPAN></P></TD>
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Location of open 
+            spaces<o:p></o:p></SPAN></P></TD></TR>
+        <TR style="mso-yfti-irow: 3">
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Site 
+            shape<B><o:p></o:p></B></SPAN></P></TD>
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Form and height of 
+            buildings<o:p></o:p></SPAN></P></TD></TR>
+        <TR style="mso-yfti-irow: 4">
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Topographic 
+            features<B><o:p></o:p></B></SPAN></P></TD>
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Fenestration<o:p></o:p></SPAN></P></TD></TR>
+        <TR style="mso-yfti-irow: 5; mso-yfti-lastrow: yes">
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: windowtext 1pt solid; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Surrounding 
+            Buildings<B><o:p></o:p></B></SPAN></P></TD>
+          <TD 
+          style="BORDER-RIGHT: windowtext 1pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0cm; BORDER-LEFT: medium none; WIDTH: 221.4pt; PADDING-TOP: 0cm; BORDER-BOTTOM: windowtext 1pt solid; mso-border-alt: solid windowtext .5pt; mso-border-left-alt: solid windowtext .5pt; mso-border-top-alt: solid windowtext .5pt" 
+          vAlign=top width=295>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Tree 
+            cover<o:p></o:p></SPAN></P>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ground 
+            profiling<o:p></o:p></SPAN></P>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Wind 
+            breaks<o:p></o:p></SPAN></P>
+            <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+            style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Surrounding surfaces 
+            (paving grass etc)<B><o:p></o:p></B></SPAN></P></TD></TR></TBODY></TABLE>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Two main 
+      possibilities for influencing Micro Climate are Solar Access and 
+      Wind Control<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Solar 
+      Access<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Solar access to a 
+      site is often a case of <SPAN class=SpellE>minimising</SPAN> solar 
+      overheating in summer while <SPAN class=SpellE>maximising</SPAN> solar 
+      access during the winter.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Buildings with a 
+      heating requirement should be orientated north south with maximum glazing 
+      on the south face.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Deciduous trees 
+      offer an excellent means of site shading, with shading being reduced in 
+      winter when the trees lose their leaves.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The <SPAN 
+      class=SpellE>colour</SPAN> of surrounding surfaces will have a pronounced 
+      effect on the solar<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      class=GramE>radiation</SPAN> available to the building. Light <SPAN 
+      class=SpellE>coloured</SPAN> paving will increase the radiation reflected 
+      from the ground into the building. Paving stones will also provide 
+      external thermal mass, moderating temperature swings immediately adjacent 
+      to the building.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Grass planted 
+      outside a building will reduce the ground reflected solar.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Use of courtyards 
+      and water can also moderate the effects of high temperatures on 
+summer.</P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><IMG height=246 
+      src="image008.jpg" width=442><o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Wind 
+      Control<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">The form of the 
+      building can have a great effect on the impact of the wind:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Avoidance of the building flank facing the wind<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Avoidance of funnel-like gaps between buildings<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Avoidance of flat roofed buildings and cubical forms<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Avoid 
+      piercing buildings at ground level<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Avoid 
+      abrupt changes in building heights<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· 
+      </SPAN>Orientate long axis of the building parallel to the direction of 
+      the wind<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Use 
+      podium to limit down draught at ground level<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Use 
+      pitched rather than flat roofs and stepped forms for higher 
+      buildings<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      style="FONT-FAMILY: Symbol; mso-bidi-font-family: Symbol">· </SPAN>Groups 
+      of buildings can be arranged <SPAN class=SpellE>inirregular</SPAN> 
+      patterns to avoid wind tunneling.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Coniferous trees 
+      and fencing and other landscape features such as mounds of earth and 
+      hedges can also reduce the impact of wind and driving rain on the 
+      building<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      class=GramE>structure</SPAN>.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><B>Enhanced Micro 
+      Climate and Energy Saving<o:p></o:p></B></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Increased external 
+      air temperature leading to reduced space heating reduction:<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      class=GramE>increase</SPAN> solar access to site, wind protection, 
+      external thermal mass, quick drying surfaces.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none">Reduced Air Change 
+      Rate, internal air movement and decreased external surface connective heat 
+      transfer: reduced pressure driven ventilation by wind 
+      protection.<o:p></o:p></P>
+      <P class=MsoNormal style="mso-layout-grid-align: none"><SPAN 
+      class=GramE>Reduced moisture effects on fabric: less wetting of fabric and 
+      energy loss due to evaporation from wet surfaces by protecting from 
+      driving rain and providing adequate surface 
+drainage.</SPAN><o:p></o:p></P>
+      <P class=MsoNormal><o:p>&nbsp;</o:p></P>
+      <P><FONT size=-1>More information on macro-micro climate is provided by 
+      the University of Strathclyde's<BR>Energy Systems Research Unit <A 
+      href="http://www.esru.strath.ac.uk/Courseware/">ESRU's</A> web site 
+      Environmental Engineering Science 1</FONT> 
+  
+      <DIV align=center> 
+        <P><FONT color=#000000><br>
+          Close this window if not needed</FONT> </P>
+      </DIV></TD></TR></TBODY></TABLE><BR><br><br>
+
+ </BODY></HTML>

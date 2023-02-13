@@ -1,0 +1,171 @@
+<HTML>
+<HEAD>
+<TITLE>The use of the Sokkia Theodolite</TITLE>
+<meta name="keywords" content="Theodolite, horizontal and vertical planes, face right, face left">
+<meta name="description" content="Axes and circles of a theodolite">
+
+
+</HEAD>
+<BODY BGCOLOR="#fff">
+<table width=650 align="center" border="0" cellpadding="15">
+  <tr><td>
+<H3 ALIGN=CENTER>Site Surveying & Set Out 2</H3>
+      <table width="650" border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr> 
+        
+          <td width="101"><a href="#1">Theodolite checks</a></td>
+          <td width="144"><a href="#2">How to read micro scales</a></td>
+          <td width="133"><a href="#3">Vertical angles and heights</a></td>
+          <td width="98"><a href="#4">Height calculations</a></td>
+        <td width="134"><a href="#5">Using an optical square</a></td>
+        </tr>
+      </table>
+
+      <h2 ALIGN=CENTER>Using the Theodolite</h2>
+	  <p>In Surveying 2 we use a theodolite to determine (read) both horizontal 
+        and vertical angles to an accuracy of 20" and mark out the buildings on 
+      College ground using theodolite and tape (Module requirements)</p>
+
+      <p><img src="theo2.jpg" width="348" height="283" align="left">
+      <p >A theodolite is an instrument for measuring both horizontal and vertical angles. It 
+        consists of a telescope mounted movably within two perpendicular axes, 
+        the horizontal and vertical axis. <br>
+        All students have to use the <b>Sokkia</b> instrument. 
+        as that is the only one in our department. Using the same instrument  students can learn from each other how to read scales and use all the 
+        feature of the theodolite. <br>
+        The left instrument in the opposit figure shows a Wild Theodolite and 
+        the right instrument shows a Sokkia Theodolite</p>
+     
+     
+      <h3><a name="1"><b>Checking a theodolite</b></a></h3>
+     
+        <p>A theodolite can measure angles  in both the horizontal and vertic</p>
+        <p>al planes. How accurately this can be will depend partly on the quality of the instrument, and partly on the competence  of the student.
+  </p>
+        </p>
+      <p>A theodolite may not be in perfect adjustment and the lines and planes should be checked.  To minimise error as much as possible, an angle  is measured a number of times with instrument: &#9658;<em><strong>face left</strong></em> (vertical circle on the left of the telescope) and &#9658;<em><strong>face right</strong></em> (vertical circle on the right of the telescope).
+      Reading an angle face right and face left  will eliminate the errors due to the non adjustment of the line of collimation and the trunnion axis.</p>
+      <p align="center">We won't do any adjustment and assume the instrument is calibrated.</p>
+      
+          </font>        
+         Both axes of a theodolite are equipped with graduated 
+            circles that can be read out through microscopes. The vertical circle 
+            (the one associated with the horizontal axis!) should read 90° when 
+            the sight axis is horizontal. 
+            <p>A theodolite, like the Level is mounted on a tripod by means of a forced 
+            centering plate or tribrach, containing three thumbscrews for rapid 
+            levelling. Before use, a theodolite must be placed precisely and vertically 
+        over the point to be measured.        
+	<div align="right">
+        <p><A HREF="#top">back to top</A></p>
+      </div>
+      <h3><a name="2">Reading scales</a></h3>
+      <p>Theodolites have different reading scales. A theodolite can read, depending 
+        on the accuracy, <br>
+        <b>a)</b> degrees, <b>b)</b> degrees and minmutes or <b>c)</b> degrees, 
+        minutes and seconds.
+      <table>
+        <tr> 
+          <td width="187"> 
+            <div align="center"><img src="direct-read.gif" width="120" height="119"><br>
+              <b>a)</b> scale can read degrees &amp; minutes </div>          </td>
+          <td width="187"> 
+            <div align="center"><img src="micro-read.gif"><br>
+              <b>b)</b> scale can read degrees, minutes &amp; seconds </div>          </td>
+          <td width="212"> 
+            <div align="center"><img src="digital-read.gif"><br>
+              <b>c)</b> digital reading (electronically) <br>
+              reads degrees, minutes &amp; seconds</div>          </td>
+        </tr>
+      </table>
+      <p>Modern theodolites read the horizontal and vertical circles electronically 
+        and display readings digitally as in <b>c)</b> above.
+      <h3>How to read the micro-scales on the Sokkia Theodolite<img src="read-micro.gif" align="left">      </h3>
+      <p> The opposite figure shows a typical view through the microscope eye 
+        piece. The microscope eyepiece is located adjacent (right) to the telescope 
+        eye piece. Two set of parallel lines (0&deg; and 360&deg;} are seen in 
+        the H window. If the observed reading in the H-window is <img src="degree-scale.gif" width="171" height="80" align="left" vspace="15">245&deg; 
+        sitting between 50' and 60' divisions you need to turn the mircometer 
+        knob until the parallel 245&deg; lines are biseced by the 50' line as 
+        shown in figure. Then the window above the H window will shows in the 
+        top row the minute and below the seconds. The final reading as shown in 
+        the figure is 245&deg; 53' 18&quot;. (The seconds reading is scaled and 
+        not precise.) <br>
+        The vertical circle (V-window) is read in a similar manner. 
+      <div align="right">
+        <p><A HREF="#top">back to top</A></p>
+      </div>
+      <p><a name="3"><b>Using the Vertical Angles and the distances to determine the height.</b></a><br>
+        The measured vertical angle combined with the distance to any object can 
+        be used to determine the height of an object. Most modern theodolites 
+        will automatically set the reference direction for the vertical circle 
+        once the theodolite is leveled. Zero degrees for the vertical circle is 
+        usually set at the zenith (vertically above the theodolite) and the telescpoe reading is 90&deg; when it is horizontal. The vertical 
+        angle is then the angle from the zenith down to the line of observation. 
+        Points on equal elevation (horizontal plane) to the theodolite will therefore 
+        be at 90 degrees. Basically the precision for our vertical angle measurement 
+        will determine the accuracy of measured positions. </p>
+     
+      <p><b>Procedures 
+        to measure vertical and horizontal angles</b><br>
+      <br>
+      <img src="height-m.gif" width="345" height="281" align="left">
+        Aim at the first specified corner of the building and <b>zero</b> the 
+        horizontal circle reading. Readings for horizontal angles should be either 
+        in a clock wise or anti clock wise direction. Do not change directions 
+        and close the cirle at 360&deg;. Then read the vertical angles (angle 
+        of elevation &amp; angle of depression) to determine the height of the 
+        corner of the building. Make sure the sighting points are verticle above 
+        each other. After that sight the next specified corner and read the horizontal 
+        angle, and note the reading of the vertical angles.The horizontal distance 
+        between all specified building corners must be exactly measured. (<font color="#000000">Note 
+        the distance to</font><font color="#0000FF"> angle A</font> is different 
+        to <font color="#808000">angle A</font>.) Continue reading horizontal 
+        and vertical angles as well as distance measures until the specified corners 
+        of all buildings are completed. 
+      <div align="right">
+        <p><A HREF="#top">back to top</A></p>
+      </div>
+     <h3><a name="4">Height calculations</h3>
+      We use the <i>tan-function</i> to calculate the height. As shown in the 
+      figure above the height is determined by measuring two angles (angle of 
+      elevation &amp; angle of depression). To calculate the Height A multiply 
+      the horizontal distance on for your first height reading by the tan of the 
+      related angle.
+
+<p align="center"><font face="Arial, Helvetica, sans-serif" color="#808000">Height 
+        A = horizontal distance x tan 90&deg;- A&deg;</font></div>
+      <p align="center"><font face="Arial, Helvetica, sans-serif" color="#FF0000">Height 
+        B = horizontal distance x tan B&deg;</font><font color="#FF0000">- 90&deg; 
+        </font>
+      <p>Now add both distances together. Add this measurent to the known reduced 
+        level (RL) at the bottom to obtain the new height level (RL gutter or 
+        fascia) at the top.<br>
+      <p align="center">Make up a template for recording angles and measurements.</p>
+	 
+      <p>The reading precision of the instrument and the accuracy of your angle 
+        reading and horizontal measured distance will determine the correct height 
+        distance.
+		
+       
+      <h3><a name="5">Using an double prism optical square  </h3>
+       <p>Surveyor's use the instrument for laying out right angles and 
+       placing points on line. It is a very simple geodetic instrument. The prism  has two 
+       mirrors for measure right angles Figure) 1&nbsp;or in-line parallel to an object 
+       using range poles (Figure 2)</p>
+        <p>
+        <p align=center><img src="optical-square-2.gif" width="577" height="266"><p align="center"><b>Figure 1</b></p><P align=center><img src="optical-square.gif" width="513" height="554"></P><p align="center"><b>Figure 2</b>
+      </p>     
+ <a href="https://triginstruments.co.nz/brochures/Optical%20Square.pdf" target="_blank">Standard operation procedure      </a>
+      
+     <div align="right">
+        <p><A HREF="#top">back to top</A></p>
+      </div>
+      <h2><a name="5">The total station</h2>
+<p>All surveyors used nowadays a total station, thats consists of atheodolite with a built-in distance
+ meter. It can measure angles and distances at the same time. Today’s electronic total stations all
+have an opto-electronic distance meter (EDM) and electronic angle scanning ability.
+</tr>
+</table>
+</BODY>
+</HTML>

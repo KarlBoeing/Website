@@ -1,0 +1,1649 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 11">
+<link id=Main-File rel=Main-File href="../Week7%20smoke%20control.htm">
+<link rel=Preview href=preview.wmf>
+<meta name=Robots content=NoIndex>
+<script src=script.js></script><script><!--
+
+if( !(IsWin("PPTOtl")||IsWin("PPTNav")||IsWin("PPTOtlNav")) )
+{
+	obj = GetObj("Main-File")
+	parent.location.href=obj.href
+}
+
+var gOtlHiliteClr="#ffffff",gOtlNormalClr="#000000",gOtlActiveClr="#ffff00",gSelected="",gTxtState=false,gChildEntryTable=new Array()
+
+function Load()
+{
+	if( IsWin("PPTOtl" ) ){ LoadOtl(); parent.gOtlLoaded=true; return }
+	if( g_supportsPPTHTML ) {
+		if( IsWin("PPTNav" ) ){ LoadNav("NavObj",UpdNav); parent.gNavLoaded=true; return }
+		if( IsWin("PPTOtlNav" ) ){ LoadNav("OtlNavObj",UpdOtlNav); parent.gOtlNavLoaded=true; return }
+	}
+}
+function Upd(){ if( IsWin("PPTNav") ) LoadNav("NavObj",UpdNav) }
+function LoadNav( oId,UpdFunc )
+{
+	document.ondragstart=CancelDrag
+	document.onselectstart=CancelDrag
+	document.body.style.margin=2
+	UpdFunc()
+	obj=document.all.item(oId)
+	obj.style.display="block"
+	obj.style.visibility="visible"
+	document.bgColor="threedface"
+
+	if( parent.frames["PPTNts"] )
+		notesBtn.style.display = ""
+	if( parent.gHasNarration )
+		nb_voiceBorder.style.display = ""
+}
+function LoadOtl()
+{
+	var otl=GetObj("OtlObj")
+	otl.style.display="block"
+	otl.style.visibility="visible"
+	if( gOtlActiveClr == "" ) gOtlActiveClr=document.linkColor
+	if( gOtlHiliteClr == "" ) gOtlHiliteClr=document.fgColor
+	if( gOtlNormalClr == "" )
+		gOtlNormalClr=document.bgColor
+	else
+		document.bgColor=gOtlNormalClr  
+
+	InitArray()
+
+	if( ObjExists( parent.gCurSld ) ) {
+		ChangeState( parent.gCurSld,gOtlNormalClr,gOtlHiliteClr )
+		gSelected=parent.gCurSld
+	}
+	else gSelected = -1
+
+	UpdOtl()
+}
+function UpdOtl(){ UpdIdx(parent.gCurSld) }
+function UpdIdx( idx )
+{
+	if( gSelected != idx ) {
+		if( gSelected > 0 )
+			ChangeState( gSelected,gOtlHiliteClr,gOtlNormalClr )
+
+		if( ObjExists( idx ) ) {
+			gSelected = idx
+			ChangeState( gSelected,gOtlNormalClr,gOtlHiliteClr )
+		}
+		else gSelected = -1
+	}
+
+	if( gTxtState != parent.gOtlTxtExp ) {
+		state = "block"
+		if( !parent.gOtlTxtExp )
+			state="none"
+
+		for(ii=0; ii<gChildEntryTable.length; ii++) {
+			obj=gChildEntryTable[ii];
+			if( obj.id == null ) continue;
+
+			if( obj.id.indexOf("PPTC") >= 0 )
+				obj.style.display=state;
+		} 
+		gTxtState=parent.gOtlTxtExp
+		if( ObjExists( gSelected ) )
+			ChangeState( gSelected,gOtlNormalClr,gOtlHiliteClr )
+	}
+}
+function InitArray()
+{
+	count=0
+	var list=GetTags(document,"DIV");
+	for(ii=0; ii<list.length; ii++) {
+		obj=list.item(ii)
+		if( obj.id == null ) continue
+
+		if( obj.id.indexOf("PPTC") >= 0 )  
+			gChildEntryTable[count++]=obj
+	}
+}
+function ChangeState( idx,fgColor,bgColor )
+{
+	obj=GetObj("PPTL"+idx)
+	obj.style.color=fgColor
+
+	obj=GetObj("PPTP"+idx)
+	obj.style.backgroundColor=bgColor
+}
+function ChgClr( o,clr ){ if( o.id != "PPTL"+gSelected ) o.style.color=clr }
+function Over( src ){ ChgClr(GetLink(src),gOtlActiveClr) }
+function Out( src ){ ChgClr(GetLink(src),gOtlHiliteClr) }
+function Follow(src){ window.location.href = GetLink(src).href; }
+function ObjExists( ii ) { obj=GetObj("PPTP"+ii ); return( obj ) }
+function GoToSld( href ){ UpdIdx(parent.GetSldNum(href)); parent.GoToSld( href ) }
+function CancelDrag(){ window.event.cancelBubble=true;window.event.returnValue=false}
+function GetLink(src)
+{
+   if(src.tagName=="A") return src
+   else return GetTags(src,"A").item(0)
+}
+
+function UpdNav()
+{
+	txt = "<center>";
+	if( parent.GetHrefObj( parent.gCurSld ).mOrigVis == 1 )
+		txt += "Slide " + parent.GetCurSldNum() + " of " + parent.GetNumSlds()
+	else
+		txt += "Hidden Slide"
+	txt += "</center>";
+	nav_text.innerHTML = txt;
+
+	if( !parent.HasPrevSld() )
+		gBtnArr["nb_prev"].Enabled(0)
+	else
+		gBtnArr["nb_prev"].Enabled(1)
+
+	if( !parent.HasNextSld() )
+		gBtnArr["nb_next"].Enabled(0)
+	else
+		gBtnArr["nb_next"].Enabled(1)
+	gBtnArr["nb_nts"].Enabled(1)
+	gBtnArr["nb_ntsBorder"].SetFlag( parent.gHasNts )
+
+	gBtnArr["nb_sldshw"].Enabled(1)
+	gBtnArr["nb_voice"].Enabled(1)
+}
+
+function ExecBtn()
+{
+	if (event.keyCode == 13)
+	{
+		BtnOnDown();
+		BtnOnUp();
+	}
+}
+function UpdOtlNav()
+{
+	gBtnArr["nb_otl"].SetEnabled();
+
+	if( parent.gOtlOpen )
+		gBtnArr["nb_otlTxt"].Enabled( true );
+	else
+		document.all.item("nb_otlTxtBorder").style.visibility = "hidden";
+}
+
+
+
+
+//--></script>
+<style>
+<!--.PTxt
+	{position:relative;
+	width:100%;
+	margin-top:5px;
+	padding-left:2px;
+	font-weight:bold;}
+.CTxt
+	{position:relative;
+	width:100%;
+	margin-top:5px;}
+a
+	{color:white;
+	text-decoration:none;}
+ul
+	{color:white;
+	margin-bottom:0px;
+	margin-left:20px;}
+.sldNum
+	{margin-top:5px;
+	color:white;}
+.button
+	{position:absolute;
+	width:32px;
+	height:20px;
+	border-style:solid;
+	border-width:1px;
+	border-color:threedface;}
+-->
+</style>
+</head>
+
+<body onload="Load()" style='margin:2px'>
+
+<div id=NavObj onload="Load()" onmouseover="BtnOnOver()"
+onmousedown="BtnOnDown()" onmouseout="BtnOnOut()" onmouseup="BtnOnUp()"
+onkeypress="ExecBtn()" style='display:none;visibility:hidden'>
+<table id="notesBtn" style='display:none;position:relative;width:55px' align=left cellpadding=0
+ cellspacing=0>
+ <td nowrap>
+ <div id="nb_ntsElem" title="Show/Hide
+Notes" align=center style='position:relative;margin-left:5px;margin-right:5px;padding:3px;
+ font-family:Arial;color:buttontext;font-size:9pt; cursor:default'>
+ <img src="notes_flag.gif" id="nb_nts" style='display:none'> &nbsp;Notes</div>
+ <div id="nb_ntsBorder" title ="Show/Hide
+Notes" onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=1 style='position:absolute;top:0%;left:0%;width:100%;height:20px'>
+
+ </div>
+ </td>
+</table>
+
+
+<table style='position:relative;width:70px' align=right cellpadding=0 cellspacing=0>
+ <td nowrap>
+ <div id="nb_sldshwText" title="Full Screen Slide Show" align=center style='position:relative;margin-left:20px;padding:3px;
+ font-family:Arial;color:buttontext;font-size:9pt;cursor:default'>Slide
+Show</div>
+ <div id="nb_sldshwBorder" title="Full Screen Slide Show" onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=5 style='position:absolute;top:0%;left:0%;width:100%;height:20px'>
+ <div style='position:absolute;clip:rect(0px, 18px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_sldshw" style='position:relative;left:-254px'></div>
+ </div>
+ </td>
+ <td>
+ <div id="nb_voiceBorder" style='display:none;position:absolute;top:0;left:-40px;
+ width:20px;height:20px' onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=4 class=button>
+ <div style='position:absolute;clip:rect(0px, 18px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_voice" title="Pause/Play Narration" style='position:
+ relative;left:-290px'></div>
+ </div>
+ </td>
+</table>
+
+<table style='position:relative' align=center cellpadding=0 cellspacing=0>
+ <td nowrap>
+ <div id="nb_prevBorder" onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=2 class=button style='left:-30px'>
+ <div style='position:absolute;clip:rect(0px, 30px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_prev" title="Previous Slide" style='position:relative;
+ left:0px'></div>
+ </div>
+ <span id="nav_text" style='position:relative;top:3px;width:100px;font-family:
+ Arial;color:buttontext;font-size:9pt'></span>
+ <div id="nb_nextBorder" onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=3 class=button>
+ <div style='position:absolute;clip:rect(0px, 30px, 18px, 0px)'><img
+ src="buttons.gif" id="nb_next" title="Next Slide" style='position:relative;
+ left:-90px'></div>
+ </div>
+ </td>
+</table>
+</div>
+
+<div id=OtlNavObj onload="Load()" onmouseover="BtnOnOver()"
+onmousedown="BtnOnDown()" onmouseout="BtnOnOut()" onmouseup="BtnOnUp()"
+onkeypress="ExecBtn()" style='display:none;visibility:hidden'>
+
+<table style='position:relative;width:70px' align=left cellpadding=0 cellspacing=0>
+ <td nowrap><div title="Show/Hide
+Outline" id="nb_otl" onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=11
+ style='position:absolute;top:0%;left:0%;width:100%;height:100%;cursor:default'>
+ <div id="nb_otlElem" align=center style='position:relative;padding:3px;font-family:Arial;
+ color:buttontext;font-size:9pt'>Outline</div></div>
+ </td>
+</table>
+
+<table style='position:relative' align=center cellpadding=0 cellspacing=0>
+ <td>
+ <div style='position:absolute;left:-18px;width:24px;height:20px;border-style:
+ solid;border-width:1px;border-color:threedface' onfocus="BtnOnOver()" onblur="BtnOnOut()" TABINDEX=12 id="nb_otlTxtBorder">
+ <div style='position:absolute;clip:rect(0px, 22px, 18px, 0px)'><img
+ src=buttons.gif id="nb_otlTxt" title="Expand/Collapse Outline"
+ style='position:relative;left:-157px'></div>
+ </div>
+ </td>
+</table>
+
+</div>
+
+<div id=OtlObj style='display:none;visibility:hidden;'>
+
+
+<table width="100%" style='font-family:Arial;font-size:9pt'>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>1</font></div>
+  </td>
+  <td width="100%">
+  <div id=PPTP1 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0068.htm');" id=PPTL1><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>2</font></div>
+  </td>
+  <td>
+  <div id=PPTP2 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0053.htm');" id=PPTL2>Characteristics of Smoke</a></font></div>
+  <div id=PPTC2 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Smoke generated by fire has long been recognized as a potential threat
+       to life. A fatality as a result of fire is often due to the effect of
+       smoke rather than the effect of heat.</li>
+   <li>Two important features of smoke are:</li>
+   <li>	toxic products of combustion and</li>
+   <li>	reduction in visibility.</li>
+   <br>
+   <br>
+   <li>The two factors are generally related. Dense smoke is usually highly
+       toxic and reduces visibility substantially.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>3</font></div>
+  </td>
+  <td>
+  <div id=PPTP3 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0020.htm');" id=PPTL3>The objectives of smoke
+  control</a></font></div>
+  <div id=PPTC3 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The need to control smoke in a fire seems obvious and the BCA requires
+       that occupants of buildings be safeguarded in a variety of ways from the
+       effects of smoke and its potential to hinder their escape.</li>
+   <li>The objectives of smoke control should encompass:</li>
+   <li>	• the maintenance of escape paths free of smoke</li>
+   <li>	• control of the spread of smoke</li>
+   <li>	• the reduction of smoke that may hinder the fire-		fighter’s role</li>
+   <li>	• the reduction of smoke damage to other parts of a 		building affected
+       by fire.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>4</font></div>
+  </td>
+  <td>
+  <div id=PPTP4 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0052.htm');" id=PPTL4>Smoke Developed Index</a></font></div>
+  <div id=PPTC4 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <ul>
+    <li>The smoke developed index relates to the optical density of smoke
+        produced under the conditions of the standard test.</li>
+    <li>Doubling of the optical density of the smoke increases the smoke
+        developed index. The higher the index, the greater the hazard is likely
+        to be from smoke.</li>
+    <li>The thickness of the material can affect the smoke produced as can the
+        mass to surface area ratio.</li>
+    <br>
+    <br>
+   </ul>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>5</font></div>
+  </td>
+  <td>
+  <div id=PPTP5 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0050.htm');" id=PPTL5>Spread of Flame Index</a></font></div>
+  <div id=PPTC5 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <ul>
+    <li>The spread of flame index is based on studies of actual rates of spread
+        of flame on various wall-lining materials.</li>
+    <li>Where the walls of rooms with 2.75m ceiling height were lined with
+        materials with high spread of flame indices, flames rapidly spread up
+        the wall and, by igniting combustible gases that had accumulated below
+        the ceiling, rapidly involved the whole room in fire.</li>
+    <li>An index of 10 indicates that the material could be expected to cause
+        flames to reach the ceiling of such a room within 10s of ignition; an
+        index of zero means that the materials will not cause flames to reach
+        the ceiling.</li>
+   </ul>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>6</font></div>
+  </td>
+  <td>
+  <div id=PPTP6 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0051.htm');" id=PPTL6>TABLE 1 RESULTS OF EARLY
+  FIRE HAZARD TESTS <br>
+    (FROM AS 1530.3-1999)</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>7</font></div>
+  </td>
+  <td>
+  <div id=PPTP7 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0021.htm');" id=PPTL7>The mechanism of smoke
+  production</a></font></div>
+  <div id=PPTC7 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <li>The combustion of solid materials in a fire involves the heating of
+       materials and the release of hot combustible volatiles. These gaseous
+       products ignite, rising above the fire as a column of flames and hot
+       smoky gases.</li>
+   <br>
+   <br>
+   <li>The density of the column is lower than that of the surrounding colder
+       air and consequently it moves upwards.</li>
+   <br>
+   <br>
+   <li>Incomplete combustion produce unburnt solid particles to form sooty
+       smoke component. The excess air is heated and mixed with the hot smoky
+       products of combustion to form a large inseparable cloud of smoke.</li>
+   <br>
+   <br>
+   <li>The rate of smoke production is approximately equal to the rate at which
+       air is entrained by the rising column of hot gases and flames.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>8</font></div>
+  </td>
+  <td>
+  <div id=PPTP8 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0022.htm');" id=PPTL8>The volume of smoke
+  produced</a></font></div>
+  <div id=PPTC8 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The rate of air entrainment into the column of hot gases and unburnt
+       solid particles above the seat of a fire will depend on:</li>
+   <li>the perimeter of the fire</li>
+   <li>the heat output of the fire</li>
+   <li>the effective height of the column of hot gases above the fire. This is,
+       the distance between the floor of the room or space where the fire is
+       and the bottom of the layer of smoke and hot gases which form under the
+       ceiling of an enclosed space.</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>9</font></div>
+  </td>
+  <td>
+  <div id=PPTP9 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0064.htm');" id=PPTL9><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>10</font></div>
+  </td>
+  <td>
+  <div id=PPTP10 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0011.htm');" id=PPTL10>Smoke Densities</a></font></div>
+  <div id=PPTC10 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The smoke produced by fires varies considerably in nature and content.</li>
+   <li>It will vary in appearance from light-coloured to black and sooty,
+       depending on the amount and type of unburnt particles in it and on the
+       presence of coloured gases and condensation products. The quantity of
+       smoke produced varies for materials.</li>
+   <li>The following quantities will produce enough smoke to fill a room of
+       approximately 85m<sup>3</sup> reducing the visibility to about 1m.</li>
+   <li>	0.6 kg of timber (untreated)</li>
+   <li>	0.08 kg of expanded polystyrene</li>
+   <li>	0.12 kg of foam rubber</li>
+   <li>	0.6 kg of polyurethane foam</li>
+   <li>	0.35 litre of kerosene.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>11</font></div>
+  </td>
+  <td>
+  <div id=PPTP11 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0023.htm');" id=PPTL11>&quot;The smoke density
+  is an...&quot;</a></font></div>
+  <div id=PPTC11 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The smoke density is an important feature that needs careful
+       consideration because it reduces visibility, thus hindering the progress
+       of a person escaping from a fire.</li>
+   <li></li>
+   <li>Optical density is the logarithmic reduction of the intensity of light
+       passing through a filter, in this case, through smoke.</li>
+   <br>
+   <br>
+   <li>Light obscuration and optical density can also be expressed as
+       mathematical equations. Both are also interrelated so that the
+       percentage of light obscuration can be converted to optical density.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>12</font></div>
+  </td>
+  <td>
+  <div id=PPTP12 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0054.htm');" id=PPTL12>&quot;Smoke Testing
+  Apparatus&quot;</a></font></div>
+  <div id=PPTC12 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Smoke Testing Apparatus</li>
+   <li>Smoke density The smoke density is produced by a paraffin oil generator.</li>
+   <li><span style='mso-spacerun:yes'> </span>Heat The duct is provided with a
+       heating option. The testing of heat detectors according to EN 54-5 is
+       not realised yet. For this purpose the heating concept would have to be
+       upgraded to achieve a temperature rise of 30 K/min.</li>
+   <li>Gases The fire gases are produced by real fires (e.g. a cotton wick
+       fire) by means of a simply constructed burning chamber; the smoke
+       particles are filtered out. Additionally, there is the option to inject
+       synthetic gases into the duct.</li>
+   <li>Dust It is possible to test the sensitivity of smoke detectors against
+       dust. Standardized dust particles are injected into the smoke duct.</li>
+   <li><br>
+              ISO dust A1: Ultrafine - dust particle with a nominal size of
+       0-10 µm <br>
+              ISO dust A2: Fine - dust particle with a nominal size of 0-80 µm</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>13</font></div>
+  </td>
+  <td>
+  <div id=PPTP13 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0055.htm');" id=PPTL13><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>14</font></div>
+  </td>
+  <td>
+  <div id=PPTP14 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0024.htm');" id=PPTL14>Visibility</a></font></div>
+  <div id=PPTC14 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Visibility in smoke depends on many conditions:</li>
+   <br>
+   <br>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	 the colour of
+       the smoke;</font></li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	 the size of
+       the smoke particles;</font></li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	 the density
+       of the smoke; and</font></li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	 the irritant
+       nature of the smoke are all characteristics 		 	 which influence the
+       degree of visibility.</font></li>
+   <br>
+   <br>
+   <li>The physical and mental state of the observer in panic or near-panic
+       state of a real fire will affect visibility.</li>
+   <li>The comparative visibility of smoke produced by common building
+       materials was established. These are shown in Table 1.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>15</font></div>
+  </td>
+  <td>
+  <div id=PPTP15 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0012.htm');" id=PPTL15>Table 1 <br>
+    Common building materials and comparative smoke visibility</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>16</font></div>
+  </td>
+  <td>
+  <div id=PPTP16 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0025.htm');" id=PPTL16>The mechanism of smoke
+  movement</a></font></div>
+  <div id=PPTC16 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The main factors that determine the movement of smoke and hot gases from
+       a fire in a building are:</li>
+   <li>	• the smoke’s own mobility, or buoyancy,</li>
+   <li>	• the normal air movement inside the building,</li>
+   <br>
+   <br>
+   <li>The movement caused by the smoke’s mobility, or buoyancy is due to
+       pressure differentials created by:</li>
+   <li>	• the expansion of the gases as they are heated by the fire</li>
+   <li>	• the difference in density between the hot gases and hot air above the
+       	<span style='mso-spacerun:yes'>  </span>flames and the cooler air
+       surrounding the fire.</li>
+   <br>
+   <br>
+   <li>The normal movement of air in the building is usually caused by the
+       following</li>
+   <li>factors:</li>
+   <li>	• the stack effect,</li>
+   <li>	• the wind outside;</li>
+   <li>	• the presence, or otherwise, of a mechanical air-handling system or
+       	<span style='mso-spacerun:yes'>  </span>mechanical ventilators inside
+       the building.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>17</font></div>
+  </td>
+  <td>
+  <div id=PPTP17 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0026.htm');" id=PPTL17>Systems of smoke
+  control</a></font></div>
+  <div id=PPTC17 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>There are various methods and design arrangements for smoke control in
+       buildings. These could be one of the following:</li>
+   <li>	•	take advantage of the natural forces of air movement 		to achieve the
+       desired control and subsequent 			removal of the smoke</li>
+   <li>	• 	rely on mechanical equipment and installations to 		guide the air
+       and smoke along predetermined paths 		leading to a point of discharge
+       outside the building.</li>
+   <li>Either system should be considered as a means of smoke control. The most
+       efficient smoke control is generally obtained by employing both basic
+       systems, natural and mechanical.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>18</font></div>
+  </td>
+  <td>
+  <div id=PPTP18 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0056.htm');" id=PPTL18><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>19</font></div>
+  </td>
+  <td>
+  <div id=PPTP19 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0027.htm');" id=PPTL19>Natural systems of
+  smoke control</a></font></div>
+  <div id=PPTC19 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The layout and the arrangement of vertical and horizontal divisions can
+       effectively control smoke within a building and also assist in its
+       removal.</li>
+   <li>(Smaller and single-storey buildings represent lesser problems, whereas
+       large high-rise buildings and complicated modern shopping complexes pose
+       considerable problems for smoke control.)</li>
+   <li>The movement of smoke within a building will be influenced by many
+       variables. It is practically impossible to try to stop the flow of smoke
+       in a building altogether.</li>
+   <li>This is the case in large buildings, particularly high-rise buildings.</li>
+   <li>The more reasonable and realistic approach is to try to prevent the
+       entry of smoke into the parts of the building that are not affected by
+       the fire.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>20</font></div>
+  </td>
+  <td>
+  <div id=PPTP20 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0028.htm');" id=PPTL20>Cross ventilation</a></font></div>
+  <div id=PPTC20 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The simplest method for providing natural ventilation and evacuation of
+       smoke from an enclosed space is the provision of openings in the
+       external walls.</li>
+   <li>Cross-ventilation method for smoke disposal is mainly suitable for
+       single-storey houses. The single-storey arrangement is particularly
+       suitable for roof vents.</li>
+   <li>Keep the smoke in the upper reaches of the building and allow the
+       unrestricted entry of fresh air.</li>
+   <br>
+   <br>
+   <li>In high-rise buildings vertical shafts are used as a means of smoke
+       control and smoke extraction. In many cases special smoke shafts or
+       smoke-ventilation ducts are provided.</li>
+   <li>In all cases the smoke should be discharged into the open and not
+       recirculated within the building.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>21</font></div>
+  </td>
+  <td>
+  <div id=PPTP21 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0029.htm');" id=PPTL21>Air locks</a></font></div>
+  <div id=PPTC21 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Air locks or smoke lobbies prevent, or at least to reduce considerably,
+       the entry of smoke into the defined fire-emergency exit system. When air
+       locks protect the entrances to fire-isolated stairs, they may be
+       arranged as:</li>
+   <li>	• lobby-approach stair</li>
+   <li>	• ventilated lobby-approach stair</li>
+   <li>	• balcony-approach stair</li>
+   <li>	• isolated tower stair.</li>
+   <li>Smoke lobbies are used as both natural and mechanical means for smoke
+       control. The benefit is that in order to reach the exit system, the
+       smoke has to pass through two sets of doors, across each of which a
+       pressure opposing the smoke flow can be developed.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>22</font></div>
+  </td>
+  <td>
+  <div id=PPTP22 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0030.htm');" id=PPTL22>Smoke reservoirs</a></font></div>
+  <div id=PPTC22 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Smoke reservoirs can be provided by subdividing the underside of the
+       roof of large single-compartment into separate catchment areas.</li>
+   <li>This can be done by suspending smoke curtains from the ceiling (roof).</li>
+   <li>Such lightweight non-combustible smoke curtains form inverted reservoirs
+       at ceiling level that entrain the smoke and hot gases directly over the
+       seat of the fire and for a certain period of time prevent its further
+       spread at ceiling level.</li>
+   <li>Vents are installed in these catchment areas (smoke reservoirs) to
+       exhaust the collected smoke directly to the outside atmosphere.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>23</font></div>
+  </td>
+  <td>
+  <div id=PPTP23 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0057.htm');" id=PPTL23>Automatic Smoke
+  Curtain<br>
+    <br>
+    Smoke containment systems prevent the movement of <br>
+    smoke and heat from one area to another.</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>24</font></div>
+  </td>
+  <td>
+  <div id=PPTP24 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0031.htm');" id=PPTL24>Fire door or smoke door</a></font></div>
+  <div id=PPTC24 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Smoke doors automatically seal off the flow of smoke through the
+       particular doorway protected by such a door.</li>
+   <li>The smoke door is not necessarily a fire door and is very often of
+       lightweight construction and may be combustible.</li>
+   <li>Its only function is to prevent, or at least restrict, the passage of
+       smoke whereas a fire door will stop the passage of fire.</li>
+   <li>The important requirement for a smoke door is that such a door must be
+       closed automatically by the action of a smoke detector.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>25</font></div>
+  </td>
+  <td>
+  <div id=PPTP25 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0058.htm');" id=PPTL25>Fire Doors</a></font></div>
+  <div id=PPTC25 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Fire doors are designed to withstand fire, heat and smoke for a period
+       of 20-minutes to 3 hours.</li>
+   <li>Did you know that corridor office doors are fire doors and should have a
+       fire rating?</li>
+   <li>Corridor laboratory doors should have a 60 minute rating.</li>
+   <br>
+   <br>
+   <li>Fire Doors are required to:</li>
+   <ul>
+    <li>Be Self Closing: fire doors should have a door closure that pulls doors
+        completely shut after the door has been opened</li>
+    <br>
+    <br>
+    <li>Have Positive latching: a positive latch locks a door in place so can
+        open swing open freely.</li>
+   </ul>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>26</font></div>
+  </td>
+  <td>
+  <div id=PPTP26 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0035.htm');" id=PPTL26>Power-operated units</a></font></div>
+  <div id=PPTC26 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Mechanical systems of smoke control</li>
+   <li>The mechanical extraction of smoke and the arrangements for providing
+       higher atmospheric pressure in certain parts of a building are used to
+       increase the efficacy of natural smoke control. A mechanical system of
+       smoke control could be:</li>
+   <li>	• 	power-operated units for smoke extraction or for fresh-air 		supply</li>
+   <li>	• 	a particular operation of the air-handling system, or air
+       		conditioning, in a building fitted with such a system</li>
+   <li>	• 	pressurisation of certain parts of a building, principally the
+       		defined fire emergency exit system(s).</li>
+   <li>They must operate with emergency electrical power as the normal power
+       supply could not be relied upon during a building fire.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>27</font></div>
+  </td>
+  <td>
+  <div id=PPTP27 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0033.htm');" id=PPTL27>A pressurisation system
+  can be used:</a></font></div>
+  <div id=PPTC27 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>	•	only in the event of a fire with provisions 		for automatic and
+       manual starting</li>
+   <li>	• 	at full operation when the building is 			occupied</li>
+   <li>	• 	at reduced capacity when the building is 		normally occupied with an
+       automatic and 		manual boost to full operation in the 			event of a
+       fire.</li>
+   <li>During a fire situation the necessary electrical power is to be supplied
+       from an emergency power source.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>28</font></div>
+  </td>
+  <td>
+  <div id=PPTP28 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0034.htm');" id=PPTL28>Smoke control in large
+  buildings</a></font></div>
+  <div id=PPTC28 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Air-handling systems and pressurisation of the fire-emergency exit are
+       particularly suitable.</li>
+   <li>Smoke curtains in the roof space and the various types of roof vents are
+       better suited to large single-storey buildings.</li>
+   <li>The types of roof vents that may be used are:</li>
+   <li>	• permanently open vents usually fitted with fixed louvres</li>
+   <li>	• vents that are set to open automatically when actuated by a
+       		detector – usually opened by a gravity or spring action</li>
+   <li>	• combustible roof skylights made of plastics with a low 			melting
+       temperature, so that when this skylight melts the 		hole in the roofing
+       acts as a vent opening.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>29</font></div>
+  </td>
+  <td>
+  <div id=PPTP29 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0038.htm');" id=PPTL29>Smoke modelling
+  computer packages</a></font></div>
+  <div id=PPTC29 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>A number of commercial software packages are available in Australia.
+       They use accepted models which can help in the prediction of fire growth
+       and movement, they are:</li>
+   <li>	• Firecalc – developed by the CSIRO</li>
+   <li>	• Yardstick – developed by the University of 			Adelaide.</li>
+   <li>These are specialist programs for use by fire engineers. It should be
+       remembered that they only give indications and cannot be regarded as
+       being a true reflection of fire outcomes in every instance.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>30</font></div>
+  </td>
+  <td>
+  <div id=PPTP30 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0010.htm');" id=PPTL30>Smoke Production and
+  Handling</a></font></div>
+  <div id=PPTC30 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The rate of air entrainment into the column of hot gases and unburnt
+       solid particles above the seat of a fire will depend on:</li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	the perimeter
+       of the fire</font></li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	the heat
+       output of the fire</font></li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	the effective
+       height of the column of hot 			gases above the fire.</font></li>
+   <li>		This is, the distance between the floor of the room or 			space where
+       the fire is and the bottom of the layer of 			smoke and hot gases which
+       form under the ceiling of an 		enclosed space.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>31</font></div>
+  </td>
+  <td>
+  <div id=PPTP31 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0013.htm');" id=PPTL31>The Mechanism of Smoke
+  Movement</a></font></div>
+  <div id=PPTC31 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The smoke’s own mobility, or buoyancy, which is due to the fact that the
+       hot gases and the hot air in the cloud of smoke are less dense than the
+       surrounding air</li>
+   <li>The normal air movement inside the building, which may have nothing to
+       do with the fire, but which could carry the smoke around that building.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>32</font></div>
+  </td>
+  <td>
+  <div id=PPTP32 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0016.htm');" id=PPTL32>The Mechanism of Smoke
+  Movement</a></font></div>
+  <div id=PPTC32 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The movement caused by the smoke’s mobility, or buoyancy is due to
+       pressure differentials created by:</li>
+   <br>
+   <br>
+   <li>The expansion of the gases as they are heated by the fire</li>
+   <br>
+   <br>
+   <li>The difference in density between the hot gases and hot air above the
+       flames and the cooler air surrounding the fire.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>33</font></div>
+  </td>
+  <td>
+  <div id=PPTP33 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0017.htm');" id=PPTL33>Smoke Movement</a></font></div>
+  <div id=PPTC33 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>The normal movement of air in the building is usually caused by the
+       following factors:</li>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS">	The stack
+       effect or the pressure differential due to 		the air inside the building
+       having a different 			temperature from the air outside.</font></li>
+   <br>
+   <br>
+   <li>	<font face=Symbol>·</font><font face="Arial Unicode MS"> The wind
+       outside; all buildings are to a greater or 		lesser extent leaky or have
+       openings to the 			outside.</font></li>
+   <br>
+   <br>
+   <li><span style='mso-spacerun:yes'> </span>	<font face=Symbol>·</font><font
+       face="Arial Unicode MS"> The presence or otherwise, of a mechanical
+       air-		handling system or mechanical ventilators inside 		the building.</font></li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>34</font></div>
+  </td>
+  <td>
+  <div id=PPTP34 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0014.htm');" id=PPTL34>Safety precautions</a></font></div>
+  <div id=PPTC34 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Rapid spread of fire and smoke requires technical investigation to
+       determine how the life safety features of building may have impacted
+       egress</li>
+   <li>Examination of parameters that affected egress, including hazard<span
+       style='mso-spacerun:yes'>  </span>recognition and response, location and
+       identification of exits, condition of exits, and changing conditions
+       inside structure (i.e. smoke and heat build-up, loss of lighting)</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>35</font></div>
+  </td>
+  <td>
+  <div id=PPTP35 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0015.htm');" id=PPTL35>Evaluate smoke control
+  in buildings</a></font></div>
+  <div id=PPTC35 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li><br>
+              # 	Research psychological effects of 		smoke on people exposed to
+       building fires.</li>
+   <li><span style='mso-spacerun:yes'> </span><br>
+              #	Record and identified mechanisms of 	smoke movement in
+       building.</li>
+   <li><span style='mso-spacerun:yes'> </span><br>
+              # 	Identified smoke control systems that<span
+       style='mso-spacerun:yes'>  </span>		meet the requirements for buildings
+       in 	accordance with legislative requirements.</li>
+   <li><br>
+              #	Analyse the application of computer 	packaged smoke control
+       systems.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>36</font></div>
+  </td>
+  <td>
+  <div id=PPTP36 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0044.htm');" id=PPTL36>BCA General
+  Requirements</a></font></div>
+  <div id=PPTC36 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Paragraph 2 of Specification C1.10 prescribes that any material (other
+       than a sarking) or component used in a Class 2, 3, 5, 6, 7, 8 or 9
+       building must have</li>
+   <li>&nbsp;&nbsp;&nbsp;(a)	a Spread of flame Index not more 	than 9; and</li>
+   <li>&nbsp;&nbsp;&nbsp;(b) 	a Smoke developed Index not more 	than 8 if the
+       	Spread of flame Index is 	more than 5.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>37</font></div>
+  </td>
+  <td>
+  <div id=PPTP37 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0045.htm');" id=PPTL37>Fire Isolated Exits</a></font></div>
+  <div id=PPTC37 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Paragraph 3 prescribes the requirement of materials used in
+       fire-isolated stairways, passageways, ramps or lift shafts in Class 2 to
+       9 buildings. These materials must -</li>
+   <li>&nbsp;&nbsp;&nbsp; (a) 	have a Spread of flame Index of 0; and</li>
+   <li>&nbsp;&nbsp;&nbsp; (b)	have a Smoke developed Index of not more than 2.</li>
+   <li>&nbsp;&nbsp;&nbsp; (c)	if combustible, be attached directly to a
+       non-combustible 	substrate and not exceed 1mm in finished thickness; and</li>
+   <li>	(d) 	have a Flammability Index of 0 (for Sarking-type materials 	used
+       as an exposed wall or ceiling or as a finish or 	attachment there-to).</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>38</font></div>
+  </td>
+  <td>
+  <div id=PPTP38 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0002.htm');" id=PPTL38>What do we know about
+  the fire performance<br>
+    of plastics in fire?</a></font></div>
+  <div id=PPTC38 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Reaction to fire</li>
+   <li>Testing in relation to reaction to fire, deals specifically with
+       parameters such as:</li>
+   <li>	&#9658;	Ease of ignitability,</li>
+   <li>	&#9658; Flammability,</li>
+   <li>	&#9658; Spread of flame characteristics,</li>
+   <li>	&#9658; Heat evolved</li>
+   <li>	&#9658; Smoke</li>
+   <li>	&#9658; Toxicity</li>
+   <li>Properties relate to the contribution of a plastic material to the smoke
+       of a fire that has already started.</li>
+   <li>Testing in this area is applicable for wall and ceiling lining
+       materials.</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>39</font></div>
+  </td>
+  <td>
+  <div id=PPTP39 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0003.htm');" id=PPTL39><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>40</font></div>
+  </td>
+  <td>
+  <div id=PPTP40 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0004.htm');" id=PPTL40>Expandable Polystyrene
+  (EPS) Sandwich panels</a></font></div>
+  <div id=PPTC40 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>If a fire starts and the EPS sandwich panels themselves get involved in
+       the fire, the fire can spread very quickly.</li>
+   <li>The correct installation practices and proprietary panel types must be
+       used.</li>
+   <li>Specific fire protection systems may be applied, otherwise the fire can
+       cause serious damage to a facility.</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>41</font></div>
+  </td>
+  <td>
+  <div id=PPTP41 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0005.htm');" id=PPTL41>Generic plastic types</a></font></div>
+  <div id=PPTC41 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <br>
+   <li>Thermoplastic and Thermoset type plastics.</li>
+   <li>Thermoplastic type plastics soften when heated and reharden when cooled.
+       The process is reversible. These plastic materials typically melt and
+       burn in fires.</li>
+   <li>Some examples include acrylic plastics, polycarbonate, PET (Polyethylene
+       terephthalate), PVC and EPS (expanded polystyrene).</li>
+   <li>Thermoset plastics cure and the process is irreversible. They do not
+       soften and reharden on cooling. When they burn they typically char.</li>
+   <li>Examples include Polyurethane, (PU),Polyisocyanurate, (PIR), Fibre
+       Reinforced Plastics, (FRP) and Phenolics.</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>42</font></div>
+  </td>
+  <td>
+  <div id=PPTP42 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0009.htm');" id=PPTL42>External Insulation and
+  Finishing Systems (EIFS)</a></font></div>
+  <div id=PPTC42 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>This is a relatively new construction practice that is popular in Europe
+       and the USA, and involves polystyrene insulation with polymeric render
+       over the top of it.</li>
+   <br>
+   <br>
+   <li>Note 1 - EIFS containing EPS with a thickness greater than 25 mm adhered
+       to a plasterboard substrate is considered combustible construction.</li>
+   <li></li>
+   <li>There are obviously on going maintenance issues for life of building to
+       ensure the EPS is covered as some of these systems have been known to be
+       subject to impact damage and damage from flying debris in storms.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>43</font></div>
+  </td>
+  <td>
+  <div id=PPTP43 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0001.htm');" id=PPTL43><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>44</font></div>
+  </td>
+  <td>
+  <div id=PPTP44 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0008.htm');" id=PPTL44><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>45</font></div>
+  </td>
+  <td>
+  <div id=PPTP45 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0007.htm');" id=PPTL45>Standards</a></font></div>
+  <div id=PPTC45 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>ISO 5660-2:2002</li>
+   <li>	Reaction-to-fire tests - Heat release, smoke production and mass loss
+       rate - Part 2: Smoke production rate (dynamic measurement)</li>
+   <li>AS/NZS 1530.3:1999&nbsp;:&nbsp;<br>
+              Methods for fire tests on building materials, components and
+       structures - Simultaneous determination of ignitability, flame
+       propagation, heat release and smoke release</li>
+   <li>AS/NZS 4256.1:1994&nbsp;:&nbsp;<br>
+              Plastic roof and wall cladding materials - General requirements</li>
+   <li>AS/NZS 2785:2000&nbsp;:&nbsp;<br>
+              Suspended ceilings - Design and installation</li>
+   <li>AS 60695.6.1-2006&nbsp;:&nbsp;<br>
+              Fire hazard testing - Smoke obscuration - General guidance</li>
+   <br>
+   <br>
+   <li>AS 4655-2005&nbsp;:&nbsp;<br>
+              Fire safety audits</li>
+   <li>	Sets out requirements for auditing fire safety measures against
+       nominated audit criteria, including those relating to life safety.
+       Includes general principles of auditing, audit program management, the
+       fire safety audit process and responsibilities, reporting, fire safety
+       audit levels, audit team competence evaluation of auditors and
+       derivation of fire safety audit criteria.</li>
+   <li>ATS 5387.2-2006&nbsp;:&nbsp;<br>
+              Guidelines - Fire safety engineering - Design fire scenarios and
+       design fires</li>
+   <li>	Sets out guidance on the identification of appropriate design fire
+       scenarios for consideration in fire safety design and provides guidance
+       on the specification of design fires for quantitative analysis in fire
+       safety design of buildings.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>46</font></div>
+  </td>
+  <td>
+  <div id=PPTP46 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0059.htm');" id=PPTL46><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>47</font></div>
+  </td>
+  <td>
+  <div id=PPTP47 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0062.htm');" id=PPTL47><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>48</font></div>
+  </td>
+  <td>
+  <div id=PPTP48 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0061.htm');" id=PPTL48><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>49</font></div>
+  </td>
+  <td>
+  <div id=PPTP49 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0065.htm');" id=PPTL49><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>50</font></div>
+  </td>
+  <td>
+  <div id=PPTP50 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0066.htm');" id=PPTL50><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>51</font></div>
+  </td>
+  <td>
+  <div id=PPTP51 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0071.htm');" id=PPTL51><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>52</font></div>
+  </td>
+  <td>
+  <div id=PPTP52 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0069.htm');" id=PPTL52>&quot;If calcium
+  hydroxide is heated&quot;</a></font></div>
+  <div id=PPTC52 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>If calcium hydroxide is heated, it will form calcium oxide and water.
+       The change in heat required is</li>
+   <li>+ 65.1 kJ.</li>
+   <li>Again, chemically this would be represented in the following manner</li>
+   <li>Ca(OH)<sub>2</sub><span style='mso-spacerun:yes'>   </span>CaO + H<sub>2</sub>O<span
+       style='mso-spacerun:yes'>    </span>DHf = + 65.1 kJ.</li>
+   <li>This shows that there are 65.1 less kJ of energy tied up in the
+       compounds on the left hand side of the equation than in the products on
+       the right hand side. This means that the calcium hydroxide had to be
+       heated before the reaction took place.</li>
+   <br>
+   <br>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>53</font></div>
+  </td>
+  <td>
+  <div id=PPTP53 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0073.htm');" id=PPTL53>&quot;Calcium - Ca&quot;</a></font></div>
+  <div id=PPTC53 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>Calcium - Ca</li>
+   <li>Atomic number 20</li>
+   <li>Atomic mass 40.08 g.mol -1</li>
+   <li>Mass volume 1.6 g.cm-3 at 20°C</li>
+   <li>Melting point 840 °C</li>
+   <li>Boiling point 1484 °C</li>
+   <li>Vanderwaals radius 0.197 nm</li>
+   <li>Ionic radius 0.099 nm</li>
+   <li>Isotopes 10</li>
+   <li>Standard potential- 2.87 V</li>
+   <li>Discovered Sir Humphrey Davy in 1808</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>54</font></div>
+  </td>
+  <td>
+  <div id=PPTP54 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0072.htm');" id=PPTL54><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>55</font></div>
+  </td>
+  <td>
+  <div id=PPTP55 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0074.htm');" id=PPTL55>&quot;A COVALENT BOND
+  results when...&quot;</a></font></div>
+  <div id=PPTC55 class=CTxt style='display:none'><font size=2>
+  <ul>
+   <li>A COVALENT BOND results when two atoms &quot;share&quot; valence
+       electrons between them.</li>
+   <li>Carbon forms covalent bonds</li>
+   <li>An IONIC BOND occurs when one atom gains a valence electron from a
+       different atom, forming a negative ion (ANION) and a positive ion (CATION),
+       respectively. These oppositely charged ions are attracted to each other,
+       forming an ionic bond.</li>
+   <li>example is table salt, sodium chloride</li>
+   <li>METALLIC BONDING usually occurs in metals, such as copper. A piece of
+       copper metal has a certain arrangement of copper atoms. The valence
+       electrons of these atoms are free to move about the piece of metal and
+       are attracted to the positive cores of copper, thus holding the atoms
+       together.</li>
+  </ul>
+  </font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>56</font></div>
+  </td>
+  <td>
+  <div id=PPTP56 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0078.htm');" id=PPTL56><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>57</font></div>
+  </td>
+  <td>
+  <div id=PPTP57 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0075.htm');" id=PPTL57>Covalent Bond</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>58</font></div>
+  </td>
+  <td>
+  <div id=PPTP58 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0076.htm');" id=PPTL58>Ionic Bond</a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>59</font></div>
+  </td>
+  <td>
+  <div id=PPTP59 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0077.htm');" id=PPTL59><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>60</font></div>
+  </td>
+  <td>
+  <div id=PPTP60 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0079.htm');" id=PPTL60><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+ <tr onmouseover="Over(this)" onmouseout="Out(this)" onclick="Follow(this)"
+  style='cursor:hand'>
+  <td align=right valign=top>
+  <div class=sldNum><font size=2>61</font></div>
+  </td>
+  <td>
+  <div id=PPTP61 class=PTxt><font size=2><a
+  href="javascript:GoToSld('slide0080.htm');" id=PPTL61><span
+  style='mso-spacerun:yes'> </span></a></font></div>
+  </td>
+ </tr>
+</table>
+
+
+
+</div>
+
+<div style='display:none'><a href=master03.htm></a><a href=master03.xml></a><a
+href=preview.wmf></a><a href=pres.xml></a><a href=slide0068.htm></a><a
+href="master03_background.gif"></a><a href="slide0068_image001.jpg"></a><a
+href="slide0068_image002.jpg"></a><a href=slide0053.htm></a><a
+href=slide0020.htm></a><a href=slide0052.htm></a><a href=slide0050.htm></a><a
+href=slide0051.htm></a><a href="slide0051_image003.wmz"></a><a
+href="slide0051_image004.gif"></a><a href="slide0051_image005.gif"></a><a
+href="slide0051_image006.gif"></a><a href="slide0051_image007.gif"></a><a
+href="slide0051_image008.gif"></a><a href="slide0051_image009.gif"></a><a
+href="slide0051_image010.gif"></a><a href=slide0021.htm></a><a
+href=slide0022.htm></a><a href=slide0064.htm></a><a
+href="slide0064_image011.png"></a><a href="slide0064_image012.gif"></a><a
+href="slide0064_image013.png"></a><a href="slide0064_image014.gif"></a><a
+href="slide0064_image015.png"></a><a href="slide0064_image016.gif"></a><a
+href="slide0064_image017.png"></a><a href="slide0064_image018.gif"></a><a
+href=slide0011.htm></a><a href=slide0023.htm></a><a href=slide0054.htm></a><a
+href="slide0054_image019.png"></a><a href="slide0054_image020.jpg"></a><a
+href="slide0054_image021.jpg"></a><a href="slide0054_image022.jpg"></a><a
+href=slide0055.htm></a><a href="slide0055_image023.jpg"></a><a
+href="slide0055_image024.jpg"></a><a href=slide0024.htm></a><a
+href=slide0012.htm></a><a href=slide0012.xml></a><a
+href="slide0012_image025.gif"></a><a href=slide0025.htm></a><a
+href=slide0026.htm></a><a href=slide0056.htm></a><a
+href="slide0056_image026.jpg"></a><a href="slide0056_image027.jpg"></a><a
+href=slide0027.htm></a><a href=slide0028.htm></a><a href=slide0029.htm></a><a
+href=slide0030.htm></a><a href=slide0057.htm></a><a
+href="slide0057_image028.wmz"></a><a href="slide0057_image029.gif"></a><a
+href="slide0057_image030.wmz"></a><a href="slide0057_image031.gif"></a><a
+href=slide0031.htm></a><a href=slide0058.htm></a><a
+href="slide0058_image032.jpg"></a><a href="slide0058_image033.gif"></a><a
+href="slide0058_image034.gif"></a><a href="slide0058_image035.gif"></a><a
+href="slide0058_image036.gif"></a><a href="slide0058_image037.gif"></a><a
+href=slide0035.htm></a><a href=slide0033.htm></a><a href=slide0034.htm></a><a
+href=slide0038.htm></a><a href=slide0010.htm></a><a href=slide0013.htm></a><a
+href=slide0016.htm></a><a href=slide0017.htm></a><a href=slide0014.htm></a><a
+href=slide0015.htm></a><a href=slide0044.htm></a><a href=slide0045.htm></a><a
+href=slide0002.htm></a><a href=slide0003.htm></a><a
+href="slide0003_image038.wmz"></a><a href="slide0003_image039.gif"></a><a
+href="slide0003_image040.wmz"></a><a href="slide0003_image041.gif"></a><a
+href=slide0004.htm></a><a href=slide0005.htm></a><a href=slide0009.htm></a><a
+href=slide0001.htm></a><a href="slide0001_image042.jpg"></a><a
+href="slide0001_image043.jpg"></a><a href=slide0008.htm></a><a
+href="slide0008_image044.jpg"></a><a href="slide0008_image045.jpg"></a><a
+href=slide0007.htm></a><a href=slide0059.htm></a><a
+href="slide0059_image046.jpg"></a><a href="slide0059_image047.jpg"></a><a
+href=slide0062.htm></a><a href="slide0062_image048.jpg"></a><a
+href="slide0062_image049.jpg"></a><a href=slide0061.htm></a><a
+href="slide0061_image050.jpg"></a><a href="slide0061_image051.jpg"></a><a
+href=slide0065.htm></a><a href="slide0065_image052.jpg"></a><a
+href="slide0065_image053.jpg"></a><a href=slide0066.htm></a><a
+href="slide0066_image054.jpg"></a><a href="slide0066_image055.jpg"></a><a
+href="slide0066_image056.jpg"></a><a href="slide0066_image057.jpg"></a><a
+href=slide0071.htm></a><a href="slide0071_image058.wmz"></a><a
+href="slide0071_image059.gif"></a><a href=slide0069.htm></a><a
+href=slide0073.htm></a><a href=slide0072.htm></a><a
+href="slide0072_image060.png"></a><a href="slide0072_image061.jpg"></a><a
+href=slide0074.htm></a><a href=slide0078.htm></a><a
+href="slide0078_image062.png"></a><a href="slide0078_image063.gif"></a><a
+href="slide0078_image064.gif"></a><a href=slide0075.htm></a><a
+href="slide0075_image065.png"></a><a href="slide0075_image066.gif"></a><a
+href=slide0076.htm></a><a href="slide0076_image067.png"></a><a
+href="slide0076_image068.gif"></a><a href=slide0077.htm></a><a
+href="slide0077_image069.png"></a><a href="slide0077_image070.gif"></a><a
+href="slide0077_image071.gif"></a><a href=slide0079.htm></a><a
+href=slide0080.htm></a><a href=master01.htm></a><a
+href="master03_stylesheet.css"></a><a href=script.js></a><a
+href="../Week7%20smoke%20control.htm"></a><a href=fullscreen.htm></a><a
+href="notes_flag.gif"></a><a href=buttons.gif></a><a href=frame.htm></a><a
+href=outline.htm></a></div>
+
+</body>
+
+</html>

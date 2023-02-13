@@ -1,0 +1,537 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+
+	"http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<html>
+
+<head>
+
+<title>Scaffolding Sketch</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<style type="text/css">
+
+<!--
+
+body { background-color: #FFFFFF; font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000}
+
+p{  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+
+td  { font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+
+a img { color: #FFFFFF; background: #FFFFFF; border-style: none}
+
+.right {  text-align: right}
+
+-->
+
+</style>
+
+<script type="text/JavaScript">
+
+var trys = new Array; 
+
+var done = new Array; 
+
+var ans = new Array; 
+
+
+
+ans[1] = "3.26"; 
+
+ans[2] = "3.4"; 
+
+ans[3] = "3.67"; 
+
+ans[4] = "3.33"; 
+
+ans[5] = "3.62"; 
+
+ans[6] = "3.9"; 
+
+ans[7] = "3.36"; 
+
+ans[8] = "3.17"; 
+
+ans[9] = "3.22"; 
+
+ans[10] = "3.55"; 
+
+
+
+for(var i=1; i<ans.length; i++) { //set arrays to 0 values
+
+	done[i]=0; 
+
+	trys[i]=0;
+
+}
+
+
+
+function check(hazard,answer) {
+
+	
+
+	trys[hazard]++;
+
+	
+
+	//incorrect answer
+
+	if (answer != ans[hazard]) {
+
+		if (!done[hazard]) { 
+
+    		if (trys[hazard]>=3) {
+
+				alert("Attempt " +trys[hazard]+" incorrect!"+"\n\nCorrect answer was " +ans[hazard]);
+
+				imgswap("check"+hazard,"cross"+trys[hazard]); 
+
+				done[hazard] = -1;
+
+			}
+
+			else {
+
+				alert("Attempt " +trys[hazard]+" incorrect!"+"\n\nTry again."); 
+
+				imgswap("check"+hazard,"cross"+trys[hazard]); 
+
+			}
+
+		} 
+
+	}
+
+	
+
+	//correct answer
+
+	else {
+
+		if (!done[hazard]) {	//check if done 
+
+       	done[hazard] = -1; //set hazard as done
+
+   		imgswap("check"+hazard,"tick"+trys[hazard]); 
+
+    	} 
+
+   } 
+
+}
+
+
+
+function imgswap(imgname,swapname) {
+
+	eval("document."+imgname+".src='"+swapname+".gif'");
+
+}
+
+
+
+times = 6;
+
+onOrOff= 1;
+
+rate = 200; 
+
+
+
+function imgblink(imgname,swapname) {
+
+	img = imgname;
+
+	swap = swapname;
+
+	
+
+	if (times <= 0){times=6;return;}
+
+	
+
+	if (onOrOff) {
+
+		eval("document."+img+".src='"+swap+"_.gif'");
+
+  		onOrOff= 0;
+
+		setTimeout('imgblink(img,swap)',rate);}
+
+	else {
+
+		eval("document."+img+".src='"+swap+".gif'");
+
+	   	onOrOff= 1;
+
+		setTimeout('imgblink(img,swap)',rate);}
+
+	times--;
+
+}
+
+
+
+</script>
+
+</head>
+
+<body>
+
+<table bgcolor="#f7ffce" width="730" border="0" align="center">
+  <tr> 
+    <td colspan="2">
+      <div align="center"><font face="Arial, Helvetica, sans-serif" size="3"><b><font size="5">Spot the hazards on this building site<br><br>
+        </font></b></font></div>
+    </td>
+  </tr>
+  <tr> 
+
+    <td valign="top">
+      <div align="center"><a href="javascript:;"><img src="Scaffold.gif" width="470" height="376" usemap="#scaffold" style="cursor:crosshair" alt="Scaffold Sketch" border="0"></a><br>
+      <br>
+      <b><font size="5">Good luck!</font></b><div style="line-height:6px"><br></div>
+  
+        <b><font size="3">Identify the hazards and find the appropriate regulations</font></b><br>
+      <div style="line-height:3px"><br></div>
+       &nbsp;&nbsp;&nbsp;Hopefully  you'll get get everything done.
+    </div>
+    </td>
+
+    <td valign="top" align="left"><b>Instructions</b><div style="line-height:6px"><br></div>
+
+      <font size="3">1. Move & hold the cursor on the sketch to identify the hazards and click mouse button (this shows the hazard on the right side of screen)</font>
+      <div style="line-height:3px"><font size="3"><br>
+        </font></div>
+      <font size="3">2. Type in the regulation number <b>without the R</b> for the hazard in the text box.</font>
+      <div style="line-height:3px"><font size="3"><br>
+        </font></div>
+      <font size="3">3. Use the Check button to check your answer. </font>
+<div style="line-height:3px"><br></div>
+
+      <form name="form1" onSubmit="return false" action="javascript:;">
+
+        <table border="0" cellpadding="1" width="100%" cellspacing="0">
+
+          <tr> 
+
+            <td>&nbsp;</td>
+
+            <td><b>Hazard</b></td>
+
+            <td><b>Reg</b></td>
+
+            <td>&nbsp;</td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">1.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard1" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text1" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check1" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(1,form1.text1.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">2.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard2" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text2" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check2" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(2,form1.text2.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">3.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard3" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text3" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check3" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(3,form1.text3.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">4.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard4" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text4" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check4" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(4,form1.text4.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">5.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard5" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text5" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check5" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(5,form1.text5.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">6.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard6" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text6" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check6" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(6,form1.text6.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">7.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard7" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text7" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check7" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(7,form1.text7.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">8.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard8" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text8" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check8" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(8,form1.text8.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">9.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard9" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text9" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check9" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(9,form1.text9.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+          <tr> 
+
+            <td> 
+
+              <div class="right">10.</div>
+
+            </td>
+
+            <td><img src="blank.gif" alt="Hazard"  name="hazard10" width="110" height="18"></td>
+
+            <td> 
+
+              <input type="text" name="text10" maxlength="4" size="3">
+
+            </td>
+
+            <td><img src="check.gif" name="check10" width="41" height="18" alt="Trys"></td>
+
+            <td><a href="javascript:;" onClick="check(10,form1.text10.value);return false;"><img src="checkbtn.gif" width="41" height="18" alt="Check"></a></td>
+
+          </tr>
+
+        </table>
+
+      </form>
+
+    </td>
+
+  </tr>
+
+</table>
+
+<div> 
+
+  <map name="scaffold"> 
+
+    <!--1. Ladder height-->
+
+    <area shape="rect" coords="330,67,357,106" href="javascript:;" onClick="imgblink('hazard1','ladder');return false;" alt="Hazard 1">
+
+    <!--2. Lifting-->
+
+    <area shape="rect" coords="156,213,175,235" href="javascript:;" onClick="imgblink('hazard2','lifting');return false;" alt="Hazard 2">
+
+    <area shape="rect" coords="154,28,182,88" href="javascript:;" onClick="imgblink('hazard2','lifting');return false;" alt="Hazard 2">
+
+    <!--3. Fender board-->
+
+    <area shape="rect" coords="80,76,467,92" href="javascript:;" onClick="imgblink('hazard3','fender');return false;" alt="Hazard 3">
+
+    <!--4. Safety wear-->
+
+    <area shape="rect" coords="108,356,156,374" href="javascript:;" onClick="imgblink('hazard4','safetywear');return false;" alt="Hazard 4">
+
+    <area shape="rect" coords="100,259,123,286" href="javascript:;" onClick="imgblink('hazard4','safetywear');return false;" alt="Hazard 4">
+
+    <!--5. Power cord-->
+
+    <area shape="poly" coords="453,210,461,223,460,232,449,243,443,255,433,260,368,268,353,277,360,282,355,285,351,293,338,296,297,309,273,312,264,317,244,319,237,323,235,333,242,341,194,342,189,348,192,355,179,354,165,365,157,358,157,350,150,357,151,367,162,373,190,360,204,360,210,357,206,351,257,349,262,340,248,334,252,326,273,325,284,318,316,316,336,304,353,299,368,278,377,276,439,262,460,238,469,224,465,214,456,212,457,203" href="javascript:;" onClick="imgblink('hazard5','powercord');return false;" alt="Hazard 5">
+
+    <!--6. Smoking near fuel-->
+
+    <area shape="poly" coords="14,191,13,272,44,272,44,210,69,182,55,162" href="javascript:;" onClick="imgblink('hazard6','smoking');return false;" alt="Hazard 6">
+
+    <!--7. Safety helmet-->
+
+    <area shape="rect" coords="133,192,150,215" href="javascript:;" onClick="imgblink('hazard7','helmet');return false;" alt="Hazard 7">
+
+    <!--8. Rubish-->
+
+    <area shape="poly" coords="384,254,385,242,408,237,425,241,434,248,424,260,406,259,390,263,383,255" href="javascript:;" onClick="imgblink('hazard8','rubbish');return false;" alt="Hazard 8">
+
+    <area shape="poly" coords="366,265,339,276,309,278,253,264,293,255,324,257,334,265,360,260" href="javascript:;" onClick="imgblink('hazard8','rubbish');return false;" alt="Hazard 8">
+
+    <area shape="poly" coords="367,300,393,280,434,270,451,280,424,299,378,308" href="javascript:;" onClick="imgblink('hazard8','rubbish');return false;" alt="Hazard 8">
+
+    <!--9. Vehicle movement-->
+
+    <area shape="poly" coords="415,321,333,299,260,286,164,274,86,262,61,244,64,228,79,217,80,204,51,223,41,252,59,277,93,289,121,294,176,306,267,318,317,326,340,332,391,354" href="javascript:;"
+
+  onClick="imgblink('hazard9','vehicle');return false;" alt="Hazard 9">
+
+    <!--10. Handrail-->
+
+    <area shape="rect" coords="81,53,466,64" href="javascript:;" onClick="imgblink('hazard10','handrail');return false;" alt="Hazard 10">
+
+    <!--Netscape Nabvigator 4.x problems: -->
+
+    <!--(1) Using nohref stops links from working. -->
+
+    <!--(2) Using href="javascript:; stops status bar showing map areas  -->
+
+    <!--(3) Following area added to stop cursor showing map areas. -->
+
+    <area shape="rect" coords="0,0,478,376" href="javascript:;" alt="Scaffold Image">
+
+  </map>
+
+</div>
+
+</body>
+
+</html>
+
+
+

@@ -1,0 +1,63 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+ xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <p:presentation sizeof="screen" notessizex="6048" notessizey="9504"
+  gridspacingx="46448" gridspacingy="46448" subsetembed="1">
+  <p:master id="39" slidesn="1CB31DE,CF649F90" type="main" href="master39.htm"
+   xmlhref="master39.xml" template="Office Theme" layout="title_body"
+   slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+   </p:schemes>
+  </p:master>
+  <p:master id="1" slidesn="1CB31DE,95FEB6F0" type="notes" href="master01.htm"
+   layout="notes" slots="header,dateTime,slideImage,body,footer,slideNumber"/>
+  <p:master id="2" slidesn="1CB31DE,95FEB6F0" type="handout" href="master02.htm"
+   layout="handout" slots="header,dateTime,footer,slideNumber"/>
+  <p:slide id="76" slidesn="1CC6937,CFCF0330" href="slide0076.htm"/>
+  <p:slide id="64" slidesn="1CC6782,677F57F0" href="slide0064.htm"/>
+  <p:slide id="27" slidesn="0,0" href="slide0027.htm"/>
+  <p:slide id="6" slidesn="0,0" href="slide0006.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="5" slidesn="0,0" href="slide0005.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="44" slidesn="0,0" href="slide0044.htm"/>
+  <p:slide id="43" slidesn="0,0" href="slide0043.htm"/>
+  <p:slide id="2" slidesn="0,0" href="slide0002.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="49" slidesn="1CB31F9,A5B8CAC0" href="slide0049.htm"/>
+  <p:slide id="40" slidesn="0,0" href="slide0040.htm"/>
+  <p:slide id="28" slidesn="0,0" href="slide0028.htm"/>
+  <p:slide id="9" slidesn="0,0" href="slide0009.htm"/>
+  <p:slide id="41" slidesn="0,0" href="slide0041.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="65" slidesn="0,0" href="slide0065.htm"/>
+  <p:slide id="66" slidesn="0,0" href="slide0066.htm"/>
+  <p:slide id="67" slidesn="0,0" href="slide0067.htm"
+   overridemasteranimations="t"/>
+  <p:slide id="68" slidesn="0,0" href="slide0068.htm"/>
+  <p:slide id="69" slidesn="0,0" href="slide0069.htm"/>
+  <p:slide id="71" slidesn="0,0" href="slide0071.htm"/>
+  <p:slide id="73" slidesn="0,0" href="slide0073.htm"/>
+  <p:slide id="74" slidesn="0,0" href="slide0074.htm"/>
+  <p:slide id="75" slidesn="1CC692A,A2E71D60" href="slide0075.htm"/>
+  <p:viewstate type="slideView" nosnaptogrid="t" restoredleft="156"
+   restoredtop="852" manualadjustleft="t" manualadjusttop="t"
+   hideoutlineicons="t"/>
+  <p:guide type="horizontal" position="3024"/>
+  <p:guide type="vertical" position="355"/>
+  <p:kinsoku language="Japanese" level="levelOne"/>
+  <p:headersfooters nouserdate="t" nofooter="t" noheader="t" nodate="t"
+   todaydate="t"/>
+  <p:headersfooters notes="t" nouserdate="t" nofooter="t" noheader="t"
+   nodate="t" todaydate="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"
+   browsersupport="v4"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="40966">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+   endarrowlength="short" color2="none [0]" weight=".35275mm"/>
+  <v:shadow on="t" offset="6pt,6pt"/>
+  <o:colormru v:ext="edit" colors="#c6d4b4,#963,#9cf,blue,#009e47,#f90,#4d4d4d,#b2b2b2"/>
+  <o:colormenu v:ext="edit" fillcolor="#9cf" strokecolor="none" shadowcolor="none"/>
+ </o:shapedefaults></xml>

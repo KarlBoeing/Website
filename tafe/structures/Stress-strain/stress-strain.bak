@@ -1,0 +1,191 @@
+
+<html>
+<HEAD>
+<TITLE>Stress / Strain</TITLE>
+</HEAD>
+<body bgcolor="#9999f6" text="000000">
+<table>
+<tr><td width=35></td>
+<td width=627><p>
+
+<img src="property.jpg">
+<p>
+To consider the behaviour of the commoner building materials under load, we should be able to define their mechanical properties. These properties include Strength, Elasticity, Ductility, Malleability, Plasticity, Brittleness, Toughness, and Hardness. It is in terms of one or more of these that the suitability of a material for any specific purpose must be judged, and in order to realise the meaning of test results we must understand how, and to what extent, they indicate the various properties.
+</p>
+<p>
+<b>Strength.</b></p>
+<p>
+The strength of a member or structure is the resistance it is able to offer to the load, which will just cause fracture. The strength of a material is the resistance which e.g. 1 mm² of section can offer to the load whitout fracturing. This breaking strength is also referred to as ultimate strength, by which is meant the strength when it reaches the last or ultimate stage of breaking, which in ductile materials occurs when the " waist " begins to form. The ultimate strength value is defined as the nominal stress at the point of maximum loading on the basis of original cross-section and not the actual or reduced area (see graph below). In other connections, such as safe strength, working strength, yield point strength, elastic limit strength, the word indicates the resistance offered by the material under the conditions implied, usually in the form of strength per mm² of section, or stress, for comparative purposes (Usually measured in MPa).
+</p>
+<p>
+<b>Elasticity.</b></p>
+<p>
+Elasticity is the property by which a material is enabled to return exactly to its original shape on removal of a straining force, a very important property in engineering materials. It is measured by,
+	 (i) the Elastic Limit Stress,
+	(ii) the Modulus of Elasticity.
+These two values show how great a stress may be applied to the material before permanent distortion results, and by how much a member made of the material will distort under a given load-knowledge which is of the utmost value in the design of all types of structures. 
+</p>
+<p>
+<b>Ductility.</b></p>
+<p>
+Ductility is the property which enables a material to be drawn out in the direction of its length -that is, converted into wire. It is a valuable property, because a ductile material will not fail suddenly, or snap off short in service without giving adequate warning by elongation. <font size=-1>(In an ewarthquake area structures need to be designed for ductility).</font>
+</p>
+<p>
+<b>Malleability.</b></p>
+<p>
+Malleability enables a material to be hammered or otherwise worked into various shapes, and is a somewhat similar property to ductility. It may be considered as " mass ductility ", since it is not confined to one direction, but permits the whole mass of the material to be altered in shape without fracture. Familiar processes made possible by this property are forging, drop-stamping, and hot rolling, etc. 
+</p>
+<p>
+<b>Plasticity.</b></p> 
+<p>
+Plasticity is the reverse of elasticity; a plastic material will retain exactly the shape it assumes under load when the load is removed. Familiar examples are the stamping of images on coins and the multiplicity of domestic and ornamental objects produced by pressing synthetic resins and similar compounds in steam-heated dies. Plasticity is fairly similar to ductility.
+</p>
+<p>
+<b>Brittleness.</b></p>
+<p>
+Brittleness is the property, which causes a material to break or snap off short without any sensible elongation, and is the reverse of ductility. It is obviously a most undesirable property in materials, as brittle materials give no warning of approaching failure. Brittleness is often induced by fatigue, which results from the application of varying and repeated stresses or stress reversal.
+</p>
+<p>
+<b>Toughness.</b></p>
+Toughness may be defined as the resistance of a material, after its yield point has been passed, to fracture by repeated bending or twisting. There are several tests for this property, such as observing the number of times a bar of the material will twist axially prior to fracture, or the number of repeated bending it can be subjected to. Another is the bend test under which a specimen should be capable of being bent through a specified angle and show no sign of fracture (bending of reinforcement).
+</p>
+<p>
+<b>Resistance to impact.</b></p>
+<p>
+The resistance offered by a specimen of the material to fracture by the impact of a moving body, is considered a measure of the toughness.
+<p>
+<b>Hardness.</b></p>
+<p>
+The term Hardness is usually defined as the degree of resistance to indentation by a standard steel ball, or by a pyramidal diamond. It is also used to refer to the resistance to scratching, or to the ability to indent or cut other materials, as in the case of tools. (Tis property is important for floor and wall surfaces.) 
+</p>
+<p><b>Yield stress - Proof stress.</b></p>
+Only low carbon steel exhibit a defined yield point. All other materials have no defined yield point. In this case a term <i>proof stress</i> is sometimes use instead of yield stress. 
+</p>
+<hr>
+<p>
+<b>Stress - Strain</b></p>
+<p>
+Stresses and strains will be set up in any material that is subjected to an external load.
+</p><p>
+<table>
+<tr><td width=170>
+<img src="equat1s.jpg" align=left></td><td width=250 valign=center>
+<b>Stress</b>:<br>	Force per unit area within materials that arises from externally applied forces. It is the<b><i> internal reaction force</i></b> in a material created by an external loading.</p></td></tr>
+</table>
+<p>
+<img src="equat2s.jpg"></p>
+<p>
+The unit of stress is pascal (Pa), and multiples of the pascal i.e. kilopascal <b>(kPa)</b>, megapascal <b>(MPa)</b> and the gigapascal (GPa).</p>
+<p>
+<img src="equat3s.jpg">
+</p>
+<p>
+<b>Tensile stress</b>
+</p>
+<p>
+The steel bar shown below has a cross section area A (mm²) and is pulled out at each end by forces F. (Note that the total force in the member is F kN not 2F kN. At the plane x-x there exists a state of stress between the fibres on one side of plane x-x and those on the other. 
+</p>
+<p>
+<img src="tension.jpg" ALT="this bar is in tension">
+</p>
+<p>
+This stress is evenly distributed over the cross-section and set up along the whole length of the bar and not in plane x-x only, just as in a chain resisting forces are set up by every link. Each square millimeter of cross-section provides the same resistance to the pulling apart tendency
+</p>
+<p>
+<b>Compressive stress</b>
+</p>
+<p>
+Compressive stress is similar to the tension stress but the forces acting towards each other putting the bar in compression. Here the cross section is resisting the tendency of the fibres to be crushed. 
+</p>
+<p>
+</p>
+<p>
+<img src="compress.jpg" ALT="this bar is in compression">
+
+</p>
+<table>
+<tr><td valign=top>
+<b>Strain:</b>
+</td>
+<td>
+deformation or change in shape of a material caused by an external loading. Strain is the ratio of the change in length (&#916 l) per unit length (or original length (l<sub>o</sub>)).
+</td></tr></table>
+
+	<p>
+<b>Hooke’s law</b>
+</p>
+<p>
+Robert Hooke (1635-1703) found that stress is proportional to strain, provided the elastic limit of the material is not exceeded.
+</p>
+<p>
+The ratio of stress to strain is a constant and characteristic of the material within the elastic limit. This ratio is known as <b><i>modulus of elasticity (E)</i></b> or <b><i>Young’s modulus</i></b>. E is a measure of the stiffness of the material. The unit of the <b><i>modulus of elasticity </i></b>is the gigapascal (Gpa).
+</p>
+<p>
+<b>Elasticity</b>
+</p>
+<p>
+All material bodies will deform. As the stress increased the deformation also increases and if the load on the material is removed at any stage up to the elastic limit it will return to its original shape and dimension (original length).</p>
+<p>
+<img src="delta-l.jpg" ALT="left bar is stretched right bar is compressed">
+Conventionally <b>tensile stresses</b> are considered positive (+) and <b>compressive stresses</b> negative (-)
+</p>
+<p>
+<b>Modulus of elasticity</b>
+</p>
+<p>
+In a tensile test a graph is produced of stress against strain as the load is gradually applied. The first portion of the graph will be a straight line as shown below.
+</p>
+<p>
+<img src="l-e_grap.jpg" ALT="Load/Extension graph"><br>
+The slope of this straight line is the constant of proportionality known as the <b>MODULUS OF ELASTICITY </b>
+</p>
+<p>
+<img src="equat4s.jpg" align=left>
+</p>
+<p><br>where<br>
+<ul>F = applied axial force<br>
+	<i>l</i><sub>o</sub> = original length<br>
+	A = area of cross-section<br>
+	&#916<i> l</i> = change in length<br>
+	E = modulus of elasticity<br>
+</ul>
+</p>
+
+<p><b>Example 1</b></p>
+<TABLE><TR><TD>
+With the right equipment in a laboratory a technician can test a metal bar to find the modulus of elasticity. Assume a low carbon (mild) steel bar of 10mm diameter, original length 50 mm (standard test length) was tested and the following data were obtained:<p>
+
+The extensometer reading was &#916 <i>l</i> = 62.1 &#956 m (0.0621 mm) when the load was exactly 20 kN</p></TD>
+<TD><IMG SRC="equat-pi.jpg" WIDTH="91" HEIGHT="122" BORDER="0" ALT="equat-pi.jpg - 9378 Bytes">
+</TD>
+</TR>
+</TABLE>
+
+<table><tr><td>
+<P><B>Solution</B></P>
+By using the above formula we are now able to  calculate the modulus of elasticity <b>(E)</b>.
+<p>
+First we have to find the cross-sectional area of the 10 mm diameter steel bar. Using the formula shown in the claculation example, the area  is 78.54 mm&#178. 
+<br>
+Now we have all figures to calculate the modulus of elasticity</td>
+<td>
+<img src="equat5s.jpg">
+</td></tr></table>
+<hr>
+<p>
+<b>Example  2</b></p>
+Determine the increase in length of a steel rod four (4) metre long and 20 mm diameter when subjected to a tensile load of 85 kN. (E = 200 Gpa)</p>
+<B>Solution</B>
+
+<table>
+<tr><td width=250>
+Area of cross-section 
+<p><img src="equat6s.jpg" align=left></td>
+<td>
+Re-arranging the equation from above and making &#916 l to the subject of the formula:<br>
+<img src="equat7s.jpg" align=center></td>
+</tr></table>
+</tr>
+</table>
+</body>
+</html>

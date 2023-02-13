@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Shadow angles</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="Shade angles and overshadowing of buildings">
+<meta name="keywords" content="shade angle, shading of buildings, solar elevation, solar azimuth, overshadowing, residential design codes, design for climate,solar eccess, longitude, latitude, climate regions">
+<meta name="Author" content="Karl Boeing">
+</head>
+
+<body bgcolor="#eff8ad" text="#000000">
+<table width=650 align="center">
+  <tr><td>
+      
+      <h2 align="center">Shade Angles</h2>
+      <p>The <a href="R-code.htm">Residential Design Codes</a> of Western Australia" 
+        requires buildings to be design for climate. Protecting solar access for 
+        neighbouring properties is an important design criteria. Excessive shadows 
+        should not be cast onto adjacent properties. Building Surveyors should 
+        be familiar with <a href="../../Environment/passive-energy.htm">general 
+        requirements</a> for climatic design. 
+      <p><b>Solar Altitude and Azimuth Angles</b><br>
+        The Sun's position in the sky is defined by two angles. The Solar Altitude 
+        angle is the vertical angle up from the horizon. The Azimuth is the horizontal 
+        rotation angle from Due North (in the Southern Hemisphere) or from Due 
+        South (in the Northern Hemisphere). 
+      <p> <img src="sun-path-perth.gif" width="353" height="370" align="left"><div style="line-height:2px"><br></div>
+        The shadow cast at different seasons(winter, summer and spring/autumn) 
+        of the year can easily be calculated:
+      <div style="line-height:20px"><br></div> 
+      <table border="1" cellspacing="0" cellpadding="6" bgcolor="#00FF99" align="center">
+        <tr>
+          <td>
+      <b>Summer</b> (21<sup>st</sup> of December) 
+      <div style="line-height:2px"><br></div>
+     Angle = (90° - latitude) + 23.5° <b><br>
+     <div style="line-height:20px"><br></div>
+      Winter</b> (21<sup>st</sup> of June) 
+      <div style="line-height:2px"><br></div>
+       Angle = (90° - latitude) - 23.5° 
+       <div style="line-height:20px"><br></div>
+	        <b>Spring/Autumn</b> (equinox) 
+            <div style="line-height:2px"><br></div> 
+      Angle = (90° - latitude)
+	  </td>
+        </tr>
+      </table>
+      <div style="line-height:20px"><br></div><b>Example altitude angles for Perth</b><br>
+        <div style="line-height:2px"><br></div>
+        Summer = (90&deg;- 32&deg;) + 23.5&deg; = <b>81.5&deg;</b> 
+      <div style="line-height:2px"><br></div>
+ Winter &nbsp;&nbsp;= (90&deg;- 32&deg;) - 23.5&deg;&nbsp; = <b>34.5&deg;</b> 
+      <div style="line-height:2px"><br></div>
+      Autumn/Spring = (90&deg;- 32&deg;)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = <b>58°</b><br>
+      <div style="line-height:10px"><br></div>
+      <div style="margin-left:150px"><font face="Arial, Helvetica, sans-serif">Figure 
+        1</font></div>
+     
+      <p>A more precise calculation of overshadowing for particular month and 
+        times of the day can be determined from suncharts. (The sunchart is a 
+        map of the sun's path across the sky during the year and maps out the 
+        sun's position as a function of day and time.) There are two types of 
+        suncharts:<br>
+        <br>
+      <table>
+        <tr> 
+          <td> 
+            <div align="center">a) Cylindrical sunchart <img src="sun-chart-cylindrical.jpg"><br>
+              <font face="Arial, Helvetica, sans-serif">Figure 2</font></div>
+          </td>
+          <td>
+            <div align="center">b) Polar sunchart <img src="polar-sun-chart-a.jpg"><br>
+              <font face="Arial, Helvetica, sans-serif">Figure 3</font></div>
+          </td>
+        </tr>
+      </table>
+      <p>Figure 1 &amp; 2 show two typical suncharts for Perth 31.97&deg; south 
+        latitude. These suncharts map out the sun's position in the sky (vertical 
+        and horizontal shadow angles). For the location of the sun's position 
+        you need two coordinates, the <b>altitude VSA </b>(Vertical Sun Angle) 
+        and the <b>azimuth HSA</b> (Horizontal Sun Angle). The altitude angle 
+        (angle of elevation) measures the sun's location in the sky above the 
+        horizon. 
+      <div style="line-height:2px"><br></div> 
+        Figure 1 (cylindrical sunchart) shows the azimuth angle in degrees east 
+      or west of due North (southern hemisphere). Angles being positive due east 
+      (sunrise) and negative due west (sunset). 
+      <div style="line-height:2px"><br></div>
+      Figure 2 (polar sunchart) shows the azimuth as compass bearing, relative 
+      to direction north. Azimuth angles range from 0 degrees (north) through 
+      90 (east), 180 (south), 270 (west), and up to 360 (north again). 
+      <p>The cylindrical sunchart seems to be easier to use. The University of 
+        Oregon has a program that creates cylindrical suncharts for any location 
+        on the earth. Use these <a href="http://solardat.uoregon.edu/SunChartProgram.html">suncharts</a> 
+        to determine the altitude and azimuth angle for your assignment. Remember 
+        for <b>Australian</b> locations <b>south latitude</b> input in <b>negative 
+        degrees</b> and <b>east longitude</b> input in <b>positive degrees</b>, 
+        and the time zone for WA is UTC + 8 h.
+      <div style="line-height:2px"><br></div>
+		The figure below shows the steps that are required to create the sunchart. 
+      <div style="line-height:2px"><br></div>
+		 
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="364"><img src="sun-chart-step1-3.jpg" align="top"><br>
+            <font face="Arial, Helvetica, sans-serif" size="2">Step 1 and 2 are 
+            the minimum input to create a chart.<br>
+            <font color="#666666">Step 3 select </font></font><u>Plot only this 
+            date</u> <font face="Arial, Helvetica, sans-serif" size="2">to depict 
+            one curve </font> 
+            <div style="margin-left:60px"><font face="Arial, Helvetica, sans-serif" size="2">only</font></div>
+           
+            <font face="Arial, Helvetica, sans-serif" size="2">Step 4 change Extend 
+            azimuth to crop azimuth and</font> 
+            <div style="margin-left:60px"><font face="Arial, Helvetica, sans-serif" size="2"> 
+              you may selection other to suit your own style</font></div>
+            <font face="Arial, Helvetica, sans-serif" size="2">Step 5 in </font>Line 
+            1<font face="Arial, Helvetica, sans-serif" size="2"> type the City 
+            that your group covers</font><br>
+             
+            <div style="margin-left:60px"><font face="Arial, Helvetica, sans-serif" size="2">in</font> 
+              Line 2 <font face="Arial, Helvetica, sans-serif" size="2">type your 
+              name otherwise leave it<br>
+              blank</font></div>
+            <font face="Arial, Helvetica, sans-serif" size="2">Step 6 leave the 
+            default setting<br>
+            Step 7 </font>create chart <font face="Arial, Helvetica, sans-serif" size="2">and 
+            print it.</font>
+          </td>
+          <td width="308"><img src="sunchartStep4.jpg" width="254" height="334"><br>
+            <br>
+            <br>
+<img src="sunchartStep5.jpg" width="247" height="177"><br>
+</td>
+  </tr>
+</table>
+       
+      
+      <p>Templates for Assignment 1 will be provided to record the appropriate 
+        data (see Table 1 including longitude and latitude angles for various 
+        WA locations) it also provides site plan and building elevation to draw 
+        the required shadows.
+      <div align="center"><font face="Arial, Helvetica, sans-serif"><b>Table 1</b></font><br>
+      </div>
+      <table  border=1 cellpadding=0 cellspacing=0 width=582 align="center">
+        <tr> 
+          <td colspan=8>
+            <div align="center">
+              <h3>Shade Angles</h3>
+            </div>
+          </td>
+        </tr>
+        <tr> 
+          <td rowspan=2 width="153"> 
+            <div align="center"><b>Location</b></div>
+          </td>
+          <td rowspan=2 width="63"> 
+            <div align="center"><b>Month</b></div>
+          </td>
+          <td colspan=2> 
+            <div align="center"><b>8 a.m.</b></div>
+          </td>
+          <td colspan=2> 
+            <div align="center"><b>12 p.m.</b></div>
+          </td>
+          <td colspan=2> 
+            <div align="center"><b>5 p.m.</b></div>
+          </td>
+        </tr>
+        <tr height=18> 
+          <td height=18 width="60">Altitude</td>
+          <td width="57">Azimuth</td>
+          <td width="57">Altitude</td>
+          <td width="56">Azimuth</td>
+          <td width="47">Altitude</td>
+          <td width="74">Azimuth</td>
+        </tr>
+        <tr bgcolor="ccffcc"> 
+          <td bgcolor="eff8ad" width="153"><b>Perth</b></td>
+          <td width="63">December</td>
+          <td class=xl36 style='border-left:none' width="60"> 
+            <div align="right">37.0°</div>
+          </td>
+          <td class=xl37 style='border-left:none' width="57"> 
+            <div align="right">97°</div>
+          </td>
+          <td class=xl38 width="57"> 
+            <div align="right">81.5°</div>
+          </td>
+          <td class=xl39 style='border-left:none' width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td class=xl40 style='border-top:none' width="47"> 
+            <div align="right">24°</div>
+          </td>
+          <td class=xl39 style='border-top:none' width="74"> 
+            <div align="right">253.5°</div>
+          </td>
+        </tr>
+        <tr height=18 style='height:13.5pt'> 
+          <td height=18 class=xl41 style='height:13.5pt' width="153">&nbsp;</td>
+          <td class=xl42 width="63">Jan/Nov</td>
+          <td width="60"> 
+            <div align="right">35.5°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">92°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">78°</div>
+          </td>
+          <td width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td width="47"> 
+            <div align="right">22.5°</div>
+          </td>
+          <td width="74"> 
+            <div align="right">260°</div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="153">Latitude<span style='mso-spacerun:yes'>     </span>31.9667°S<span style='mso-spacerun:yes'> </span></td>
+          <td class=xl50 width="63">Feb/Oct</td>
+          <td class=xl51 width=60 style='border-left:none;width:48pt'> 
+            <div align="right">31.0°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">83°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">69°</div>
+          </td>
+          <td width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td width="47"> 
+            <div align="right">18°</div>
+          </td>
+          <td width="74"> 
+            <div align="right">268°</div>
+          </td>
+        </tr>
+        <tr bgcolor="ccffcc"> 
+          <td bgcolor="eff8ad"  width="153">&nbsp;</td>
+          <td width="63">Mar/Sept</td>
+          <td width="60"> 
+            <div align="right">25.0°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">68°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">58°</div>
+          </td>
+          <td width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td class=xl40 width="47"> 
+            <div align="right">12.5°</div>
+          </td>
+          <td width="74"> 
+            <div align="right">278°</div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="153">Longitude 115.8167°E</td>
+          <td width="63">Apr/Aug</td>
+          <td width="60"> 
+            <div align="right">18.0°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">63°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">46°</div>
+          </td>
+          <td width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td width="47"> 
+            <div align="right">6°</div>
+          </td>
+          <td width="74"> 
+            <div align="right">288°</div>
+          </td>
+        </tr>
+        <tr> 
+          <td width="153">&nbsp;</td>
+          <td width="63">May/July</td>
+          <td width="60"> 
+            <div align="right">12.5°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">57°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">37.5°</div>
+          </td>
+          <td width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td width="47"> 
+            <div align="right">1.5°</div>
+          </td>
+          <td width="74"> 
+            <div align="right">295.5°</div>
+          </td>
+        </tr>
+        <tr bgcolor="ccffcc"> 
+          <td bgcolor="eff8ad"  width="153">&nbsp;</td>
+          <td width="63">June</td>
+          <td width="60"> 
+            <div align="right">10.0°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">53°</div>
+          </td>
+          <td width="57"> 
+            <div align="right">34.5°</div>
+          </td>
+          <td width="56"> 
+            <div align="right">0° <font size="-1">(360°)</font></div>
+          </td>
+          <td class=xl40 width="47"> 
+            <div align="right">0°</div>
+          </td>
+          <td class=xl39 width="74"> 
+            <div align="right">298°</div>
+          </td>
+        </tr>
+      
+        <tr> 
+          <td width="153"></td>
+          <td width="63"></td>
+        </tr>
+        </table>
+		
+		
+      <p><b>Example of how to draw a shadow cast from a building </b>
+      <div style="line-height:2px"><br></div>
+	  A site plan should be drawn to scale, showing the proposed building, the 
+      property lines, and a north arrow. With the help of the sunchart find altitude 
+      &amp; azimuth angles. Table 1 above list shade angles for 8 am, 12 pm &amp; 
+      5 pm for the year, location Perth. Assignment 1 will give you an understanding 
+      of the shortening and lengthening of a shadow by tracking one throughout 
+      the day. 
+      <p align="center"><b>Altitude angle</b>
+      <table width="600" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="350">
+     <img src="shadow-cast.gif" width="295" height="375" align="left"></td>
+    <td width="313">The 
+        <u>altitude angle</u> is used to find the length of the shadow that the 
+        building cast onto the ground. Let the height of the building be <u>16.800 
+        m</u> and the altitude angle <u>37&deg;</u> (8 a.m. December, see Table 
+        1). The length of the shadow can now be calculated <u>16.8&nbsp;/&nbsp;tan&nbsp;37°&nbsp;=&nbsp;22.294 
+        m</u> (level ground).</td>
+  </tr>
+</table>
+ 
+      <br> <div style="line-height:4px"><br></div>
+        
+      <font size="2"><i>(You could use the graphical method (shown in Figure&nbsp;5) 
+      and draw the shade angle from top of the building until it hits the ground 
+      level. The point where the shadow line hits the ground could then projected 
+      onto the site plan. However, this method is an approximation and only accurate 
+      if the sun rays would come from due east or due west, but the real shadow 
+      angle must be measured in the direction of the azimuth angle)</i></font> 
+      <div style="line-height:6px"><br>
+      </div>
+		
+      <b>The distance should therefore be calculated and measured along the direction 
+      of the azimuth angle. </b> 
+      <div style="line-height:10px"><br></div>
+     
+      For all azimuth angles a sun chart must be used to establish the direction 
+      of the shadow lines. In the cylindrical sunchart the azimuth angles are 
+      given in<br>
+      <div style="margin-left:147px"> <font face="Arial, Helvetica, sans-serif">Figure 
+        5</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;positive 
+        degrees east and negative degrees west.</div>
+ 
+     
+      <p align="center"><b>Azimuth angle</b><br /><img src="deg-rose.gif" align="left">
+      <div style="line-height:6px"><br></div>
+        In December the azimuth angle is 97&deg; at 8 a.m. and 253.5&deg; at 5 
+      p.m. (Table 1). An azimuth bearing uses all 360° of a compass to indicate 
+      direction as shown in Figure 6. 
+     <div style="line-height:6px"><br></div>
+      <p>The 253.5 figure is derived by subtracting 106.5&deg; (sun chart figure) 
+        from 360&deg;.
+      <div style="line-height:2px"><br></div> 
+    There are a number of computer programs that calculates altitude and azimuth. 
+      If you want to know the Sun Altitude/Azimuth angles for a specific location use the 
+        U.S. Naval Observatory Specify year, type of table, and place (scroll down to B)<br>
+      <a href="http://aa.usno.navy.mil/data/docs/RS_OneYear.php" target="_blank"><b>Form 
+      B</b> - Locations Worldwide</a>.
+   
+
+<div style="line-height:35px"><br></div>
+      <p>
+      <div style="margin-left:130px"><font face="Arial, Helvetica, sans-serif">Figure 
+        6</font></div><br>
+     
+      <img src="calc-sun-shade.gif" width="410" height="376" align="left"><b>Example how to measure the azimuth angle</b>
+<div style="line-height:6px"><br></div>
+Place the protector on the corner of the building and mark the 97&deg;<br>
+ <div style="line-height:6px"><br></div>
+      <p>The length of the shadow is 22.294 metre as previously calculated.<br>
+     <div style="line-height:6px"><br></div> 
+        The sunchart angle is positive (east) or negative (west) and the shadow 
+      length can be easily calculated using 
+      <p><b>S = building height / tan <img src="alpha.lc.gif" width="8" height="7"></b>
+       <div style="line-height:1px"><br></div> 
+       
+        <img src="alpha.lc.gif" width="8" height="7"> = altitude angle<br>
+        <div style="line-height:6px"><br></div>
+        (The negative sign is of no relevance for the shadow length calculation.)<br>
+        
+      <div style="margin-left:180px"><font face="Arial, Helvetica, sans-serif">Figure 
+        7 </font></div>
+        
+      <p>The data for the month December at 8 a.m., 12 p.m. and 5 p.m. are used 
+        in Figure 5 to draw a shadow diagram graphically. Please remember that 
+        this method is only accurate if the azimuth angle is exactly <u>90&deg; 
+        east</u> or <u>-90&deg;&nbsp;west (<i>270° compass bearing</i>)</u>. If 
+        the azimuth angle is not greater than 107&deg; (error in this case is 
+        less than 5%) then the graphical method can be used otherwise the calculation 
+        method must be used for the Assignment 1</p>
+        <div align="center">
+        <img src="shadows.gif" width="557" height="440"><br>
+        <font face="Arial, Helvetica, sans-serif">Figure 8</font> </div>
+     
+      <p align="center"><font color="#000000">If you want to contact me per email 
+        please use the  email-address</font><br>
+    <a href="mailto:">Karl Boeing</a></p> 
+            </td>
+  </tr>
+</table>
+</body>
+</html>

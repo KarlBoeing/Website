@@ -1,0 +1,140 @@
+
+<html>
+<HEAD>
+<TITLE>Section Properties</TITLE>
+</HEAD>
+<body bgcolor="#9fe0f9">
+
+<table>
+<tr><td width=35></td>
+<td width=550>
+<p><FONT SIZE="5" COLOR="#000000" FACE="arial">Centre of an area
+
+
+</FONT></p><br>
+
+<P>
+
+The centre of an area, or centroid, of a shape is the point at which it is in equilibrium. If it is supported at this point it is in a state of equilibrium and should not fall off. A useful analogy that helps understanding this idea may be found by considering the centre of gravity or centre of mass.</p>
+
+<p>The centre of different shapes cut out from a card board can be found by hanging it from a string. The line of action will always pass through the centre of gravity of the particular shape. The principle is shown in the Figure below.</p>
+<IMG SRC="plum-line.jpg" WIDTH="602" HEIGHT="269" BORDER="0" ALT="plum-line.jpg - 37936 Bytes">
+<CENTER>Figure 1</CENTER>
+<p>Note:	The centre of gravity is not necessarily within the body of the shape, it can fall outside as with most angular shapes.</p>
+
+
+<p>A more precise procedure to find the centre of gravity is the <b><i>first moment of area </i></b>method.</p>
+
+<p>The position of the centre of gravity of a compound body can be found by dividing the body into several parts where the centre of gravity of the individual parts are known.</p>
+<TABLE>
+<TR><TD>
+<p>The following method applies:</p>
+<ol>
+<li>Divide the body into several parts.
+
+<LI>Divide the body into several parts.
+<LI>Determine the area (or volume) of each part.
+<li>Establish a reference point for taking moments
+<li>Determine the distance from the reference point to the centre of gravity of the individual parts
+<li>Take moments about the x-axis and y-axis to determine the centre of gravity of the whole bod
+</OL>
+</TD>
+<TD><IMG SRC="sec-fig2.jpg" WIDTH="292" HEIGHT="334" BORDER="0" ALT="sec-fig2.jpg - 22543 Bytes">
+<CENTER>Figure 2</CENTER></TD>
+</TR>
+</TABLE>
+
+<P>Example of the <B>first moment of area</B> method</P>
+<P>The easiest way is to organise all data in a table as shown below:</P>
+<FONT SIZE="3">
+<TABLE BORDER="2" CELLPADDING="6" CELLSPACING="1" ALIGN="CENTER">
+<TR>
+<TD COLSPAN="2" ALIGN="CENTER"><B>Dimensions</B></TD><TD ALIGN="CENTER" COLSPAN="2"><B>Area</B></TD><TD COLSPAN="2" ALIGN="CENTER"><B>Distance to<br> centre of mass</B></TD><TD ALIGN="CENTER" COLSPAN="2">	<B>Area Moment</B></TD></TR><TR><FONT SIZE="1">
+<TD ALIGN="CENTER" WIDTH="40"><FONT SIZE="1">Length<br>Units</TD> <TD  ALIGN="CENTER"WIDTH="40"><FONT SIZE="1">Width<br>Units</TD><TD  ALIGN="CENTER"COLSPAN="2"><FONT SIZE="1">Units</TD>
+
+<TD ALIGN="CENTER" WIDTH="60"><FONT SIZE="1">x-direction<br>y-axis</TD><TD ALIGN="CENTER" WIDTH="60"><FONT SIZE="1">y-direction<br>x-axis</TD><TD ALIGN="CENTER"><FONT SIZE="1">x-axis</TD><TD ALIGN="CENTER"><FONT SIZE="1">y-axis</TD></FONT></TR>
+<TR>	
+<TD ALIGN="CENTER">4	<TD>1</TD>	<TD WIDTH="30" ALIGN="CENTER"><B>A1</B></TD>	<TD WIDTH="30" ALIGN="CENTER">4</TD>	<TD ALIGN="CENTER">0.5</TD>	<TD ALIGN="CENTER">4</TD>	<TD ALIGN="CENTER">2</TD>	<TD ALIGN="CENTER">16</TD>
+</TR>
+<TR>
+<TD ALIGN="CENTER">2</TD>	<TD>4</TD>	<TD ALIGN="CENTER"><B>A2</B></TD>	<TD ALIGN="CENTER">8</TD>	<TD ALIGN="CENTER">2.0</TD>	<TD ALIGN="CENTER">1</TD>	<TD ALIGN="CENTER">16</TD>	<TD ALIGN="CENTER">8</TD></TR> 
+<TR>
+<TD COLSPAN="3" ALIGN="RIGHT">	Area	</TD><TD>	<B>12</B></TD><TD COLSPAN="2" ALIGN="RIGHT">	Area Moment</TD><TD ALIGN="CENTER">	<B>18</B></TD><TD ALIGN="CENTER">	<B>24</B></TD>
+</TR>
+</TABLE><FONT SIZE="3">
+<P>The centre of gravity is found by dividing the specific area moment (x- and y-direction) by the total area.</P>
+<TABLE CELLPADDING="6"><TR><TD VALIGN="TOP">
+Therefore</TD><TD>
+<IMG SRC="sec-equat1.jpg" WIDTH="315" HEIGHT="148" BORDER="0" ALT="sec-equat1.jpg - 16766 Bytes"></p></TD>
+</TR>
+</TABLE>
+
+<P><CENTER><FONT SIZE="4" FACE="arial" COLOR="#00C81F">Centroids of common symetrical ares</CENTER></FONT></P>
+
+<IMG SRC="sec-fig3.jpg" WIDTH="602" HEIGHT="174" BORDER="0" ALT="sec-fig3.jpg - 27790 Bytes">
+<FONT SIZE="3">
+<P><B><FONT SIZE="5">Second moment of area (I) or moment of inertia</B></FONT></P>
+<P>The second moment of area (I) about a given axis is the sum product of the area and the square of the distance from the centroid to the axis.</P>
+<P>The second moment of area or moment of inertia (I) is expressed mathematically as:</P>
+<P><B><CENTER>I<SUB>xx</SUB> = Sum (A) x (y<SUP>2</SUP>)</CENTER></B> </P>
+<TABLE CELLPADDING="6">
+<TR><TD>
+Where </TD><TD>	Ixx</TD><TD> =	the second moment of area (moment of inertia) around the xx-axis</TD></TR>
+<TR>
+<TD COLSPAN="2" ALIGN="RIGHT">	A</TD> <TD> =	the area  of the plane of the object</TD></TR>
+<TR><TD COLSPAN="2" ALIGN="RIGHT">	Y </TD><TD> =	the distance between the centroid of the object and the
+		x-axis</TD></TR>
+</TABLE>
+<P>The second moment of area (I) is an important figure that is used to determine the stress in a section, to calculate the resistance to buckling, and to determine the amount of deflection in a beam.</P>
+<P>Let us look at two boards to intuitively determine which will deflect more and why. If two boards with actual dimensions of 200 by 50 mm were laid side by side - one on the 50mm side and the other on the 200 mm side. The board that is supported on its 50 mm edge is considerably stiffer than that supported along its 200 mm edge. Both board have the same cross-sectional area, but the area distributed differently about the horizontal axis.</P>
+<CENTER>
+<IMG SRC="sec-fig4.jpg" WIDTH="424" HEIGHT="287" BORDER="0" ALT="sec-fig4.jpg - 27590 Bytes">
+</CENTER>
+<P>Calculus is usually used to find the moment of inertia (I) of an irregular section. However, a simple formula has been derived for a rectangular section, which is the most important section in this subject.</P>
+<TABLE>
+<TR><TD>
+<IMG SRC="sec-fig5.jpg" WIDTH="192" HEIGHT="232" BORDER="0" ALT="sec-fig5.jpg - 14208 Bytes"></TD>
+<TD WIDTH="400" ALIGN="CENTER"><FONT SIZE="4">The formula for a rectangular section is:</FONT><br><br><IMG SRC="sec-equat4.jpg" WIDTH="104" HEIGHT="68" BORDER="0" ALT="sec-equat4.jpg - 7641 Bytes"></TD>
+</TR>
+</TABLE>
+<P><B><FONT SIZE="5">Section modulus</B></FONT></P>
+<P>To calculate the <B>bending stress</B> in structural members (beams), a property called <B>SECTION MODULUS</B> is used to express the bending moment/stress relationship.</P>
+
+<P>Each point within a cross-section of a beam will have a section modulus, this being the ratio of the second moment of inertia to the distance between a point within the section and the relevant axis.</P>
+<TABLE><TR><TD><IMG SRC="sec-fig6.jpg" WIDTH="176" HEIGHT="217" BORDER="0" ALT="sec-fig6.jpg - 13531 Bytes"></TD>
+<TD>In the section shown opposite the section moduli of the point are:<br><br><CENTER>
+<IMG SRC="sec-equat5.jpg" WIDTH="104" HEIGHT="131" BORDER="0" ALT="sec-equat5.jpg - 9802 Bytes"></CENTER></TD>
+</TR>
+</TABLE>
+<P>As the maximum stress occurs in the extreme outer fibres, this distance is needed for the calculation of the maximum bending stress.</P>
+<P>Following from this we can conclude that for a rectangular section y' should be substituted with d/2 and x' with b/2 respectively in the above formula to find the stress in the extrem outer fibres.</P>
+<P>I of a rectangular section is equal to the breadth times depth cubed over 12.
+Substitute this in the formula gives:</P>
+<IMG SRC="sec-equat3.jpg" WIDTH="467" HEIGHT="100" BORDER="0" ALT="sec-equat3.jpg - 13148 Bytes">
+<P>For asymmetric section the distance to the neutral axis is not the same to the extreme outer fibre and therefore two values for each axis exists. This is shown in the figure below.</P>
+<TABLE>
+<TR><TD COLSPAN="2">
+<IMG SRC="sec-fig7.jpg" WIDTH="602" HEIGHT="232" BORDER="0" ALT="sec-fig7.jpg - 18954 Bytes">
+
+<TR><TD>
+(a) Angle upright position</TD><TD>	(b) Angle flat position
+</TD></TR>
+</TABLE>
+<P>For each axis (x-x and y-y) exists one <B>moments of inertia</B> (Ixx and Iyy) and as the distance to the outer fibre is different in angle position (a) and (b)  there are two section modulus  for each axis (x-x and y-y). The four section modulus, Zxx<SUB>(t)</SUB>, Zxx<SUB>(c)</SUB>  for position (a)  and Zyy<SUB>(t)</SUB> and Zyy<SUB>(c)</SUB> for position (b), can be found by dividing the particular moment of inertia (I) by the distance  a, b, c and d respectively.</P>
+<P>As can be seen the the compression  is geater than the tension. If you compare angle position (a) with (b), position  (b) is not as effective as (a) because due to less depth geater stress in tension and compression occurs in (b).</P>
+<P><B>Relationship between second moment of area and deflection</B></P>
+<P>The stress in long span members is usually not the critical design criteria. Most standards impose a limitation on the deflection. It should not exceed for instance l/300 or l/500; that means the deflection of an nine metre (9 m) beam should be less than 30 or18 mm respectively.</P>
+<UL>The following factors affect beam deflection:
+<li>Load (usually in kN)
+<li>Span in metre or millimeter
+<li>Size and shape of beam (moment of inertia)
+<li>Stiffness of material (modulus of elasticity)
+<li>Constant factor (dending on load & support conditions)
+</UL>
+<P>Hopefully you'll remember some of the  factors and by using a ruler you can easily find the missing factors. Anyway, your ruler can be an important tool in Structures. You can use it as small scaled beam, column etc.  You can investigate structural issues like  the difference between a single and continuous span, the disparity of material, deflection, bending/buckling,  reaction etc.  by simply  using your ruler.</P>
+
+</TD></TR>
+</table>
+
+</body>
+</html>

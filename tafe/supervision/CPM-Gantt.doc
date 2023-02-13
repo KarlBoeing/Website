@@ -1,0 +1,277 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff89\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f89\fswiss\fcharset0\fprq0{\*\panose 00000000000000000000}CG Times{\*\falt Impact};}{\f100\froman\fcharset238\fprq2 Times New Roman CE;}{\f101\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f103\froman\fcharset161\fprq2 Times New Roman Greek;}{\f104\froman\fcharset162\fprq2 Times New Roman Tur;}{\f105\froman\fcharset186\fprq2 Times New Roman Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\nowidctlpar\adjustright \f89 \snext0 Normal;}{\*\cs10 \additive Default Paragraph Font;}{\s15\nowidctlpar\adjustright \f89 \sbasedon0 \snext15 endnote text;}{\*\cs16 \additive \super \sbasedon10 endnote reference;}{\s17\nowidctlpar\adjustright \f89 \sbasedon0 \snext17 footnote text;}{\*\cs18 \additive \super \sbasedon10 footnote reference;}{\s19\fi-720\li720\ri720\sb480\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 1;}{\s20\fi-720\li1440\ri720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 2;}{\s21\fi-720\li2160\ri720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 3;}{\s22\fi-720\li2880\ri720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 4;}{\s23\fi-720\li3600\ri720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 5;}{\s24\fi-720\li720\nowidctlpar\tqr\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 6;}{\s25\fi-720\li720\nowidctlpar\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 7;}{\s26\fi-720\li720\nowidctlpar\tqr\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 8;}{\s27\fi-720\li720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd toc 9;}{\s28\fi-1440\li1440\ri720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd index 1;}{\s29\fi-720\li1440\ri720\nowidctlpar\tqr\tldot\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 \sautoupd index 2;}{\s30\nowidctlpar\tqr\tx9360\hyphpar0\adjustright \f89 \sbasedon0 \snext0 toa heading;}{\s31\nowidctlpar\adjustright \f89 \sbasedon0 \snext0 caption;}{\*\cs32 \additive _Equation Caption;}}{\info{\title Chapter10 [Karl]}{\author Karl Boeing}{\operator Karl Boeing}{\creatim\yr1999\mo1\dy21\hr15\min47}{\revtim\yr1999\mo1\dy21\hr15\min49}{\version3}{\edmins3}{\nofpages10}{\nofwords1827}{\nofchars10414}{\*\company Boeing Engineering}{\nofcharsws12789}{\vern71}}\paperw11906\paperh16838\margl1440\margr1440 \widowctrl\ftnbj\aenddoc\hyphhotz916\aftnnar\notabind\wraptrsp\nocolbal\sprslnsp\lytprtmet\hyphcaps0\viewkind4\viewscale100 \fet0{\*\ftnsep \pard\plain \nowidctlpar\adjustright \f89 {\chftnsep 
+\par }}{\*\aftnsep \pard\plain \sl-20\slmult0\nowidctlpar\adjustright \f89 {
+\par }}{\*\aftnsepc \pard\plain \nowidctlpar\adjustright \f89 { 
+\par }}{\*\aftncn \pard\plain \nowidctlpar\adjustright \f89 { 
+\par }}\sectd \pgnrestart\linex0\headery1440\footery1440\colsx709\sectdefaultcl {\*\pnseclvl1\pnucrm\pnstart1 {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1 {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1 {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1 {\pntxta .}}{\*\pnseclvl5\pndec\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1 {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1 {\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1 {\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang{\pntxtb (}{\pntxta )}}\pard\plain \qj\nowidctlpar\hyphpar0\adjustright \f89 {\b\f0\ul\expnd0\expndtw-3\lang3081 C.P.M. NETWORKS AND THE TIME BAR DIAGRAMS
+\par 
+\par 
+\par }{\f0\expnd0\expndtw-3\lang3081 This chapter of the text deals with several examples of production problems and analyses the logical sequence of activities and events. Times will be allocated to each activity to discover the Critical Path. We will then be in a position to plot the Time Bar Diagrams which are the formalised presentation of the plan in terms of time sequences.
+\par 
+\par Looking first at }{\i\f0\expnd0\expndtw-3\lang3081 Activity Incrementing in a Project, }{\f0\expnd0\expndtw-3\lang3081 simply means the fractionalisation of an individual activity in order to speed up the job.
+\par 
+\par 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Example 1:}{\f0\expnd0\expndtw-3\lang3081 \tab \tab Draw a network for a project consisting of excavation, forming and pouring concrete. (Note: excavation must precede forming and forming must precede pouring). Forming can be started after excavating is 25% complete, and pouring can be started after forming 25% complete. Each of the three requirements is then accomplished in 25% increments to completion. There is only one crew for each of the three activities.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Step 1.}{\f0\expnd0\expndtw-3\lang3081 \tab Show as 100% first. (Linear network).
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Step 2.}{\f0\expnd0\expndtw-3\lang3081 \tab Show as 50% increments,
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Step 3.}{\f0\expnd0\expndtw-3\lang3081 \tab Show as 25% increments.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Step 4.}{\f0\expnd0\expndtw-3\lang3081 \tab The network can also be used to show delivery of items, such as reinforcement, so let us add the following activities:-
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab \tab Order reo., deliver \u-4045\'3f quantity of reo., then \u-4046\'3f, \u-4038\'3f and finally the total quantity.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par 
+\par Note possible "float" time on the formwork activities. Also dummy restraints between the various increments.
+\par 
+\par 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Definitions used in C.P.M.
+\par 
+\par }{\f0\expnd0\expndtw-3\lang3081 In Chapter 9 you will remember that it was mentioned several definitions used in C.P.M., and here we will restate them in detail, together with several new ones.
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Activity:\tab \tab \tab A time-consuming effort needs to complete a segment of the project. An activity is sometimes called a job and is shown by an arrow. Resources may or may not be required.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Event:\tab \tab \tab A point in time indicating the beginning or the end of an activity. It is sometimes called a node and is indicated by a circle.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Dummy:\tab \tab \tab A symbol showing a restraint relationship between activities. A dummy requires no time and is indicated by a dashed arrow.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Critical Path:\tab \tab \tab The longest sequential path of activities in a project which connects the beginning and the end of a project. The sum total of the activity durations along this path is equal to the minimum project duration. The critical path is shown by a heavy arrow, and is where the earliest start time equals the latest start time, and the earliest finish time equals the latest finish time.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Earliest Event Time:\tab \tab The earliest possible time at which all activities terminating at the event can be completed. Indicated in a square at the head of one activity arrow terminating at this event.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Latest Event Time:\tab \tab The latest possible time in which all activities terminating at the event can be completed, so as not to cause a delay in the project completion date. Indicated in a triangle at the tail of one activity arrow starting at the event and having the earliest (smallest) of the latest start times.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Earliest Start Time (ES):\tab The earliest time at which an activity can start, controlled by the earliest event time.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Earliest Finish Time (EF):\tab The earliest time at which an activity can be completed, indicated at the head of an activity arrow.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Latest Start Time (LS):\tab The latest time at which an activity can be completed, controlled by the latest event time.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Latest Finish Time (LF):\tab The latest time at which an activity can be completed, controlled by the latest event time.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-2880\li2880\nowidctlpar\tx-720\tx0\tx720\tx1440\tx2160\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Total Float (TF):\tab \tab The amount of surplus time available for lengthening or rescheduling a segment of the project or an individual activity. There is no "float" on the critical path, nor for the project as a whole. Float is separated into total float, free float and independent float.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par }\pard \qj\nowidctlpar\tqc\tx4513\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab Fig. 10.1 Example for Time-Values
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par \page 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Earliest Start Time (ES)
+\par 
+\par }{\f0\expnd0\expndtw-3\lang3081 Earliest Start time refers to the event or node (i,j) of origin of an activity as well as to the activity itself. ES is placed on the network diagram below the node to which it applies (Fig. 10.1). It is important to know that EF is an activity time, whereas ES is a node time. However, if more than one activity arrow enters a node and the duration time for activity A, B and C are given as well as the ES for nodes g, i and h (Fig. 10.2) then ESj will be calculated as follows:
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par }\pard \qj\nowidctlpar\tqc\tx4513\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab Fig. 10.2
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par In the case of a dummy arrow, apply the same rules for dummy arrows as for activity arrows.
+\par 
+\par 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Latest Finish Time (LF)
+\par 
+\par }{\f0\expnd0\expndtw-3\lang3081 The Latest Finish Time is the latest possible time by which all activities entering a node must be completed in order that the entire project be finished on time LF applies to a node like ES does. For the first node and all nodes on critical paths, LF for the final node equals ES for that node. Activities which do not lie on critical paths have time leeway called Total Float (TF). TF of an activity is the amount of time that the activity can be delayed or lengthened without affecting ES of any node in the diagram. The calculation for LF is quite similar to ES values except that it starts at the final node and moves chronologically backwards. LS for an activity is equal to LF of its terminal node minus dA (duration time). In example Fig. 10.3 the LF's for nodes k, j and l are given as well as the duration time dD, dE and dF. LFi will be calculated as follows:
+\par 
+\par LS}{\f0\expnd0\expndtw-3\lang3081\sub D}{\f0\expnd0\expndtw-3\lang3081  = 23 - 4 = 19
+\par LS}{\f0\expnd0\expndtw-3\lang3081\sub E}{\f0\expnd0\expndtw-3\lang3081  = 28 - 14 = 14
+\par LS}{\f0\expnd0\expndtw-3\lang3081\sub F}{\f0\expnd0\expndtw-3\lang3081  = 19 - 6 = 13
+\par 
+\par 
+\par 
+\par LS}{\f0\expnd0\expndtw-3\lang3081\sub F}{\f0\expnd0\expndtw-3\lang3081  is the least LS for all activity arrows leaving node i and determines LF}{\f0\expnd0\expndtw-3\lang3081\sub i}{\f0\expnd0\expndtw-3\lang3081 ; LF}{\f0\expnd0\expndtw-3\lang3081\sub i}{\f0\expnd0\expndtw-3\lang3081  = LS}{\f0\expnd0\expndtw-3\lang3081\sub F}{\f0\expnd0\expndtw-3\lang3081  = 13
+\par  
+\par 
+\par }\pard \qj\nowidctlpar\tqc\tx4513\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab Fig. 10.3
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Total Float Time (TF)
+\par 
+\par }{\f0\expnd0\expndtw-3\lang3081 The Total Float Time is the difference between the time available to complete the task and the time required for the work as given by the activity duration (dA) TFA should be calculated as follows:
+\par 
+\par }\pard \qj\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab TF}{\f0\expnd0\expndtw-3\lang3081\sub A}{\f0\expnd0\expndtw-3\lang3081   =  (LF}{\f0\expnd0\expndtw-3\lang3081\sub j}{\f0\expnd0\expndtw-3\lang3081 ) - ES}{\f0\expnd0\expndtw-3\lang3081\sub i}{\f0\expnd0\expndtw-3\lang3081 ) - d}{\f0\expnd0\expndtw-3\lang3081\sub A}{\f0\expnd0\expndtw-3\lang3081 \tab (See Fig. 10.1)
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par TF is a measurement of time leeway which can be used to organise a non-critical activity in different ways, as shown in Fig. 10.4.
+\par 
+\par 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 Possibility\tab (a)\tab Activity A starts at ES}{\f0\expnd0\expndtw-3\lang3081\sub i}{\f0\expnd0\expndtw-3\lang3081  and finishes at EF}{\f0\expnd0\expndtw-3\lang3081\sub A}{\f0\expnd0\expndtw-3\lang3081 .
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab \tab (b)\tab Activity A starts at LS}{\f0\expnd0\expndtw-3\lang3081\sub A}{\f0\expnd0\expndtw-3\lang3081  and finishes at LF}{\f0\expnd0\expndtw-3\lang3081\sub j}{\f0\expnd0\expndtw-3\lang3081 .
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab \tab (c)\tab Activity A starts later than ES}{\f0\expnd0\expndtw-3\lang3081\sub i}{\f0\expnd0\expndtw-3\lang3081  and finishes before LF}{\f0\expnd0\expndtw-3\lang3081\sub j}{\f0\expnd0\expndtw-3\lang3081 .
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab \tab (d)\tab Activity A may be split, part A}{\f0\expnd0\expndtw-3\lang3081\sub 1}{\f0\expnd0\expndtw-3\lang3081  could be done first, and the rest A}{\f0\expnd0\expndtw-3\lang3081\sub 2}{\f0\expnd0\expndtw-3\lang3081  later after the interruption.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\nowidctlpar\tqc\tx4513\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab Fig. 10.4
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Event or Node Numbering}{\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par Events or Nodes are identified by numbers.  The term event does not necessarily mean that something accomplished at a node it represents, only a point in time at which an activity arrow originates or terminates.  There is not a rigid rule in numbering events or nodes but the preceding node or nodes should be smaller than that node at which the activity arrow(s) enter.  When the initial network planning phase is established the network should then be numbered.  It can be prudent to number the network only with even or odd numbers because this provides numbers for unforeseen future addition of activities.  (See Fig. 10.5).
+\par 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Procedure for Preparing a C.P.M. Analysis.}{\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 1.\tab Develop a list of jobs or activities.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 2.\tab Draw a rough network.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab (a)\tab Rules for establishing activity sequences:
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab \tab i)\tab What immediately precedes the activity?
+\par \tab \tab ii)\tab What immediately follows the activity?
+\par \tab \tab iii)\tab What can be done simultaneously with the activity?
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 3.\tab Assign durations (times) to all activities.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 4.\tab Perform computations and determine the critical path.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 5.\tab Number of events.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 6.\tab Review the network and analyse the critical path.  (Is it too long?  Can it be shortened?  Is it practical?)
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 7.\tab Draft a finished network.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 8.\tab Draft a Time Bar Diagram for presentation by considering:
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab (a)\tab Finished network.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab (b)\tab Utilisation of available slack (float).
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-1440\li1440\nowidctlpar\tx-720\tx0\tx720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab (c)\tab Relocation of manpower, resources and money.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \page 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Example of a C.P.M. Analysis:}{\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par In this example, we will consider a Lawn Mowing Project as follows:
+\par 
+\par The problem is to build a network for a Lawn Mowing Project, on the assumptions that there is one lawn-mower, one pair of grass trimmers, two or more people and that some debris in the yard must be picked up before work can start.  Trimming is done after mowing.  Write in the activities on the network, calculate and find the critical path and then produce a Time Bar Diagram.  Use }{\i\f0\expnd0\expndtw-3\lang3081 only}{\f0\expnd0\expndtw-3\lang3081  the following list of activities:
+\par 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 A.\tab Pick up debris on front lawn\tab 20 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 B.\tab Pick up debris on back lawn\tab 20 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 C.\tab Get equipment\tab 10 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 D.\tab Mow front lawn\tab 40 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 E.\tab Mow back lawn\tab 30 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 F.\tab Trim front lawn\tab 60 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 G.\tab Trim back lawn\tab 30 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx720\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 H.\tab Return and stow equipment\tab 10 minutes
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Solution:}{\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par Follow the procedure on the previous page and it will be seen on inspection of the above activities, that:
+\par 
+\par A. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  D.;\tab B. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  E.;\tab C. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  D.;\tab D. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  E. & F.;
+\par 
+\par E. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  G.;\tab F. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  G.;\tab G. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  H.
+\par 
+\par \page 
+\par 
+\par So we draw our network thus:
+\par 
+\par 
+\par 
+\par It will be seen that the critical path lies between events 1, 5, 7, 11, 13 and 15 (note: an alternative numbering system has been used to facilitate possible future alterations) and the critical activities are A.D.F.G. and H. giving a total project duration of 160 minutes, which is the shortest time that work can be completed under these conditions.
+\par 
+\par Our Time Bar Diagram should be as follows:
+\par 
+\par 
+\par 
+\par It should be noticed that considerable "float" time exists in Activities B. C. and E., and because these are not critical activities, their start time may be altered as convenient within the float times.  It must be borne in mind, however, that a non-critical activity can become critical if it exceeds its float time, and in that case, the critical path must be redrawn to take this into account.  
+\par 
+\par It should be realised that the foregoing problem and its solution are very simple when compared with the multitude of activities that go on in a major and complex project, but the principle remains the same.  Because of the great number of activities in some projects, a computer program is set up to solve the inter-acting events and activities.  To try to do this manually would be far too laborious and time-consuming.  However, it is not the purpose of this chapter to engage in computer programming; mention is made of this phase of work in order to warn the student that C.P.M. is not a simple method of planning!
+\par 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Advantages of the C.P.M. System:}{\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par Having studied some examples and methods in this and the previous chapter, it would be appropriate at this stage, to list some of the advantages of C.P.M. over the Gantt Bar Chart System previously discussed.
+\par 
+\par These are:
+\par 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 1.\tab Demands that you plan the exact sequence of activities.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 2.\tab Enables you to see activity relationships at a glance.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 3.\tab Shows you when and where a work unit may be started or completed and points up target dates.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 4.\tab Determines most efficient use of facilities, equipment and manpower.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 5.\tab Minimises the possibility of omissions.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 6.\tab Indicates slack or float time.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 7.\tab Emphasises each and every critical activity.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 8.\tab Anticipates probable bottlenecks and lets you plan ahead.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 9.\tab Pinpoints correct and profitable expediting.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 10.\tab Facilitates immediate field decisions.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 11.\tab Generates a master plan for subcontractors.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }{\i\f0\expnd0\expndtw-3\lang3081 Further C.P.M. Problems:}{\f0\expnd0\expndtw-3\lang3081 
+\par 
+\par Now let us consider the following problem concerning the scheduling of some Shoproom Modificiations within this list of activities:
+\par 
+\par }\pard \qj\nowidctlpar\tx1440\tx2160\tx2880\tqr\tx9026\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Symbol:\tab \tab \tab Activity Description:\tab Time Duration:}{\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\nowidctlpar\tx720\tx1440\tx2160\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 A.\tab \tab \tab Prefabricate wall forms at warehouse\tab 2 units
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx720\tx1440\tx2160\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 B.\tab \tab \tab Deliver wall forms\tab 4 units
+\par C.\tab \tab \tab Excavate by hand for wall and column footings\tab 3 units
+\par D.\tab \tab \tab Let subcontracts for electrical and mechanical works\tab 4 units
+\par E.\tab \tab \tab Form, pour and cure concrete in wall and column footings\tab 7 units
+\par F.\tab \tab \tab Erect temporary roof over entire roof area.\tab 16 units
+\par G.\tab \tab \tab Fabricate and fix interior column formwork.\tab 6 units
+\par H.\tab \tab \tab Pour, cure and strip interior columns. \tab 6 units
+\par I.\tab \tab \tab Install electrical conduit.\tab 11 units
+\par J.\tab \tab \tab Rough-in plumbing.\tab 7 units
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx-720\tx0\tx720\tx1440\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 K.\tab \tab \tab Pour, cure and strip concrete walls and backfill 
+\par }\pard \qj\fi-2160\li2160\nowidctlpar\tx720\tx1440\tx2160\tqr\tx9026\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 \tab \tab \tab to receive concrete floor slab\tab 12 units
+\par L.\tab \tab \tab Erect wall formwork and fix reinforcing steel.\tab 9 units
+\par M.\tab \tab \tab Grade for and pour concrete floor slab.\tab 5 units
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par }\pard \qj\fi-720\li720\nowidctlpar\tx-720\tx0\hyphpar0\adjustright {\i\f0\expnd0\expndtw-3\lang3081 Note:}{\f0\expnd0\expndtw-3\lang3081 \tab The time units must be the same for each activity (ie. hours, days, weeks etc.) and will depend on the amount of work involved in the activity.
+\par }\pard \qj\nowidctlpar\tx-720\hyphpar0\adjustright {\f0\expnd0\expndtw-3\lang3081 
+\par After studying the above list of activities, it will be seen that the following logical sequence and restraints will apply.
+\par 
+\par A. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  B.;  \tab \tab B. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  G.F. & L.; \tab C. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  E.I. & J.;
+\par 
+\par D. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  I. & J.: \tab E. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  G.F. & L.:\tab F. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  M.;
+\par 
+\par G. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  H.;\tab \tab H. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  M.;\tab I. & J. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  K.;
+\par 
+\par K. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  M.;\tab \tab L. }{\f0\fs48\expnd-1\expndtw-6\lang3081\sub \uc1\u-4042\'3f}{\f0\expnd0\expndtw-3\lang3081  K.
+\par 
+\par It will be seen that the critical path for this project lies between events 1, 3, 6, 7, 9 and 10 activities C. E. L. K. and M.  Also, activity C. restrains activities J. & I., and activity J. restrains activity K.
+\par 
+\par The total project duration will be 36 units (working days).
+\par }}

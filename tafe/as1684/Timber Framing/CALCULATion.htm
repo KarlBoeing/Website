@@ -1,0 +1,749 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="CALCULATion_files/filelist.xml">
+<link rel=Edit-Time-Data href="CALCULATion_files/editdata.mso">
+<link rel=OLE-Object-Data href="CALCULATion_files/oledata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Calculation of true length of roof members</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Subject>Timber Framing</o:Subject>
+  <o:Author>Karl Boeing</o:Author>
+  <o:LastAuthor>Karl Boeing</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>218</o:TotalTime>
+  <o:Created>2003-07-15T04:41:00Z</o:Created>
+  <o:LastSaved>2003-07-15T04:41:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>685</o:Words>
+  <o:Characters>3909</o:Characters>
+  <o:Company>Boeing Consulting</o:Company>
+  <o:Lines>32</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4585</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:Compatibility>
+   <w:FootnoteLayoutLikeWW8/>
+   <w:ShapeLayoutLikeWW8/>
+   <w:AlignTablesRowByRow/>
+   <w:ForgetLastTabAlignment/>
+   <w:LayoutRawTableWidth/>
+   <w:LayoutTableRowsApart/>
+   <w:UseWord97LineBreakingRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Greek Symbols";
+	mso-font-alt:Symbol;
+	mso-font-charset:2;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Bookshelf Symbol 4";
+	mso-font-alt:Symbol;
+	mso-font-charset:2;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-AU;}
+h1
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	tab-stops:42.55pt 127.6pt 6.0cm;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-font-kerning:0pt;
+	mso-ansi-language:EN-AU;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:none;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Arial;
+	mso-bidi-font-family:"Times New Roman";
+	layout-grid-mode:line;
+	mso-bidi-font-weight:normal;}
+h3
+	{mso-style-next:Normal;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:20.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-AU;
+	mso-bidi-font-weight:normal;}
+h4
+	{mso-style-next:Normal;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:49.6pt;
+	margin-bottom:.0001pt;
+	text-align:center;
+	text-indent:-49.6pt;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	tab-stops:49.65pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:EN-AU;
+	mso-bidi-font-weight:normal;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 216.0pt right 432.0pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-AU;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-AU;}
+p.MsoBodyTextIndent, li.MsoBodyTextIndent, div.MsoBodyTextIndent
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:42.55pt;
+	margin-bottom:.0001pt;
+	text-indent:-42.55pt;
+	mso-pagination:widow-orphan;
+	tab-stops:42.55pt 127.6pt 6.0cm;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-ansi-language:EN-AU;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 89.85pt 2.0cm 89.85pt;
+	mso-header-margin:1.0cm;
+	mso-footer-margin:1.0cm;
+	mso-header:url("CALCULATion_files/header.htm") h1;
+	mso-footer:url("CALCULATion_files/header.htm") f1;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:36.0pt'>
+
+<div class=Section1>
+
+<h2 align=center style='margin-top:0cm;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:0cm;text-align:center;mso-pagination:widow-orphan;tab-stops:42.55pt 127.6pt 6.0cm'><span
+lang=EN-AU style='font-size:14.0pt;mso-bidi-font-size:10.0pt;font-family:"Times New Roman";
+mso-ansi-language:EN-AU;layout-grid-mode:both;mso-bidi-font-weight:bold'>Calculation
+Example<o:p></o:p></span></h2>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;line-height:110%;mso-hyphenate:
+none;tab-stops:42.55pt 127.6pt 6.0cm'><b><span lang=EN-AU>Find the true length
+of the rafter.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:9.0pt;tab-stops:127.6pt 6.0cm'><span
+lang=EN-AU>The timber framing code AS 1684.2 – 1999 clearly differentiate
+between spacing and span (see Fig. 2.18 and Paragraph 2.7.5.</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:9.0pt;
+margin-left:49.6pt;text-indent:-49.6pt;tab-stops:49.65pt'><span class=GramE><b
+style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:normal'><u><span
+lang=EN-AU>Spacing</span></u></i></b><i style='mso-bidi-font-style:normal'><span
+lang=EN-AU><span style='mso-tab-count:1'>   </span>the centre-to-centre
+distance apart from structural members, unless otherwise indicated.</span></i></span><i
+style='mso-bidi-font-style:normal'><span lang=EN-AU><o:p></o:p></span></i></p>
+
+<p class=MsoBodyTextIndent style='margin-top:0cm;margin-right:0cm;margin-bottom:
+6.0pt;margin-left:49.65pt;text-indent:-49.65pt;page-break-after:avoid;
+mso-outline-level:2;tab-stops:49.65pt'><b style='mso-bidi-font-weight:normal'><u><span
+lang=EN-AU>Span</span></u></b><span lang=EN-AU><span style='mso-tab-count:1'>        </span>the
+face-to-face distance between points capable of giving full support to
+structural members or assemblies. In particular, rafter spans are measured as
+the distance between points of support along the length of the rafter and not
+as the horizontal projection of this distance.</span></p>
+
+<p class=MsoNormal align=center style='margin-left:49.6pt;text-align:center;
+text-indent:-49.6pt;tab-stops:49.65pt'><!--[if gte vml 1]><o:wrapblock><v:shapetype
+  id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+  path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1030" type="#_x0000_t75" style='position:absolute;
+  left:0;text-align:left;margin-left:22.2pt;margin-top:0;width:423pt;height:210.85pt;
+  z-index:1'>
+  <v:imagedata src="CALCULATion_files/image001.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed"
+  ProgID="AutoSketch Drawing" ShapeID="_x0000_s1030" DrawAspect="Content"
+  ObjectID="_1119778073">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=30 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=564 height=281 src="CALCULATion_files/image002.gif" v:shapes="_x0000_s1030"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoHeader align=center style='margin-bottom:9.0pt;text-align:center;
+line-height:110%;mso-hyphenate:none;tab-stops:36.0pt'><span lang=EN-AU
+style='mso-ansi-language:EN-AU'>Figure 1<b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-bottom:9.0pt'><span lang=EN-AU>As can be seen
+the span of the rafter in the figure below is not quite in agreement with the
+code but we will use the figures for the rafter span as calculated below.</span></p>
+
+<p class=MsoHeader style='margin-bottom:9.0pt;tab-stops:36.0pt'><span
+lang=EN-AU style='mso-ansi-language:EN-AU'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:3.0pt'><span lang=EN-AU>The angle </span><span
+lang=EN-AU style='font-family:"Greek Symbols";mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+"Greek Symbols"'><span style='mso-char-type:symbol;mso-symbol-font-family:"Greek Symbols"'>1</span></span><span
+lang=EN-AU> will be the <b style='mso-bidi-font-weight:normal'>roof pitch</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:3.0pt'><span lang=EN-AU>The opposite
+site is the <b style='mso-bidi-font-weight:normal'>rise of the roof<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:49.6pt;text-indent:-49.6pt'><span
+lang=EN-AU>The adjacent side is the<b style='mso-bidi-font-weight:normal'>
+rafter run</b></span></p>
+
+<p class=MsoNormal style='margin-left:49.6pt;text-indent:-49.6pt'><span
+lang=EN-AU>The hypotenuse is the <b style='mso-bidi-font-weight:normal'>true
+length of the rafter<o:p></o:p></b></span></p>
+
+<p class=MsoNormal style='margin-left:49.6pt;text-indent:-49.6pt'><span
+lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-left:49.6pt;text-indent:-49.6pt'><span
+lang=EN-AU>In our example the roof pitch is 20°, and the rafter run is 3.340
+metre</span><span style='mso-ansi-language:EN-US'>s</span><span lang=EN-AU>.</span></p>
+
+<p class=MsoNormal style='margin-left:49.6pt;text-indent:-49.6pt'><!--[if gte vml 1]><v:shape
+ id="_x0000_s1032" type="#_x0000_t75" style='position:absolute;left:0;
+ text-align:left;margin-left:197.95pt;margin-top:14.3pt;width:227pt;height:142pt;
+ z-index:-8;mso-wrap-edited:f;mso-position-horizontal:right' wrapcoords="8862 571 2532 2171 2532 2857 6488 4229 7675 4457 10444 6057 10760 6057 10760 7886 7437 8571 6646 8914 6646 9829 10602 11543 10760 13371 7912 14057 7596 14286 7912 15200 158 15200 158 16914 7833 17029 7833 17829 10760 18857 6567 19543 6409 20457 7437 20571 11631 20571 11789 20229 11473 19657 10760 18857 13371 18857 16932 17829 16853 17029 17169 17029 17565 15886 17565 14514 15666 14057 10760 13371 10840 11543 11552 9714 11393 9143 10760 7886 10760 6057 11789 6057 21204 4457 21204 4229 21600 2514 20967 2400 19938 2400 20413 1029 18910 571 8862 571"
+ o:allowincell="f">
+ <v:imagedata src="CALCULATion_files/image003.wmz" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+ ShapeID="_x0000_s1032" DrawAspect="Content" ObjectID="_1119778074">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=303 height=189
+src="CALCULATion_files/image004.gif" align=right hspace=12 v:shapes="_x0000_s1032"><![endif]><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="_x0000_s1033" type="#_x0000_t75" style='position:absolute;left:0;
+  text-align:left;margin-left:255.75pt;margin-top:0;width:218.4pt;height:120.1pt;
+  z-index:3' o:allowincell="f">
+  <v:imagedata src="CALCULATion_files/image005.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed"
+  ProgID="AutoSketch Drawing" ShapeID="_x0000_s1033" DrawAspect="Content"
+  ObjectID="_1119778075">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=341 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=291 height=160 src="CALCULATion_files/image006.gif" v:shapes="_x0000_s1033"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+</p>
+
+<p class=MsoNormal style='tab-stops:11.0cm'><span lang=EN-AU><span
+style='mso-tab-count:1'>                                                                                                        </span></span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='text-indent:.05pt'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-AU>Therefore the true length of the rafter is 3.554
+metre.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='text-indent:.05pt'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-AU><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='margin-bottom:9.0pt'><span lang=EN-AU>Please remember
+that the rafter span according to the Code is the face-to-face distance
+(measured along the centre line of the member) and that our calculated distance
+is 131&nbsp;mm (84+55/2) longer in this case. This may </span><span
+style='mso-ansi-language:EN-US'>be used </span><span lang=EN-AU>in a border
+case</span><span lang=EN-AU style='mso-ansi-language:EN-US'> </span><span
+style='mso-ansi-language:EN-US'>where </span><span lang=EN-AU>the next size </span><span
+style='mso-ansi-language:EN-US'>would be required. In this case </span><span
+lang=EN-AU>the size of a member may not </span><span style='mso-ansi-language:
+EN-US'>need </span><span lang=EN-AU>to be increased</span><span
+style='mso-ansi-language:EN-US'>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='line-height:110%;mso-hyphenate:none'><span
+lang=EN-AU>Now we have to find the eaves overhang. Look also at Figure 2.18 (b)
+in Section 2 regarding the length of the overhang.</span></p>
+
+<p class=MsoNormal style='line-height:110%;mso-hyphenate:none'><span
+lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:110%;mso-hyphenate:none'><span
+class=GramE><b><span lang=EN-AU>Calculation of roof overhang</span></b></span><b><span
+lang=EN-AU> fo a brick veneer construction<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='line-height:110%;mso-hyphenate:none'><span
+lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;line-height:110%;mso-hyphenate:
+none'><span lang=EN-AU>Let's assume an eave width of 600 mm. The horizontal
+dimension for the overhang is then 600 mm plus the 110 mm brickwall plus the 50
+mm cavity, which equals 760&nbsp;mm. </span></p>
+
+<p class=MsoNormal><span lang=EN-AU>No we do the same as for the rafter (the
+overhang is in this case the Hypotenuse).</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1037" type="#_x0000_t75"
+ style='position:absolute;margin-left:406.55pt;margin-top:6.2pt;width:169.2pt;
+ height:174.1pt;z-index:5;mso-position-horizontal:right' o:allowincell="f">
+ <v:imagedata src="CALCULATion_files/image007.wmz" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="AutoSketch Drawing"
+ ShapeID="_x0000_s1037" DrawAspect="Content" ObjectID="_1119778076">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=226 height=232
+src="CALCULATion_files/image008.gif" align=right hspace=12 v:shapes="_x0000_s1037"><![endif]></p>
+
+<p class=MsoNormal style='margin-bottom:9.0pt'><span lang=EN-AU><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1025" type="#_x0000_t75" style='width:170.25pt;height:105.75pt'
+ o:ole="" fillcolor="window">
+ <v:imagedata src="CALCULATion_files/image009.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=227 height=141
+src="CALCULATion_files/image010.gif" v:shapes="_x0000_i1025"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1119778077">
+ </o:OLEObject>
+</xml><![endif]--></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span lang=EN-AU>The
+eaves overhang for our brick veneer building with 600 mm eaves width is <u>0.809&nbsp;metre<o:p></o:p></u></span></b></p>
+
+<p class=MsoNormal><u><span lang=EN-AU><o:p><span style='text-decoration:none'>&nbsp;</span></o:p></span></u></p>
+
+<p class=MsoNormal style='margin-bottom:9.0pt;line-height:110%;mso-hyphenate:
+none'><span lang=EN-AU>Find the length of a strut</span></p>
+
+<p class=MsoNormal><span lang=EN-AU>If a rafter is supported on to points only </span><span
+style='mso-ansi-language:EN-US'>(single span) </span><span lang=EN-AU>and an
+appropriate size can not be found in the tables then an additional support
+(underpurlin) is needed. Underpurlin</span><span style='mso-ansi-language:EN-US'>s</span><span
+lang=EN-AU> must be supported by struts.</span><span style='mso-ansi-language:
+EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>Struts may be arranged vertically as shown
+in Figure <span class=GramE>4 <span lang=EN-US style='mso-ansi-language:EN-US'><span
+style='mso-spacerun:yes'> </span>(</span></span></span><span style='mso-ansi-language:
+EN-US'>a) </span><span lang=EN-AU>or perpendicular to the rafter </span><span
+style='mso-ansi-language:EN-US'>(b)</span><span lang=EN-AU>.</span></p>
+
+<p class=MsoHeader style='tab-stops:191.4pt'><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="_x0000_s1034" type="#_x0000_t75" style='position:absolute;margin-left:4.2pt;
+  margin-top:-606.2pt;width:351pt;height:204.35pt;z-index:4' o:allowincell="f">
+  <v:imagedata src="CALCULATion_files/image011.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed"
+  ProgID="AutoSketch Drawing" ShapeID="_x0000_s1034" DrawAspect="Content"
+  ObjectID="_1119778078">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=6 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=468 height=272 src="CALCULATion_files/image012.gif" v:shapes="_x0000_s1034"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-AU style='mso-ansi-language:EN-AU'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:184.3pt'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-AU><span style='mso-tab-count:1'>                                                              </span></span></b><span
+lang=EN-AU>Figure </span><span style='mso-ansi-language:EN-US'>4<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;line-height:110%;mso-hyphenate:
+none'><b style='mso-bidi-font-weight:normal'><span style='mso-ansi-language:
+EN-US'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1041"
+  type="#_x0000_t75" style='position:absolute;margin-left:-4.8pt;margin-top:0;
+  width:413.8pt;height:214.3pt;z-index:8'>
+  <v:imagedata src="CALCULATion_files/image013.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed"
+  ProgID="AutoSketch Drawing" ShapeID="_x0000_s1041" DrawAspect="Content"
+  ObjectID="_1119778079">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+ relative;z-index:8;left:-7px;top:0px;width:552px;height:286px'><img width=552
+ height=286 src="CALCULATion_files/image014.gif" v:shapes="_x0000_s1041"></span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-AU>The position of the underpurlin must be determined before we
+can calculate the length of the strut. To utilise the continuous span of a
+rafter the position of the underpulin must be in the middle one-third of the
+rafter as shown in the figure </span><span style='mso-ansi-language:EN-US'>5</span><span
+lang=EN-AU> Remember that continuous span member is a member whereby no span is
+greater than twice another (Section 2, Rule 2.7.5.5).</span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:6.0cm'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-AU><span style='mso-tab-count:1'>                                                         </span></span></b><span
+lang=EN-AU style='mso-bidi-font-weight:bold'>Figure </span><span
+style='mso-ansi-language:EN-US;mso-bidi-font-weight:bold'>5<o:p></o:p></span></p>
+
+<p class=MsoNormal style='tab-stops:11.0cm'><b style='mso-bidi-font-weight:
+normal'><span lang=EN-AU><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-AU>Consider Figure 4 above. As soon as we have
+determined the position of the underpurlin we can calculate the length of the
+vertical strut using sin or cos</span><span style='mso-ansi-language:EN-US'>.<b
+style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='mso-ansi-language:EN-US'>Vertical strut<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>If we position the underpurlin as shown on
+Figure 5 then </span><span style='mso-ansi-language:EN-US'>the strut for </span><span
+lang=EN-AU>the </span><span style='mso-ansi-language:EN-US'>greatest </span><span
+lang=EN-AU>rafter span </span><span style='mso-ansi-language:EN-US'>possible </span><span
+lang=EN-AU>is </span><span style='mso-ansi-language:EN-US'>the run of </span><span
+lang=EN-AU>3.554 </span><span lang=EN-AU style='font-family:Symbol;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Symbol'>´</span></span><span lang=EN-AU> </span><span lang=EN-AU
+style='font-family:"Bookshelf Symbol 4";mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+"Bookshelf Symbol 4"'><span style='mso-char-type:symbol;mso-symbol-font-family:
+"Bookshelf Symbol 4"'>°</span></span><span lang=EN-AU style='mso-ansi-language:
+EN-US'> </span><span lang=EN-AU>= 2.369 metre. To calculate the vertical strut
+we use the tan-function. The adjacent site is </span><span style='mso-ansi-language:
+EN-US'>2.369 and the pitch is 20°.</span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>Again the tan of an angle is </span><span
+style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><v:shape id="_x0000_s1038" type="#_x0000_t75"
+ style='position:absolute;margin-left:87.2pt;margin-top:33.2pt;width:105pt;
+ height:35pt;z-index:6;mso-position-horizontal:right'>
+ <v:imagedata src="CALCULATion_files/image015.wmz" o:title=""/>
+ <w:wrap type="square" side="left"/>
+</v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="Equation.3"
+ ShapeID="_x0000_s1038" DrawAspect="Content" ObjectID="_1119778080">
+</o:OLEObject>
+<![endif]><![endif]--><![if !vml]><img width=140 height=47
+src="CALCULATion_files/image016.gif" align=right hspace=12 v:shapes="_x0000_s1038"><![endif]><!--[if gte vml 1]><o:wrapblock><v:shape
+  id="_x0000_s1040" type="#_x0000_t75" style='position:absolute;margin-left:229.2pt;
+  margin-top:0;width:163.35pt;height:105.6pt;z-index:7'>
+  <v:imagedata src="CALCULATion_files/image017.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed" ProgID="DrafixCAD"
+  ShapeID="_x0000_s1040" DrawAspect="Content" ObjectID="_1119778081">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=305 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=218 height=141 src="CALCULATion_files/image018.gif" v:shapes="_x0000_s1040"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+<span lang=EN-AU><b style='mso-bidi-font-weight:normal'><o:p></o:p></b></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>Therefore the length of the vertical strut
+is</span><span style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU><sub><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:171.75pt;height:98.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="CALCULATion_files/image019.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=229 height=131
+src="CALCULATion_files/image020.gif" v:shapes="_x0000_i1026"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1119778082">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='mso-ansi-language:EN-US'>Perpendicular strut<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'>To calculate the
+length of </span><span lang=EN-AU>a perpendicular strut we need to calculate
+the rafter span </span><span style='mso-ansi-language:EN-US'>(Hypotenuse) </span><span
+lang=EN-AU>first. The rafter span is </span><span lang=EN-AU style='font-family:
+"Bookshelf Symbol 4";mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:"Bookshelf Symbol 4"'><span
+style='mso-char-type:symbol;mso-symbol-font-family:"Bookshelf Symbol 4"'>°</span></span><span
+style='mso-ansi-language:EN-US'> of the run divided by cos 20°<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU><sub><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:171pt;height:113.25pt' o:ole="" fillcolor="window">
+ <v:imagedata src="CALCULATion_files/image021.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=228 height=151
+src="CALCULATion_files/image022.gif" v:shapes="_x0000_i1027"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1119778083">
+ </o:OLEObject>
+</xml><![endif]--></span><span style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'>Now we can use the tan
+function again to calculate the strut perpendicular to the rafter.<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>The length of the perpendicular strut is
+therefore</span><span style='mso-ansi-language:EN-US'><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><sub><!--[if gte vml 1]><v:shape
+ id="_x0000_i1028" type="#_x0000_t75" style='width:260.25pt;height:62.25pt'
+ o:ole="">
+ <v:imagedata src="CALCULATion_files/image023.wmz" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=347 height=83
+src="CALCULATion_files/image024.gif" v:shapes="_x0000_i1028"><![endif]></sub><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation.3" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1119778084">
+ </o:OLEObject>
+</xml><![endif]--><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b><span style='mso-ansi-language:EN-US'>Fan strut<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>The span of an underurlin can be reduced if
+a fan-strut is used instead of a single strut. Paragraph 7.2.15.3 in As 1684.2
+- 1999 stipulates that the angle of a fan-strut should not exceed 45°. (A
+single strut should not exceed 30° from the vertical)</span></p>
+
+<p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span lang=EN-AU>To reduce the span of an underpurlin
+effectively the fan strut should have an angle of 45° because this results in a
+maximum spread of the fan strut.</span></p>
+
+<p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='margin-bottom:6.0pt;line-height:110%;mso-hyphenate:
+none'><b><span lang=EN-AU>Find the spread of a fan strut.<o:p></o:p></span></b></p>
+
+<p class=MsoNormal><span lang=EN-AU>Geometrically the fan strut consists of two
+isosceles right angle triangles as shown in Figure 6. As both angles are the
+same therefore both sides must be the same. Check on your calculator the sin of
+45° (= 0,707) and cos 45° (= 0.707) and you will see that you will get equal
+figure for both (sin and cos).</span></p>
+
+<p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='line-height:110%;mso-hyphenate:none'><span
+lang=EN-AU>In our previous calculation we found the length of the vertical
+strut 0.862 m and the length of the perpendicular strut 0.918 m</span></p>
+
+<p class=MsoNormal><!--[if gte vml 1]><o:wrapblock><v:shape id="_x0000_s1042"
+  type="#_x0000_t75" style='position:absolute;margin-left:31.2pt;margin-top:0;
+  width:306pt;height:142.7pt;z-index:9'>
+  <v:imagedata src="CALCULATion_files/image025.wmz" o:title=""/>
+  <w:wrap type="topAndBottom"/>
+ </v:shape><![if gte mso 9]><o:OLEObject Type="Embed"
+  ProgID="AutoSketch Drawing" ShapeID="_x0000_s1042" DrawAspect="Content"
+  ObjectID="_1119778085">
+ </o:OLEObject>
+ <![endif]><![endif]--><![if !vml]><span style='mso-ignore:vglayout'>
+ <table cellpadding=0 cellspacing=0 align=left>
+  <tr>
+   <td width=42 height=0></td>
+  </tr>
+  <tr>
+   <td></td>
+   <td><img width=408 height=190 src="CALCULATion_files/image026.gif" v:shapes="_x0000_s1042"></td>
+  </tr>
+ </table>
+ </span><![endif]><!--[if gte vml 1]></o:wrapblock><![endif]--><br
+style='mso-ignore:vglayout' clear=ALL>
+</p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-ansi-language:EN-US'>Figure 6<o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoHeader style='margin-bottom:6.0pt;line-height:110%;mso-hyphenate:
+none;tab-stops:9.0cm'><span lang=EN-AU style='mso-ansi-language:EN-AU'>The
+spread of a vertical fan strut is therefore<span style='mso-tab-count:1'>                   </span>0.862
+</span><span lang=EN-AU style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-ansi-language:EN-AU;mso-char-type:
+symbol;mso-symbol-font-family:Symbol'><span style='mso-char-type:symbol;
+mso-symbol-font-family:Symbol'>´</span></span><span lang=EN-AU
+style='mso-ansi-language:EN-AU'> 2 = <u>1.724 m</u><o:p></o:p></span></p>
+
+<p class=MsoHeader style='margin-bottom:6.0pt;line-height:110%;mso-hyphenate:
+none;tab-stops:9.0cm'><span class=GramE><span lang=EN-AU style='mso-ansi-language:
+EN-AU'>and</span></span><span lang=EN-AU style='mso-ansi-language:EN-AU'><o:p></o:p></span></p>
+
+<p class=MsoHeader style='tab-stops:241.0pt'><span lang=EN-AU style='mso-ansi-language:
+EN-AU'>The spread of a perpendicular fan strut is therefore<span
+style='mso-tab-count:1'>    </span>0.918 </span><span lang=EN-AU
+style='font-family:Symbol;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";mso-ansi-language:EN-AU;mso-char-type:symbol;mso-symbol-font-family:
+Symbol'><span style='mso-char-type:symbol;mso-symbol-font-family:Symbol'>´</span></span><span
+lang=EN-AU style='mso-ansi-language:EN-AU'> 2 = <u>1.836 m<o:p></o:p></u></span></p>
+
+<p class=MsoNormal><span lang=EN-AU><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

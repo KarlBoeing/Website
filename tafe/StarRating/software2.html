@@ -1,0 +1,396 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Software for energy rating</title>
+</head>
+<META name=description content="Software for Energy Rating">
+<META name=keywords 
+content="Basix, First Rate, BERS, Accurate, NatHERS, HERS, Green Star, NABERS"><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Karl Boeing</o:Author>
+  <o:LastAuthor>Karl Boeing</o:LastAuthor>
+  <o:LastPrinted>2005-05-27T11:04:44Z</o:LastPrinted>
+  <o:Created>2005-05-27T05:06:06Z</o:Created>
+  <o:LastSaved>2005-05-27T12:58:01Z</o:LastSaved>
+  <o:Company>Boeing Consulting</o:Company>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<STYLE>@page  {margin: .98in .55in .98in .55in; mso-header-margin: .51in; mso-footer-margin: .51in; }
+TABLE {
+	mso-displayed-decimal-separator: "."; mso-displayed-thousand-separator: ","
+}
+.font7 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 12pt; FONT-WEIGHT: 700; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font8 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font9 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 8pt; FONT-WEIGHT: 700; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font10 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single
+}
+.font12 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font13 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single
+}
+.font14 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: blue; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single
+}
+TR {
+	mso-height-source: auto
+}
+COL {
+	mso-width-source: auto
+}
+BR {
+	mso-data-placement: same-cell
+}
+.style21 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 10pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single; mso-generic-font-family: auto; mso-style-name: Hyperlink; mso-style-id: 8
+}
+A:link {
+	FONT-STYLE: normal; FONT-FAMILY: Arial; COLOR: blue; FONT-SIZE: 10pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single; mso-generic-font-family: auto
+}
+A:visited {
+	FONT-STYLE: normal; FONT-FAMILY: Arial; COLOR: purple; FONT-SIZE: 10pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single; mso-generic-font-family: auto
+}
+.style0 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-STYLE: normal; FONT-FAMILY: Arial; WHITE-SPACE: nowrap; COLOR: windowtext; FONT-SIZE: 10pt; VERTICAL-ALIGN: bottom; BORDER-TOP: medium none; FONT-WEIGHT: 400; BORDER-RIGHT: medium none; TEXT-DECORATION: none; mso-font-charset: 0; mso-generic-font-family: auto; mso-style-name: Normal; mso-style-id: 0; mso-number-format: General; mso-rotate: 0; mso-background-source: auto; mso-pattern: auto; mso-protection: locked visible
+}
+TD {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; FONT-STYLE: normal; PADDING-LEFT: 1px; PADDING-RIGHT: 1px; FONT-FAMILY: Arial; WHITE-SPACE: nowrap; COLOR: windowtext; FONT-SIZE: 10pt; VERTICAL-ALIGN: bottom; BORDER-TOP: medium none; FONT-WEIGHT: 400; BORDER-RIGHT: medium none; TEXT-DECORATION: none; PADDING-TOP: 1px; mso-font-charset: 0; mso-generic-font-family: auto; mso-number-format: General; mso-rotate: 0; mso-background-source: auto; mso-pattern: auto; mso-protection: locked visible; mso-style-parent: style0; mso-ignore: padding
+}
+.xl24 {
+	BACKGROUND: #666699; COLOR: yellow; mso-pattern: auto none; mso-style-parent: style0
+}
+.xl25 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 20pt; VERTICAL-ALIGN: middle; BORDER-TOP: windowtext 0.5pt solid; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl26 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: medium none; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl27 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl28 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: medium none; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl29 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl30 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: medium none; FONT-FAMILY: "Wingdings 2", serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 18pt; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 2; mso-style-parent: style0
+}
+.xl31 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl32 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: medium none; FONT-FAMILY: "Wingdings 2", serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 18pt; VERTICAL-ALIGN: middle; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 2; mso-style-parent: style0
+}
+.xl33 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: "Wingdings 2", serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 18pt; VERTICAL-ALIGN: middle; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 2; mso-style-parent: style0
+}
+.xl34 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: medium none; FONT-FAMILY: "Wingdings 2", serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 18pt; VERTICAL-ALIGN: middle; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: black 0.5pt solid; mso-font-charset: 2; mso-style-parent: style0
+}
+.xl35 {
+	TEXT-ALIGN: center; mso-style-parent: style0
+}
+.xl36 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style21
+}
+.font101 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single
+}
+.font121 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: white; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font131 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single
+}
+.font141 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: blue; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: underline; mso-font-charset: 0; text-underline-style: single
+}
+.font71 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 12pt; FONT-WEIGHT: 700; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font81 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 8pt; FONT-WEIGHT: 400; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.font91 {
+	FONT-STYLE: normal; FONT-FAMILY: Arial, sans-serif; COLOR: yellow; FONT-SIZE: 8pt; FONT-WEIGHT: 700; TEXT-DECORATION: none; mso-font-charset: 0
+}
+.xl241 {
+	BACKGROUND: #666699; COLOR: yellow; mso-pattern: auto none; mso-style-parent: style0
+}
+.xl251 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 20pt; VERTICAL-ALIGN: middle; BORDER-TOP: windowtext 0.5pt solid; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl261 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: medium none; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl271 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl281 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: medium none; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl291 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; VERTICAL-ALIGN: top; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl301 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: medium none; FONT-FAMILY: "Wingdings 2", serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 18pt; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 2; mso-style-parent: style0
+}
+.xl311 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style0
+}
+.xl331 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; TEXT-ALIGN: center; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: "Wingdings 2", serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 18pt; VERTICAL-ALIGN: middle; BORDER-TOP: windowtext 0.5pt solid; BORDER-RIGHT: medium none; mso-font-charset: 2; mso-style-parent: style0
+}
+.xl351 {
+	TEXT-ALIGN: center; mso-style-parent: style0
+}
+.xl361 {
+	BORDER-BOTTOM: windowtext 0.5pt solid; BORDER-LEFT: windowtext 0.5pt solid; FONT-FAMILY: Arial, sans-serif; WHITE-SPACE: normal; COLOR: yellow; FONT-SIZE: 8pt; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: windowtext 0.5pt solid; mso-font-charset: 0; mso-style-parent: style21
+}
+</STYLE>
+
+<body bgcolor="#00ff99">
+<TABLE style="WIDTH: 532pt; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" 
+border=0 cellSpacing=0 cellPadding=0 width=705 bgColor=#7048ad align=center 
+x:str>
+  <TBODY>
+  <TR style="HEIGHT: 157.5pt" height=210>
+    <TD style="WIDTH: 321pt; HEIGHT: 157.5pt" class=xl25 height=210 width=428>
+      <TABLE border=5 cellSpacing=0 cellPadding=0 width=720 bgColor=#7048ad>
+        <TBODY>
+        <TR align=center>
+          <TD>
+            <TABLE 
+            style="WIDTH: 532pt; BORDER-COLLAPSE: collapse; TABLE-LAYOUT: fixed" 
+            border=0 cellSpacing=0 cellPadding=0 width=705 bgColor=#7048ad 
+            align=center x:str>
+              <COLGROUP>
+              <COL 
+              style="WIDTH: 321pt; mso-width-source: userset; mso-width-alt: 15652" 
+              class=xl241 width=428>
+              <COL 
+              style="WIDTH: 16pt; mso-width-source: userset; mso-width-alt: 768" 
+              class=xl241 width=21>
+              <COL 
+              style="WIDTH: 10pt; mso-width-source: userset; mso-width-alt: 475" 
+              class=xl241 width=13>
+              <COL 
+              style="WIDTH: 11pt; mso-width-source: userset; mso-width-alt: 548" 
+              class=xl241 width=15>
+              <COL 
+              style="WIDTH: 14pt; mso-width-source: userset; mso-width-alt: 658" 
+              class=xl241 width=18>
+              <COL 
+              style="WIDTH: 16pt; mso-width-source: userset; mso-width-alt: 768" 
+              class=xl241 span=10 width=21>
+              <TBODY>
+              <TR style="HEIGHT: 157.5pt" height=210>
+                <TD style="WIDTH: 321pt; HEIGHT: 157.5pt" class=xl251 height=210 
+                width=428>Software<FONT class=font71><BR><BR>for Energy 
+                  Ratings<BR><BR>(Sustainability needs to be 
+addressed)</FONT></TD>
+                <TD style="WIDTH: 16pt" class=xl261 
+                  width=21>M<BR>a<BR>n<BR>a<BR>g<BR>e<BR>m<BR>e<BR>n<BR>t</TD>
+                <TD style="WIDTH: 10pt" class=xl271 borderColor=#0 
+                  width=13>I<BR>n<BR>d<BR>o<BR>o<BR>r <BR></TD>
+                <TD style="WIDTH: 11pt" class=xl261 borderColor=#7048ad 
+                  width=15>E<BR>n<BR>v<BR>i<BR>r<BR>o<BR>n<BR>m<BR>e<BR>n<BR>t<BR>a<BR>l</TD>
+                <TD style="WIDTH: 14pt" class=xl281 width=18><SPAN 
+                  style="mso-spacerun: yes">&nbsp;</SPAN>Q<BR>u<BR>a<BR>l<BR>i<BR>t<BR>y</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>E<BR>n<BR>e<BR>r<BR>g<BR>y</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>T<BR>r<BR>a<BR>n<BR>s<BR>p<BR>o<BR>r<BR>t</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>W<BR>a<BR>t<BR>e<BR>r</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>M<BR>a<BR>t<BR>e<BR>r<BR>i<BR>a<BR>l<BR>s</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>L<BR>a<BR>n<BR>d<BR>/<BR>e<BR>c<BR>o<BR>l<BR>o<BR>g<BR>y</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>E<BR>m<BR>I<BR>s<BR>s<BR>i<BR>o<BR>n<BR>s</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>I<BR>n<BR>n<BR>o<BR>v<BR>a<BR>t<BR>I<BR>o<BR>n</TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>W<BR>a<BR>s<BR>t<BR>e</TD>
+                <TD style="WIDTH: 16pt" class=xl281 width=21 
+                x:str="T&#10;h&#10;e&#10;r&#10;m&#10;a&#10;l ">T<BR>h<BR>e<BR>r<BR>m<BR>a<BR>l<SPAN 
+                  style="mso-spacerun: yes">&nbsp;</SPAN></TD>
+                <TD style="WIDTH: 16pt" class=xl281 
+                  width=21>O<BR>c<BR>c<BR>u<BR>p<BR>a<BR>n<BR>t<BR><SPAN 
+                  style="mso-spacerun: yes">&nbsp;</SPAN><BR>s<BR>a<BR>t<BR>I<BR>s</TD></TR>
+              <TR style="HEIGHT: 60.75pt; mso-height-source: userset" height=81 
+              bgColor=#7048ad>
+                <TD style="WIDTH: 321pt; HEIGHT: 60.75pt" class=xl291 height=81 
+                width=428>BASIX<FONT class=font81><BR>BASIX may be introduced 
+                  to all new residential dwellings (including multi unit) in WA. 
+                  In its full version it has multiple sustainability indices, 
+                  however the current release rates only Energy and 
+                  Water.<BR></FONT><FONT 
+                  class=font101>http://www.basix.nsw.gov.au/information/index.jsp</FONT></TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD 
+                style="BORDER-LEFT: medium none; WIDTH: 35pt; BORDER-RIGHT: black 0.5pt solid" 
+                class=xl331 width=46 colSpan=3>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD></TR>
+              <TR style="HEIGHT: 59.25pt; mso-height-source: userset" 
+                height=79><TD style="WIDTH: 321pt; HEIGHT: 59.25pt" class=xl311 
+                height=79 width=428>FirstRate<BR><FONT class=font81>House 
+                  energy rating software</FONT><FONT class=font91>. </FONT><FONT 
+                  class=font81>In</FONT><FONT class=font91> WA</FONT><FONT 
+                  class=font81> used for star-rating residential buildings 
+                  (Class 1). Not suitable for multi-residential buildings. A 
+                  question mark regarding up-grading. Accurate or BERS may be 
+                  used instead.<BR></FONT><FONT 
+                  class=font121>http://www.seav.vic.gov.au/buildings/firstrate/index.asp 
+                  </FONT><FONT class=font81><SPAN 
+                  style="mso-spacerun: yes">&nbsp;</SPAN></FONT></TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD 
+                style="BORDER-LEFT: medium none; WIDTH: 35pt; BORDER-RIGHT: black 0.5pt solid" 
+                class=xl331 width=46 colSpan=3>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD></TR>
+              <TR style="HEIGHT: 93.75pt; mso-height-source: userset" height=125 
+              bgColor=#7048ad>
+                <TD style="WIDTH: 321pt; HEIGHT: 93.75pt" class=xl311 height=125 
+                width=428>BERS<FONT class=font81><BR>V4.1 is the graphics 
+                  based interface to the new CSIRO CHENATH thermal simulation 
+                  engine currently nearing completion.&nbsp; This is the same 
+                  version of the engine that will be used by the new text based 
+                  ACCURATE interface.&nbsp; The AGO commissioned the CSIRO to 
+                  develop the new ACCURATE software so that it can be used as 
+                  the&nbsp; benchmark for the NatHERS scheme under which BERS 
+                  will be accredited.<BR></FONT><FONT 
+                  class=font101>http://www.solarlogic.com.au/Bers.htm</FONT></TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD 
+                style="BORDER-LEFT: medium none; WIDTH: 35pt; BORDER-RIGHT: black 0.5pt solid" 
+                class=xl331 width=46 colSpan=3>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD></TR>
+              <TR style="HEIGHT: 91.5pt; mso-height-source: userset" 
+                height=122><TD style="WIDTH: 321pt; HEIGHT: 91.5pt" class=xl311 
+                height=122 width=428>ACCURATE (NatHERS)<BR><FONT 
+                  class=font81>The software is being upgraded by CSIRO under a 
+                  grant from the Australian Green House Office (AGO). This 
+                  update will rename NatHERs as Accurate, which was originally 
+                  intended to improve the performance of project homes. A star 
+                  rating system based on the amount of energy that could be 
+                  expected to be used to achieve a nominated thermal comfort 
+                  level<BR></FONT><FONT 
+                  class=font101>http://www.nathers.com/</FONT></TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD 
+                style="BORDER-LEFT: medium none; WIDTH: 35pt; BORDER-RIGHT: black 0.5pt solid" 
+                class=xl331 width=46 colSpan=3>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD></TR>
+              <TR style="HEIGHT: 99.75pt; mso-height-source: userset" height=133 
+              bgColor=#7048ad>
+                <TD style="WIDTH: 321pt; HEIGHT: 99.75pt" class=xl361 height=133 
+                width=428>GREEN STAR<FONT class=font81><BR>Credits 
+                  environmental initiatives that are incorporated in the design 
+                  stage of new office developments. Note that some of the Energy 
+                  category credits use the ABGR rating tool.&nbsp; Design stage 
+                  is considered separately from construction or occupancy of the 
+                  building. Credits are allocated under eight environmental 
+                  categories (energy, water, indoor environment quality etc.) as 
+                  well as one innovation category. Only buildings with a rating 
+                  four, five or six stars will receive official certification 
+                  from the Council.</FONT><FONT class=font141><BR></FONT><FONT 
+                  class=font101>http://www.gbcaus.org/</FONT></TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>&nbsp;</TD>
+                <TD 
+                style="BORDER-LEFT: medium none; WIDTH: 35pt; BORDER-RIGHT: black 0.5pt solid" 
+                class=xl331 width=46 colSpan=3>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD></TR>
+              <TR style="HEIGHT: 81pt; mso-height-source: userset" height=108 
+              align=center>
+                <TD style="WIDTH: 321pt; HEIGHT: 81pt" class=xl311 height=108 
+                width=428><SPAN style="mso-ansi-language: EN" 
+                  lang=EN>NABERS<BR><FONT class=font81>(the National Australian 
+                  Built Environment Rating System)<BR>is a performance-based 
+                  rating system that measures an existing building's overall 
+                  environmental performance during operation. NABERS will rate a 
+                  building on the basis of its measured operational.<SPAN 
+                  style="mso-spacerun: yes">&nbsp; </SPAN>Due to market in 
+                  2005<BR></FONT><FONT 
+                  class=font101>http://www.deh.gov.au/industry/construction/nabers/overview.html</FONT><FONT 
+                  class=font131><SPAN 
+                  style="mso-spacerun: yes">&nbsp;</SPAN></FONT></SPAN></TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD 
+                style="BORDER-LEFT: medium none; WIDTH: 35pt; BORDER-RIGHT: black 0.5pt solid" 
+                class=xl331 width=46 colSpan=3>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>O</TD>
+                <TD style="WIDTH: 16pt" class=xl301 width=21>P</TD></TR>
+              <TR style="HEIGHT: 26.5pt" height=17 bgColor=#7048ad>
+                <TD style="HEIGHT: 14pt" class=xl351 height=17 
+                  colSpan=15><FONT color=#00ffff></FONT></TD></TR></TBODY></TABLE>
+            <P align=right><FONT color=#ffff10 size=-1>Karl 
+        Boeing</FONT></P></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+</body>
+</html>

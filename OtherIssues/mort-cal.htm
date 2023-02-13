@@ -1,0 +1,251 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>JavaScript Mortgage Calculator</TITLE>
+</HEAD>
+
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+function checkForZero(field)
+{
+    if (field.value == 0 || field.value.length == 0) {
+        alert ("This field can't be 0!");
+        field.focus(); }
+    else
+        calculatePayment(field.form);
+}
+
+function cmdCalc_Click(form)
+{
+    if (form.price.value == 0 || form.price.value.length == 0) {
+        alert ("The Price field can't be 0!");
+        form.price.focus(); }
+    else if (form.ir.value == 0 || form.ir.value.length == 0) {
+        alert ("The Interest Rate field can't be 0!");
+        form.ir.focus(); }
+    else if (form.term.value == 0 || form.term.value.length == 0) {
+        alert ("The Term field can't be 0!");
+        form.term.focus(); }
+    else
+        calculatePayment(form);
+}
+
+function calculatePayment(form)
+{
+    princ = form.price.value - form.dp.value;
+    intRate = (form.ir.value/100) / 12;
+    months = form.term.value * 12;
+    form.pmt.value = Math.floor((princ*intRate)/(1-Math.pow(1+intRate,(-1*months)))*100)/100;
+    form.principle.value = princ;
+    form.payments.value = months;
+}
+//-->
+</SCRIPT>
+
+<BODY bgcolor="#ffffc6">
+<table width="600" border="3" cellspacing="0" cellpadding="20" align="center">
+  <tr>
+    <td>
+
+<TABLE border=0>
+<TR>
+<TD VALIGN=TOP>
+
+<FORM NAME="MortgageMinder">
+
+        <TABLE WIDTH=251 BORDER=5 BGCOLOR=SILVER CELLPADDING=2>
+          <TR>
+<TD COLSPAN=2 ALIGN=CENTER>
+<B><FONT SIZE=+2 COLOR=BLUE>M<FONT SIZE=+1>ORTGAGE <FONT SIZE=+2>M<FONT SIZE=+1>INDER</FONT></font></font></font></B>
+</TD>
+</TR>
+
+<TR>
+<TD COLSPAN=2 WIDTH=50%> 
+<TABLE BORDER=0 CELLPADDING=2>
+
+<TR>
+<TD COLSPAN=2><B>Mortgage Data:</B></TD>
+
+<TR>
+<TD ALIGN=RIGHT>House Price:</TD>
+<TD>
+<INPUT 
+    TYPE=TEXT
+    NAME=price
+    VALUE="" 
+    SIZE=7
+    onBlur=checkForZero(this)
+    onChange=checkForZero(this)>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=RIGHT>Down Payment:</TD>
+<TD>
+ <INPUT 
+    TYPE=TEXT 
+    NAME=dp
+    VALUE=0 
+    onChange=calculatePayment(this.form) 
+    SIZE=7>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=RIGHT>Annual Interest Rate:</TD>
+<TD>
+<INPUT 
+    TYPE=TEXT
+    NAME=ir
+    VALUE="" 
+    SIZE=4
+    onBlur=checkForZero(this)
+    onChange=checkForZero(this)>
+%
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=RIGHT>Term:</TD>
+<TD>
+
+<INPUT 
+    TYPE=TEXT
+    NAME=term
+    VALUE="" 
+    SIZE=4
+    onBlur=checkForZero(this)
+    onChange=checkForZero(this)>
+Years
+</TD>
+</TR>
+
+</TABLE>
+
+
+
+
+
+<TABLE BORDER=0 CELLPADDING=2>
+
+<TR>
+<TD COLSPAN=2><B>Results:</B></TD>
+<TR>
+<TD ALIGN=RIGHT>Mortgage Principle:</TD>
+<TD>
+
+<INPUT 
+    TYPE=TEXT
+    NAME=principle
+    SIZE=7>
+
+</TD>
+<TR>
+<TD ALIGN=RIGHT>Total Payments:</TD>
+<TD>
+<INPUT 
+    TYPE=TEXT
+    NAME=payments
+    SIZE=7>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=RIGHT>Monthly Payment:</TD>
+<TD>
+<INPUT 
+    TYPE=TEXT
+    NAME=pmt
+    SIZE=7>
+</TD>
+</TR>
+</TABLE>
+</TD>
+</TR>
+
+<TR>
+<TD ALIGN=CENTER COLSPAN=2>
+<INPUT 
+    TYPE=BUTTON
+    NAME="cmdCalc" 
+    VALUE="Calculate"
+    onClick=cmdCalc_Click(this.form)>
+</TD>
+</TR>
+</table></form>
+<td>
+<table cellspacing=0 cellpadding=5 border=0>
+<tr>
+          <td> 
+           <img src="bc-small.gif"></td>
+          <td align=top><font size=5 color=404040 face="Arial, Helvetica, sans-serif"> Mortgage<br>
+            Calculator</font></td>
+        </tr> 
+ <tr>
+          <td colspan="2" width=380> <font color="#404040" face="Arial, Helvetica, sans-serif">To 
+            perform the actual calculations fill in the appropriate numbers. </font> 
+            <font face="Arial, Helvetica, sans-serif" color="#404040"> Here's 
+            how you use this form: </font> 
+            <ul>
+  <LI><font face="Arial, Helvetica, sans-serif" color="#blue">Enter the House 
+    Price.</font>
+  <LI><font face="Arial, Helvetica, sans-serif" color="#blue">Enter the Down 
+    Payment.</font>
+  <LI><font face="Arial, Helvetica, sans-serif" color="#blue">Enter the Annual 
+    Interest Rate percentage.</font>
+  <LI><font face="Arial, Helvetica, sans-serif" color="#blue">Enter the Term, 
+    in years. <font size=-1>(usually 20, 25 or 30)</font><font color="#ffffff">
+  <LI><font face="Arial, Helvetica, sans-serif" color="#blue">Click Calculate. 
+    </font></ul><font face="Arial, Helvetica, sans-serif" color="#blue">
+
+
+Are you able to make this monthly payment?<br> If not, look for a cheaper house or change the  term (more years of repayments).
+
+
+</td></tr>  
+</TABLE>
+
+<pre>
+<!--
+&lt;SCRIPT LANGUAGE="JavaScript"&gt;
+&lt;!--
+    function checkForZero(field) {
+        if (field.value == 0 || field.value.length == 0) {
+            alert ("This field can't be 0!");
+            field.focus(); }
+        else
+	    calculatePayment(field.form);
+    }
+
+    function cmdCalc_Click(form) {
+        if (form.price.value == 0 || form.price.value.length == 0) {
+            alert ("The Price field can't be 0!");
+            form.price.focus(); }
+        else if (form.ir.value == 0 || form.ir.value.length == 0) {
+            alert ("The Interest Rate field can't be 0!");
+            form.ir.focus(); }
+        else if (form.term.value == 0 || form.term.value.length == 0) {
+            alert ("The Term field can't be 0!");
+            form.term.focus(); }
+        else
+            calculatePayment(form);
+    }
+
+    function calculatePayment(form) {
+        princ = form.price.value - form.dp.value;
+        intRate = (form.ir.value/100) / 12;
+        months = form.term.value * 12;
+        form.pmt.value = Math.floor((princ*intRate)/(1-Math.pow(1+intRate,(-1*months)))*100)/100;
+  	form.principle.value = princ;
+	form.payments.value = months;
+    }
+//--&gt;
+&lt;/SCRIPT&gt;
+</PRE>
+</td>
+  </tr>
+</table>
+</BODY>
+</HTML>

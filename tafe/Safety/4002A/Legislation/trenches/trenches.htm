@@ -1,0 +1,181 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/1999/REC-html401-19991224/strict.dtd">
+<html>
+<head>
+<title>Trench Sketches</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {  margin-top: 0px; margin-left: 0px; background-color: #FFFFFF}
+p{  font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+td  { font-family: Arial, Helvetica, sans-serif; font-size: 12px}
+h1 {  font-family: Arial, Helvetica, sans-serif; font-size: 18px}
+.centre {  text-align: center}
+a img { color: #FFFFFF; background: #FFFFFF; border-style: none}
+-->
+</style>
+<script type="text/JavaScript">
+
+var ans = new Array; 
+var done = new Array; 
+var trys = new Array;
+var score = 0; 
+
+ans[1] = "3.108"; 
+ans[2] = "3.110"; 
+ans[3] = "3.112"; 
+ans[4] = "3.113"; 
+ans[5] = "3.111"; 
+ans[6] = "3.109"; 
+
+for(var i=1; i<ans.length; i++) { //set arrays to 0 values
+   done[i]=0; 
+   trys[i]=0;
+}
+
+function check(sketch, answer) {
+
+	trys[sketch]++;
+  
+	//incorrect answer
+	if (answer != ans[sketch]) {
+		if (!done[sketch]) { 
+    		if (trys[sketch]>=3) {
+				alert("Attempt " +trys[sketch]+" incorrect!"+"\n\nCorrect answer was " +ans[sketch]);
+				imgswap("check"+sketch,"cross"+trys[sketch]); 
+				done[sketch] = -1;
+			}
+			else {
+				alert("Attempt " +trys[sketch]+" incorrect!"+"\n\nTry again."); 
+				imgswap("check"+sketch,"cross"+trys[sketch]); 
+			}
+		} 
+	}
+	
+	//correct answer
+	else {
+		if (!done[sketch]) {	//check if done 
+       	done[sketch] = -1; //set sketch as done
+   		imgswap("check"+sketch,"tick"+trys[sketch]); 
+    	} 
+   } 
+}
+
+
+function imgswap(imgname,swapname) {
+	eval("document."+imgname+".src='"+swapname+".gif'");
+}
+
+</script>
+</head>
+<body>
+<table width="400" border="0">
+  <tr> 
+    <td> 
+      <h1>Trench Quiz</h1>
+      <p>Enter the regulation number in the text box for each of the 6 sketches. 
+        Click on the Check button to check your answer.</p>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr>
+      <p><b>Sketch 1 - Risk Identification</b></p>
+      <div class="centre"><img src="excav01.gif" width="174" height="220" alt="Sketch 1"> 
+        <form name="sketch1" onSubmit="return false" action="javascript:;">
+          <p>Reg number: 
+          <input type="text" name="text1" value="" size="6" maxlength="5">
+          <img src="check.gif" name="check1" width="41" height="18" alt="Trys"> 
+          <a href="javascript:;" onClick="check(1,sketch1.text1.value);return false;">
+		  <img src="checkbtn.gif" width="41" height="18" alt="Check"></a> 
+          </p>
+		</form>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr>
+      <p><b>Sketch 2 - Storage of Materials</b></p>
+      <div class="centre"><img src="excav02.gif" width="162" height="224" alt="Sketch 2"> 
+        <form name="sketch2" onSubmit="return false" action="javascript:;">
+          <p>Reg number: 
+		  <input type="text" name="text2" value="" size="6" maxlength="5">
+          <img src="check.gif" name="check2" width="41" height="18" alt="Trys"> 
+          <a href="javascript:;" onClick="check(2,sketch2.text2.value);return false;">
+		  <img src="checkbtn.gif" width="41" height="18" alt="Check"></a> 
+        </p>
+		</form>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr>
+      <p><b>Sketch 3 - Working Alone</b></p>
+      <div class="centre"><img src="excav03.gif" width="190" height="202" alt="Sketch 3"> 
+        <form name="sketch3" onSubmit="return false" action="javascript:;">
+         <p>Reg number: 
+          <input type="text" name="text3" value="" size="6" maxlength="5">
+          <img src="check.gif" name="check3" width="41" height="18" alt="Trys"> 
+          <a href="javascript:;" onClick="check(3,sketch3.text3.value);return false;">
+		  <img src="checkbtn.gif" width="41" height="18" alt="Check"></a> 
+        </p>
+		</form>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr>
+      <p><b>Sketch 4 - Support of Structures</b></p>
+      <div class="centre"><img src="excav04.gif" width="167" height="198" alt="Sketch 4"> 
+        <form name="sketch4" onSubmit="return false" action="javascript:;">
+          <p>Reg number: 
+          <input type="text" name="text4" value="" size="6" maxlength="5">
+          <img src="check.gif" name="check4" width="41" height="18" alt="Trys"> 
+          <a href="javascript:;" onClick="check(4,sketch4.text4.value);return false;">
+		  <img src="checkbtn.gif" width="41" height="18" alt="Check"></a> 
+        </p>
+		</form>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr>
+      <p><b>Sketch 5 - Prevention of Collapsing</b></p>
+      <div class="centre"><img src="excav05.gif" width="377" height="222" alt="Sketch 5"> 
+        <form name="sketch5" onSubmit="return false" action="javascript:;">
+          <p>Reg number: 
+          <input type="text" name="text5" value="" size="6" maxlength="5">
+          <img src="check.gif" name="check5" width="41" height="18" alt="Trys"> 
+          <a href="javascript:;" onClick="check(5,sketch5.text5.value);return false;">
+		  <img src="checkbtn.gif" width="41" height="18" alt="Check"></a>  
+        </p>
+		</form>
+      </div>
+    </td>
+  </tr>
+  <tr> 
+    <td> 
+      <hr>
+      <p><b>Sketch 6 - Barriers</b></p>
+      <div class="centre"><img src="excav06.gif" width="212" height="219" alt="Sketch 6"> 
+        <form name="sketch6" onSubmit="return false" action="javascript:;">
+          <p>Reg number: 
+          <input type="text" name="text6" value="" size="6" maxlength="5">
+          <img src="check.gif" name="check6" width="41" height="18" alt="Trys"> 
+          <a href="javascript:;" onClick="check(6,sketch6.text6.value);return false;">
+		  <img src="checkbtn.gif" width="41" height="18" alt="Check"></a>  
+        </p>
+		</form>
+      </div>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
+
+

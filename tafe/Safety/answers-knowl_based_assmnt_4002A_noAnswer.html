@@ -1,0 +1,857 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<title>Assessment Tool</title>
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Angsana New";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-name:"Normal\,new body text";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{mso-style-name:"Heading 1\,new Heading 1";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Arial",sans-serif;}
+h2
+	{mso-style-name:"Heading 2\,new heading 2";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:18.0pt;
+	font-family:"Arial",sans-serif;}
+h3
+	{mso-style-name:"Heading 3\,new head 3";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;}
+	
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"Header Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.newhead4, li.newhead4, div.newhead4
+	{mso-style-name:"new head 4";
+	mso-style-link:"new head 4 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.newbullet, li.newbullet, div.newbullet
+	{mso-style-name:"new bullet";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.newbodycentred, li.newbodycentred, div.newbodycentred
+	{mso-style-name:"new body centred";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.pc, li.pc, div.pc
+	{mso-style-name:pc;
+	mso-style-link:"pc Char";
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:22.7pt;
+	text-indent:-22.7pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	color:black;}
+span.pcChar
+	{mso-style-name:"pc Char";
+	mso-style-link:pc;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+p.CATUnitTitle, li.CATUnitTitle, div.CATUnitTitle
+	{mso-style-name:"** CAT Unit Title";
+	mso-style-link:"** CAT Unit Title Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.CATUnitTitleChar
+	{mso-style-name:"** CAT Unit Title Char";
+	mso-style-link:"** CAT Unit Title";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.newbodytextleft, li.newbodytextleft, div.newbodytextleft
+	{mso-style-name:"new body text left";
+	mso-style-link:"new body text left Char";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:26.95pt;
+	text-indent:-26.95pt;
+	text-autospace:none;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+span.newbodytextleftChar
+	{mso-style-name:"new body text left Char";
+	mso-style-link:"new body text left";
+	font-family:"Arial",sans-serif;}
+p.newbullet1cm, li.newbullet1cm, div.newbullet1cm
+	{mso-style-name:"new bullet 1 cm";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:36.0pt;
+	text-indent:-18.0pt;
+	text-autospace:none;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.newhead1, li.newhead1, div.newhead1
+	{mso-style-name:"new head 1";
+	margin-top:12.0pt;
+	margin-right:2cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	page-break-after:avoid;
+	font-size:24.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.newhollowbullet, li.newhollowbullet, div.newhollowbullet
+	{mso-style-name:"new hollow bullet";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:54.0pt;
+	text-indent:-18.0pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.tableheading, li.tableheading, div.tableheading
+	{mso-style-name:"table heading";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	text-align:center;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+span.HeaderChar
+	{mso-style-name:"Header Char";
+	mso-style-link:Header;
+	font-family:"Arial",sans-serif;}
+p.FooterPE, li.FooterPE, div.FooterPE
+	{mso-style-name:FooterPE;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	border:none;
+	padding:0cm;
+	font-size:8.0pt;
+	font-family:"Times New Roman",serif;}
+span.newhead4Char
+	{mso-style-name:"new head 4 Char";
+	mso-style-link:"new head 4";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+p.StylenewbulletLeft0cmHanging101cm, li.StylenewbulletLeft0cmHanging101cm, div.StylenewbulletLeft0cmHanging101cm
+	{mso-style-name:"Style new bullet + Left\:  0 cm Hanging\:  1\.01 cm";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:1.0cm;
+	text-indent:-1.0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.Answer, li.Answer, div.Answer
+	{mso-style-name:Answer;
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:12.0pt;
+	margin-left:26.95pt;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.Answerindent, li.Answerindent, div.Answerindent
+	{mso-style-name:"Answer indent";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:55.3pt;
+	text-indent:-1.0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	font-style:italic;}
+p.BullettableAT, li.BullettableAT, div.BullettableAT
+	{mso-style-name:"Bullet table_AT";
+	margin-top:6.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:55.3pt;
+	text-indent:-1.0cm;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+.MsoChpDefault
+	{font-size:10.0pt;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:36.0pt 70.9pt 62.95pt 70.9pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+span.newhead4Char1 {mso-style-name:"new head 4 Char";
+	mso-style-link:"new head 4";
+	font-family:"Arial",sans-serif;
+	font-weight:bold;}
+-->
+</style>
+
+</head>
+
+<body lang=DE bgcolor="#66FFFF">
+<table width="656" border="1" cellspacing="0" cellpadding="15" align="center" bgcolor="#FFFFFF">
+  <tr>
+    <td>
+
+<div align="center">
+<p class=newhead1><span lang=EN-AU>Knowledge-based assessment </span></p>
+</div>
+<table class=MsoTableGrid border=0 cellspacing=0 cellpadding=0 width=756
+ style='width:453.35pt;border-collapse:collapse;border:none'>
+ <tr>
+  
+  <td width=622 valign=top style='width:373.05pt;border:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <h3 style='margin-top:5.0pt;margin-right:0cm;margin-bottom:5.0pt;margin-left:
+  0cm'><span lang=EN-AU style='font-weight:normal'>CPCCBC4002A Manage
+  occupational health and safety in the building and construction workplace</span></h3>
+  </td>
+ </tr>
+</table>
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=756
+ style='width:453.35pt;border-collapse:collapse;border:none'>
+ <tr>
+ </tr>
+
+ <tr height=0>
+  <td width=54 style='border:none'></td>
+  <td width=420 style='border:none'></td>
+  <td width=282 style='border:none'></td>
+ </tr>
+</table>
+<h3 style='margin-top:18.0pt'><span lang=EN-AU>Knowledge of the OHS Act and Regulations</span></span></h3>
+
+<h3 style='margin-top:18.0pt'><span lang=EN-AU>Instructions to the candidate                              </span><span
+class=newhead4Char><span lang=EN-AU style='font-size:12.0pt;font-weight:normal'>Time
+allowed</span></span><span lang=EN-AU>: </span><span class=newhead4Char><span
+lang=EN-AU style='font-size:12.0pt;font-weight:normal'>180 minutes</span></span></h3>
+
+<p class=StylenewbulletLeft0cmHanging101cm><span lang=EN-AU style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-AU>All 35 questions must be attempted.</span></p>
+
+<p class=StylenewbulletLeft0cmHanging101cm><span lang=EN-AU style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-AU>You must achieve a satisfactory performance in
+all parts of the assessment.</span></p>
+
+<p class=StylenewbulletLeft0cmHanging101cm><span lang=EN-AU style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-AU>If you do not demonstrate satisfactory
+performance are required to provide further evidence. This could be in the form
+of another knowledge based assessment, interview or other method deemed
+appropriate by your assessor.</span></p>
+
+<p class=StylenewbulletLeft0cmHanging101cm><span lang=EN-AU style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-AU>This is an Open book assessment. You may use the
+OHS Act and Regulations during the assessment.</span></p>
+
+<p class=StylenewbulletLeft0cmHanging101cm><span lang=EN-AU style='font-family:
+Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-AU>Write your answers in black or blue ink.</span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=759
+ style='width:455.45pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=249 style='width:149.4pt;border:solid windowtext 1.0pt;padding:
+  0cm 5.4pt 0cm 5.4pt'>
+  <h3 style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;margin-left:
+  0cm'><span lang=EN-AU style='font-size:12.0pt'>Candidate’s name</span></h3>
+  </td>
+  <td width=510 valign=top style='width:306.05pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-AU>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=249 style='width:149.4pt;border:solid windowtext 1.0pt;border-top:
+  none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <h3 style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;margin-left:
+  0cm'><span lang=EN-AU style='font-size:12.0pt'>Date</span></h3>
+  </td>
+  <td width=510 valign=top style='width:306.05pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal><span lang=EN-AU>&nbsp;</span></p>
+  </td>
+ </tr>
+ <tr style='height:100.6pt'>
+  <td width=759 colspan=2 valign=top style='width:455.45pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt;height:100.6pt'>
+  <h3 style='margin-top:4.0pt;margin-right:0cm;margin-bottom:4.0pt;margin-left:
+  0cm'><span lang=EN-AU style='font-size:12.0pt'>Assessor’s feedback</span></h3>
+  <p class=MsoNormal><span lang=EN-AU>&nbsp;</span></p>
+  </td>
+ </tr>
+</table>
+
+<span lang=EN-AU style='font-size:11.0pt;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=newbodytextleft><span lang=EN-AU>1.<b>      </b><span
+class=newbodytextleftChar>Which of the following states the force requirements
+for fall injury prevention systems?</span></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-27.0pt'><span class=newbodytextleftChar><span lang=EN-AU>a)      regulation
+3.48</span></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-27.0pt'><span class=newbodytextleftChar><span lang=EN-AU>b)      regulation
+3.51</span></span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt;text-align:justify;text-indent:
+-27.0pt'><span class=newbodytextleftChar><span lang=EN-AU>c)      regulation
+3.52</span></span></p>
+
+<p class=MsoNormal style='margin-top:6.0pt;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:53.9pt;text-align:justify;text-indent:-26.95pt'><span
+class=newbodytextleftChar><span lang=EN-AU>d)      regulation 3.50</span></span></p>
+
+<p class=Answer><span class=newbodytextleftChar><span lang=EN-AU>Circle [a,b,c or d ?]</span></span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt;text-align:justify;text-indent:
+-27.0pt'><span lang=EN-AU>2.<b>      </b></span><span
+class=newbodytextleftChar><span lang=EN-AU>Where excavation work is likely to
+affect the stability of any building, work should not commence or continue
+unless the stability of the building or structure is protected. Which Act or
+Regulation number covers this requirement?</span></span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt;text-align:justify;text-indent:
+-27.0pt'><span lang=EN-AU>3.<b>      </b></span><span
+class=newbodytextleftChar><span lang=EN-AU>Briefly outline 3 factors in
+determining the system of support for excavations.</span></span></p>
+
+<p class=Answerindent><span lang=EN-AU>1.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>2.     </span></p>
+
+<p class=Answerindent style='margin-bottom:12.0pt'><span lang=EN-AU>3.     </span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt;text-align:justify;text-indent:
+-27.0pt'><span lang=EN-AU>4.<b>      </b></span><span
+class=newbodytextleftChar><span lang=EN-AU>All electrical installation should
+be designed, constructed, installed, protected and tested to minimise the risk
+of electrical shock or fire. What Act or Regulation number covers this
+requirement?</span></span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt;text-align:justify;text-indent:
+-27.0pt'><span lang=EN-AU>5.<b>      </b></span><span
+class=newbodytextleftChar><span lang=EN-AU>List six (6) places on a building
+site where edge protection is required.</span></span></p>
+
+<p class=Answer></p>
+<p class=Answer></p>
+<p class=Answer></p>
+<p class=MsoNormal style='margin-left:27.0pt;text-align:justify;text-indent:
+-27.0pt'><span lang=EN-AU>6.<b>      </b></span><span
+class=newbodytextleftChar><span lang=EN-AU>Which regulation describes the
+requirements for the provision of suitable screens when using and electric
+welding process?</span></span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=MsoNormal style='margin-left:27.0pt;text-indent:-27.0pt'><span
+lang=EN-AU>7.<b>      </b></span><span class=newbodytextleftChar><span
+lang=EN-AU>List four (4) considerations for public safety where excavation work
+is left outside working hours.</span></span></p>
+
+<p class=Answerindent><span lang=EN-AU>1.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>2.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>3.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>4.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>   </span></p>
+
+<span lang=EN-AU style='font-size:11.0pt;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=newbodytextleft><span lang=EN-AU>8.      Explain the requirements for
+residual current devices to be fixed to electrical supply to hand held or
+portable equipment at the workplace.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Or</span></p>
+
+<p class=Answer><span lang=EN-AU>.</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>9.      Explain what is meant by the
+term ‘Duty of Care’.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'>&nbsp;</p>
+<p class=Answer style='margin-bottom:6.0pt'>&nbsp;</p>
+<p class=Answer style='margin-bottom:6.0pt'>&nbsp;</p>
+<p class=Answer style='margin-bottom:6.0pt'>&nbsp;</p>
+
+<p class=newbodytextleft><span lang=EN-AU>10.    List four (4) kinds of plant
+  that must be registered before it can be used in the workplace.</span></p>
+
+<p class=Answer>&nbsp;</p>
+<p class=Answer>&nbsp;</p>
+<p class=Answer>&nbsp;</p>
+
+<p class=newbodytextleft><span lang=EN-AU>11.    Name the Occupational Safety
+and Health Regulation that regulates cleanliness and removal of debris on a
+worksite.</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>12.    Name the Occupational Safety
+and Health Regulation that controls erection or dismantling of scaffold and
+design, import or supply.</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>13.    Give the kg per bay and
+scaffold plank width for light, medium and heavy duty scaffold.</span></p>
+
+<p class=Answer><span lang=EN-AU></span></p>
+<p class=Answer>&nbsp;</p>
+<p class=Answer>&nbsp;</p>
+<p class=Answer>&nbsp;</p>
+
+<p class=newbodytextleft><span lang=EN-AU>14.    Name the Occupational Safety
+  and Health Regulation that controls portable ladders.</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>15.    Name the Occupational Safety
+and Health Regulation that states the Australian Standard must be complied with
+if working in a confined space.</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<span lang=EN-AU style='font-size:11.0pt;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=newbodytextleft><span lang=EN-AU>16.    List the regulation number and
+the requirements of the regulations when working in the vicinity of overhead
+power lines. (There are 5 parts to this answer.)</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation Number: No:</span></p>
+
+<p class=Answerindent><span lang=EN-AU>a)      Work  done above
+overhead electric wires</span></p>
+
+<p class=Answerindent style='margin-left:82.25pt;text-indent:-26.95pt'><span
+lang=EN-AU>(i)     </span></p>
+
+<p class=Answerindent style='margin-left:83.65pt;text-indent:0cm'><span
+lang=EN-AU>Reg </span>No:</p>
+
+<p class=Answerindent style='margin-left:82.25pt;text-indent:-26.95pt'><span
+lang=EN-AU>(ii)    </span></p>
+
+<p class=Answerindent style='margin-left:83.65pt;text-indent:0cm'><span
+lang=EN-AU>Reg </span>No:</p>
+
+<p class=Answerindent style='margin-left:82.25pt;text-indent:-26.95pt'><span
+lang=EN-AU>(iii)   </span></p>
+
+<p class=Answerindent style='margin-left:83.65pt;text-indent:0cm'><span
+lang=EN-AU>Reg </span>No:</p>
+
+<p class=Answerindent style='margin-left:82.25pt;text-indent:-26.95pt'><span
+lang=EN-AU>(iv)   </span></p>
+
+<p class=Answer style='margin-left:83.65pt'><span lang=EN-AU>RegNo: </span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>17.    Name the Occupational Safety
+and Health Regulation that requires the licence number of the tester of
+portable electrical equipment to be placed on a tag.</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>18.    Scaffold must be inspected by
+a competent person at least every 30 days and tagged during inspection. What is
+the Act or Regulation number that covers this requirement?</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>19.    In your own words, briefly
+explain the general Duties of Care an employer must take. (There are 6 parts to
+this answer.)</span></p>
+
+<p class=Answerindent><span lang=EN-AU>1.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>2.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>3.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>4.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>5.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>6.     </span></p>
+
+<p class=Answerindent style='margin-left:83.65pt'><span lang=EN-AU>(i)     </span></p>
+
+<p class=Answerindent style='margin-left:83.65pt'><span lang=EN-AU>(ii)    </span></p>
+
+<span lang=EN-AU style='font-size:11.0pt;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=newbodytextleft><span lang=EN-AU>20.    Explain the general Duties of
+Care an employee must take. (There are 2 parts to this answer.)</span></p>
+
+<p class=Answer style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+lang=EN-AU>Duties of employees</span></p>
+
+<p class=Answerindent><span lang=EN-AU>(1)     An employee shall take
+reasonable care:</span></p>
+
+<p class=Answerindent style='margin-left:83.65pt'><span lang=EN-AU>(a)    </span></p>
+
+<p class=Answerindent style='margin-left:83.65pt'><span lang=EN-AU>(b)    </span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>21.    The obligation of an employer,
+main contractor or a person having control of the workplace must ensure that
+the movement, speed of vehicles and plant minimises the risk of injury. What is
+the Act or Regulation number that covers this requirement?</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>22.    Which one of the following
+statements is correct about codes of practice?</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[a]     It is an offence not to comply
+with the requirements of any code of practice.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[b]     A code of practice cannot be
+used as evidence in prosecutions under the Act.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[c]      Codes of practice provide
+practical advice on strategies to prevent people being exposed to harm in the
+workplace.</span></p>
+
+<p class=Answer><span lang=EN-AU>Circle [a,b or c].</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>23.    What is the Act or Regulation
+number that covers the requirement at question 22?</span></p>
+
+<p class=Answer><span lang=EN-AU>Act Section ?</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>24.    Briefly explain the roles of a
+WorkSafe inspector?</span></p>
+
+<p class=Answer style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•       </span></p>
+
+<p class=Answer style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•       </span></p>
+
+<p class=Answer style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•       </span></p>
+
+<p class=Answer style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•       </span></p>
+
+<p class=Answer style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•       </span></p>
+
+<p class=Answer style='margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•       </span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>25.    The hierarchy of control has
+six (6) risk control options. List the control options in priority order.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>1.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>2.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>3.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>4.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>5.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>6.     </span></p>
+
+<span lang=EN-AU style='font-size:11.0pt;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=newbodytextleft><span lang=EN-AU>26.    List four (4) reportable
+accidents.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>(a)    </span></p>
+
+<p class=Answerindent><span lang=EN-AU>(b)    </span></p>
+
+
+<p class=Answerindent><span lang=EN-AU>(c)    </span></p>
+
+<p class=Answerindent><span lang=EN-AU>(d)   </span></p>
+
+<p class=Answerindent>&nbsp;</p>
+
+<p class=newbodytextleft><span lang=EN-AU>27.    To minimise the chance of an
+electrical fire you should not:</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[a]     Overload high voltage
+appliances.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[b]     Run electrical cords in such a
+way that they can be damaged.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[c]      Use unapproved electrical
+extension leads for power tools.</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[d]     All of the above</span></p>
+
+<p class=Answer><span lang=EN-AU>Circle [a,b,c or d].</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>28.    Give five (5) examples of ‘Hazards’
+that can be found in the work place.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>1.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>2.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>3.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>4</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>5</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'>&nbsp;</p>
+
+<p class=newbodytextleft><span lang=EN-AU>29.    Hazard identification, risk
+  assessment and risk control principles are made compulsory:</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[a]     under common law</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[b]     under the Safety and Health Act</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[c]      under the Occupational Safety
+and Health Regulations</span></p>
+
+<p class=Answerindent><span lang=EN-AU>[d]     because they help prevent injury
+or harm to health and save money.</span></p>
+
+<p class=Answer><span lang=EN-AU>Circle [a,b,c or d].</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>30.    Which Act or Regulation number
+covers the requirement at question 29?</span></p>
+
+<p class=Answer><span lang=EN-AU>Regulation No:</span></p>
+
+<span lang=EN-AU style='font-size:11.0pt;font-family:"Arial",sans-serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<p class=newbodytextleft><span lang=EN-AU>31.    In your own words, explain the
+meaning of the following two (2) terms.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Hazards – in
+relation to a person means anything that may result in:</span></p>
+
+<p class=Answer style='margin-top:6.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•        injury to the
+person</span></p>
+
+<p class=Answer style='margin-left:55.3pt;text-indent:-1.0cm'><span lang=EN-AU>•        harm
+to the health of the person.</span></p>
+
+<p class=Answer><span lang=EN-AU>Risk – in relation to any injury or harm,
+means the probability of that injury or harm occurring.</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>32.    List the six (6) types of fires
+and give an example of each type of fire.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Class </span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Class </span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Class </span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Class </span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Class </span></p>
+
+<p class=Answer><span lang=EN-AU>Class</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>33.    A portable fire extinguisher
+must be available on every construction site regardless what kind of work will
+be done.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Circle the correct
+answer.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>True        False</span></p>
+
+<p class=Answer><span lang=EN-AU> Regulation No:</span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>34.    The function of a safety and
+health committee is only to consider matters that are referred to the committee
+by safety and health representatives.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Circle the correct
+answer.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>True        False</span></p>
+
+<p class=Answer><span lang=EN-AU> Act Section: </span></p>
+
+<p class=newbodytextleft><span lang=EN-AU>35.    List four (4) unsafe acts and
+four (4) unsafe conditions at a worksite.</span></p>
+
+<p class=Answer style='margin-bottom:6.0pt'><span lang=EN-AU>Unsafe acts:</span></p>
+
+<p class=Answerindent><span lang=EN-AU>1.   </span></p>
+
+<p class=Answerindent><span lang=EN-AU>2.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>3.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>4.     </span></p>
+
+<p class=Answerindent>&nbsp;</p>
+
+<p class=Answer style='margin-top:12.0pt;margin-right:0cm;margin-bottom:6.0pt;
+margin-left:26.95pt'><span lang=EN-AU>Unsafe conditions:</span></p>
+
+<p class=Answerindent><span lang=EN-AU>1.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>2.     </span></p>
+
+<p class=Answerindent><span lang=EN-AU>3.     </span></p>
+
+
+<p class=MsoNormal><span lang=EN-AU>&nbsp;</span></p>
+
+<p class=newbodytextleft align=center style='text-align:center'><b><span
+lang=EN-AU>End of knowledge&#8209;based assessment</span></b></p>
+ 
+<br>
+<p class=newbodytextleft align=center style='text-align:center'><span
+lang=EN-AU>Send <a href="mailto:karl@boeingconsult.com">me</a> a cpoy of your assessment you'll receive <span class="newbodytextleft" style="text-align:center">the correct answers.</span></span></p><center> 
+<h5 style="color: #999;">
+You could also try to contact  a TAFE college and ask if a person would supervise and assess you. </h5></center><br />
+</p>
+</td>
+  </tr>
+</table>
+</body>
+
+</html>

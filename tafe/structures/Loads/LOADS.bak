@@ -1,0 +1,247 @@
+
+<html>
+<HEAD>
+<TITLE>Load types</TITLE>
+</HEAD>
+<body>
+
+<b></b>
+<table>
+<tr><td width=35></td>
+<td width=630><p>
+<center><font size=5><p>LOADS ON BUILDINGS</font></p></center>
+
+<font size=4>
+<p><b>LOAD TYPES</b></p>
+
+<p>The determination of the loads acting on a structure is a complex problem. The nature of the loads varies essentially with the architectural design, the materials, and the location of the structure. Loading conditions on the same structure may change from time to time, or may change rapidly with time.</p>
+<p>
+Loads are usually classified into two broad groups: dead loads and live loads. Dead loads (DL) are essentially constant during the life of the structure and normally consist of the weight of the structural elements. On the other hand, live loads (LL) usually vary greatly. The weight of occupants, snow and vehicles, and the forces induced by wind or earthquakes are examples of live loads. The magnitudes of these loads are not known with great accuracy and the design values must depend on the intended use of the structure.<br>
+In structural analysis three kinds of loads are generally used:</p>
+<p><ol>
+<li>Concentrated loads that are single forces acting over a relatively small area, for example vehicle wheel loads, column loads, or the force exerted by a beam on another perpendicular beam.<br>
+<li>Line loads that act along a line, for example the weight of a partition resting on a floor, calculated in units of force per unit length.<br>
+<li>Distributed (or surface) loads that act over a surface area. Most loads are distributed or are treated as such, for example wind or soil pressure, and the weight of floors and roofing materials.</p></ol>
+<p><b>
+Dead Loads (DL)</b></p>
+The structure first of all carries the dead load, which includes its own weight, the weight of any permanent non-structural partitions, built-in cupboards, floor surfacing materials and other finishes. It can be worked out precisely from the known weights of the materials and the dimensions on the working drawings. Although the dead load can be accurately determined, it is wise to make a conservative estimate to allow for changes in occupancy; for example, the next owner might wish to demolish some of the fixed partitions and erect others elsewhere. </p>
+<p><b>
+Live Loads (LL)</b></p>
+All the movable objects in a building such as people, desks, cupboards and filing cabinets produce an imposed load on the structure. This loading may come and go with the result that its intensity will vary considerably. At one moment a room may be empty, yet at another packed with people. Imagine the `extra' live load at a lively party!
+<p><b>
+Wind Load (WL)</b></p>
+Wind has become a very important load in recent years due to the extensive use of lighter materials and more efficient building techniques. A building built with heavy masonry, timber tiled roof may not be affected by the wind load, but on the other hand the structural design of a modern light gauge steel framed building is dominated by the wind load, which will affect its strength, stability and serviceability. The wind acts both on the main structure and on the individual cladding units. The structure has to be braced to resist the horizontal load and anchored to the ground to prevent the whole building from being blown away, if the dead weight of the building is not sufficient to hold it down. The cladding has to be securely fixed to prevent the wind from ripping it away from the structure.
+<p><b>
+Snow Load (SL)</b></p>
+The magnitude of the snow load will depend upon the latitude and altitude of the site. In the lower latitudes no snow would be expected while in the high latitudes snow could last for six months or more. In such locations buildings have to be designed to withstand the appropriate amount of snow. The shape of the roof also plays an important part in the magnitude of the snow load. The steeper the pitch, the smaller the load. The snow falling on a flat roof will continue to build up and the load will continue to increase, but on a pitched roof a point is reached when the snow will slide off.
+<p><b>
+Earthquake Load</b></p>
+Earthquake loads affect the design of structures in areas of great seismic activity, such as north and south American west coast, New Zealand, Japan, and several Mediterranean countries. Only minor disturbances have been recorded in east Asia and Australia.
+<p><b>
+Thermal Loads</b></p>
+All building materials expand or contract with temperature change. Long continuous buildings will expand, and it is necessary to consider the expansion stresses. It is usual to divide a reinforced concrete framed building into lengths not exceeding 30 m and to divide a brick wall into lengths not exceeding 10 m. Expansion joints are provided at these points so that the structure is physically separated and can expand without causing structural damage.
+<p><b>
+Settlement Loads</b></p>
+If one part of a building settles more than another part, then stresses are set up in the structures. If the structure is flexible then the stresses will be small, but if the structure is stiff the stresses will be severe unless the two parts of the building are physically separated.
+<p><b>
+Dynamic Loads</b></p>
+Dynamic loads, which include impact and aerodynamic loads, are complex. In essence, the magnitude of a load can be greatly increased by its dynamic effect.</p>
+
+<p><b>
+CALCULATION OF LOADS</b></p>
+Actual loadings in a building are typically either concentrated or uniformly distributed over an area. The former need no further consideration other than as necessary to characterise them as a force vector. In the latter, however, some modelling is needed when the area considered is actually made up of an assembly of one-way line and surface elements. These elements would pick up different portions of the total load acting over the surface, depending on their arrangement.</p>
+
+
+Consider the simple structural assembly shown in Figure 1 (a). Eight pre-cast concrete elements are supported by three beams Both external beams have to carry the weight of a half concrete element The middle beam carries the weight of one element (½ of the left and right element as illustrated in Figure 1 (b)). The reactions from all the elements supported by a beam then become loads acting on the beam. Note that these loads form a continuous line load on the beam. Loads of this type are expressed in terms of a load or force per unit length (i.e. N/m) and are commonly encountered in the structural analysis process.</p>
+<img src="load1.jpg"><br><center><font face=arial color=blue>Figure 1</font></center>
+<p>
+Another way of looking at this same loading is to think in terms of contributory areas. Each of the beams can be considered as supporting an area of the extent indicated in Figure 2 (a) and (b). The width of each area is often called the load strip. The load acting over the width of the load strip is transferred to the support beams. If the uniformly distributed load is constant and the load strip is of a constant width, the amount of load carried per unit length by the support beam is simply the load per unit area multiplied by the width of the load strip. This process is illustrated in Figure 2. The result is again a continuous line load describable in terms of a load per unit length. This process is valid for equal uniformly distributed loads only.</p>
+<img src="load2.jpg"><br><center><font face=arial color=blue>Figure 1</font></center>
+<p>
+The loading considered should, of course, include both live- and dead-load components. The exact value of the latter can be found by calculating the volume contributary area ´ the thickness of the material and multiply it by the unit weights for that material. Determining these values can be tedious. An alternative is to use a unit weight, e.g. the weight for one square metre, typically expressed as a force per unit area, to represent the weight expressed as N/m<sup>2</sup>,. Since live loads are also expressed in terms of a force per unit area, the calculation process is facilitated, since both loads can be considered simultaneously. Some sample load calculations per m2 are shown below.</p>
+<p><b>
+SAMPLE DESIGN CALCULATIONS</b></p>
+For design purposes it is most appropriate to select a unit area for all loads (dead, live, wind etc.). This often simplifies the calculation because the unit area may be used for members with the same loading but different contributory areas.</p>
+To determine the load per unit area is the most appropriate procedure in structural design. The total load can easily be calculated by load per unit area times the contributary area. For design purposes often the unit loading strip is used as indicated in Figure 1 (b) above.</p>
+It is convenient to determine first all the loadings per unit area that occur frequently throughout the building. The advantage is that these figures can then be used for all different areas or floor levels with the same loading.</p>
+
+The following is an example of a unit load determination for an office building.</p>
+<font color=green>
+<b><u>FLAT ROOF</u></b>
+<table><tr>
+<td rowspan=10 width=25></td></tr>
+<tr><td width=320>
+Tanking (Bituminous felt (5-ply) and 50 mm gravel</td>
+<td rowspan=10 width=12></td>
+<td>1.20 kN/m<sup>2</sup></td></tr>
+<tr> <td> 
+50 mm Insulation</td><td>	0.03   "</td></tr>
+<tr> <td>
+180 mm Concrete slab (0.18 x 25 kN/m<sup>3</sup>)</td><td>	4.50   "</td></tr>
+<tr> <td>
+13 mm Gypsum plaster</td><td><u>	0.22   "  </u>    </td></tr>
+<tr> <td>
+<b>DEAD LOAD</b></td><td>5.95 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+<b>LIVE LOAD</b> (SA 1170.1 & 4.8.1.1)</td><td><u>0.25 kN/m<sup>2</sup></u></td></tr>
+<tr> <td>
+<b>TOTAL LOAD</b></td><td>6.20 kN/m<sup>2</sup></td></tr>
+</table>
+
+<p><b><u>OFFICES</u></b>
+<table><tr>
+<td rowspan=10 width=25></td></tr>
+<tr><td width=320>
+Carpet</td>
+<td rowspan=10 width=12></td>
+<td>0.05 kN/m<sup>2</sup></td></tr>
+<tr> <td> 
+50 mm Insulation</td><td>	0.03   "</td></tr>
+<tr> <td>
+200 mm Concrete slab (0.20 x 25 kN/m<sup>3</sup>)</td><td>	5.00   "</td></tr>
+<tr> <td>
+13 mm Gypsum plaster</td><td><u>	0.22   "  </u>    </td></tr>
+<tr> <td>
+<b>DEAD LOAD</b></td><td>5.30 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+<b>LIVE LOAD</b>(Appendix B 6.11) </td><td><u>3.00 kN/m<sup>2</sup></u></td></tr>
+<tr> <td>
+<b>TOTAL LOAD</b></td><td>8.30 kN/m<sup>2</sup></td></tr>
+</table>
+
+<p><b><u>CORRIDORS AND PASSAGEWAYS</u></b>
+<table><tr>
+<td rowspan=10 width=25></td></tr>
+<tr><td width=320>
+Carpet</td>
+<td rowspan=10 width=12></td>
+<td>0.05 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+40 mm Screed (0.04 x 22 kN/m<sup>3</sup>)</td><td>	0.88   "</td></tr>
+<tr> <td> 
+20 mm Insulation</td><td>	0.05   "</td></tr>
+<tr> <td>
+200 mm Concrete slab (0.20 x 25 kN/m<sup>3</sup>)</td><td>	5.00   "</td></tr>
+<tr> <td>
+13 mm Gypsum plaster</td><td><u>	0.22   "  </u>    </td></tr>
+<tr> <td>
+<b>DEAD LOAD</b></td><td>6.20 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+<b>LIVE LOAD</b>(Appendix B 6.4) </td><td><u>4.00 kN/m<sup>2</sup></u></td></tr>
+<tr> <td>
+<b>TOTAL LOAD</b></td><td>10.20 kN/m<sup>2</sup></td></tr>
+</table>
+
+<p><b><u>STAIRS AND LANDINGS</u></b>
+<table><tr>
+<td rowspan=10 width=25></td></tr>
+<tr><td width=320>
+<b><u>Stairs</u></b></td>
+<td rowspan=10 width=12></td>
+<td></td></tr>
+<tr> <td>
+Marble tiles</td><td>	0.42  kN/m<sup>2</sup></td></tr>
+<tr> <td> 
+Concrete wedge (2 x 0.17 x 0.25 x 4 x 23.5	kN/m<sup>2</sup></td><td>2.08 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+160 mm Concrete slab (0.16 x 25 kN/m<sup>2</sup>)</td><td>	<u>4.00   "</u></td></tr>
+<tr> <td>
+<tr> <td>
+<b>DEAD LOAD</b></td><td>6.50 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+<b>LIVE LOAD</b>(Appendix B 6.4) </td><td><u>4.00 kN/m<sup>2</sup></u></td></tr>
+<tr> <td>
+<b>TOTAL LOAD</b></td><td>10.50 kN/m<sup>2</sup></td></tr>
+</table>
+<table><tr>
+<td rowspan=10 width=25></td></tr>
+<tr><td width=320>
+<b><u>Landings</u></b></td>
+<td rowspan=10 width=12></td>
+<td></td></tr>
+<tr> <td>
+<td rowspan=10 width=12></td>
+<tr> <td>
+Marble tiles</td><td>	0.42  kN/m<sup>2</sup></td></tr>
+<tr> <td> 
+160 mm Concrete slab (0.16 x 25 kN/m<sup>2</sup>)</td><td>	<u>4.00   "</u></td></tr>
+<tr> <td>
+<tr> <td>
+<b>DEAD LOAD</b></td><td>4.42 kN/m<sup>2</sup></td></tr>
+<tr> <td>
+<b>LIVE LOAD</b>(Appendix B 6.4) </td><td><u>4.00 kN/m<sup>2</sup></u></td></tr>
+<tr> <td>
+<b>TOTAL LOAD</b></td><td>8.42 kN/m<sup>2</sup></td></tr>
+</table>
+</font>
+<p>Having compiled the required unit loading figures the load per running metre for a particular member can be calculated quite quickly by multiplying the unit load with the appropriate depth of the loading strip, or in case the total dead load on a member is needed by multiplying the unit load with the contributary area.</p>
+
+
+<p><b>AUSTRALIAN STANDARD LOADING CODE</b> (AS 1170 PART 1)</p>
+
+<p>In the previous Unit the external loads on structures were classified in several different ways. The minimum design load on structures must be in accordance with the SAA Loading Code SA 1170 Parts 1 to 3. According to Part 1 `Dead and Live Loads and Load Combination', the structure must be designed for the worst load combination for strength, stability and serviceability for limit states design.</p>
+
+<p>It is beyond the scope of this subject to consider all load combinations (strength limit stages, stability limit stages and serviceability stages) of the standard. We will only consider the following load combination for strength limit stage:</p>
+<img src="equat1.jpg">
+<p>Where G,Q,W<sub>u</sub> are parts of dead, live, and wind loads, and have the following meaning:</p>
+<img src="equat2.jpg">
+<p>There are some other live loads, which are considered in this subject. </p>
+<ol>
+<li>Handrails, balustrades and railings of private dwellings must resist a single force of 0.6 kN acting inward, outward or downward at any point on the handrail, a continuous load of 0.4 kN/m, and the wind load acting on or transmitted to the handrail.</p>
+
+	<p>All other handrails including parapets and railings to all roofs shall resist a static load of 0.75 kN/m acting inward, outward or downward or the appropriate wind load, whichever produces the most adverse effects.</p>
+
+<li>For all non-trafficable roofs, either flat or pitched, each member providing support to the cladding thereof (including decking, purlins, beams and trusses) shall be designed to withstand the live load resultant from stacked materials or equipment used in repair or maintenance operations which shall be taken as 0.25 kPa on the plan projection, except that where the area supported by any structural member is less than 14.0 m&#178, the intensity of live loads on that member shall be determined as follows:<br>
+<CENTER>	<b>Live load = (1.8/A + 0.12)  kPa</b></CENTER></p>
+<p>A =	the plan projection of the surface area of roof supported by the member under analysis, in square metres.</p>
+
+
+<li>For flat or near-flat roofs and balconies which are intended to be available for pedestrian traffic or resort, the construction (including decking, purlins, beams and trusses) shall be designed to support the following uniformly distributed live load or a concentrated load of 1.8 kN, whichever load gives the more adverse effect -
+<ol>
+	<li>(a)	for houses: 3 kPa (for 10.0 m&#178  or less) varying linearly to 1.5 kPa (for 40.0 m&#178 or greater);
+
+		<li>(b)	for all other buildings: 4 kPa (for 10.0 m&#178 or less) varying linearly to 3 kPa (for 40.0 m&#178 or greater);
+
+		<li>Cantilevered sections of trafficable roofs shall be designed for the live load corresponding to the area of 10.0 m&#178 or less.
+</ol>
+<p><font color=green>Students who want more depth of information may refer to Part 1 and Part 2 of the Loading Code</font></p>
+<hr COLOR="#30FF00" WIDTH="3">
+<P>The following examples show you how to calculate the dead load (DL) of a structural member or component and live load (LL) on a floor area of a residential building.</P>
+
+<P><B>Example 1</B></P>
+<P>We use the following formula to calculate the dead load:</P>
+<CENTER>Dead load = Volume &#215 Density (DL = m<SUP>3</SUP> &#215 kN / m<SUP>3</SUP>
+</CENTER></P>
+Calculate the weight (DL) for a Glulam beam, size  420 &#215 75 mm 5.4 m long. Density of timber is 1100 kg/m<SUP>3</SUP><br>
+<p><b>Solution:</b><br>
+First convert mass density in weight density.1100 kg/m<SUP>3</SUP> =  11000  N/m<SUP>3</SUP> =  11 kN/m<SUP>3</SUP>
+<P>Now we can calculate the weight of the timber beam (bearer):</P>
+<CENTER>
+<TABLE CELLPADDING="2">
+<TR><TD>
+W<TD> =</TD><TD> 0.420 &#215 0.075 &#215  5.4 &#215 11 </TD>
+<TR><TD ALIGN="RIGHT" COLSPAN="2">=</TD><TD><b><u>1.87 kN</b></u></TD></TR>
+</TABLE>
+</CENTER>
+
+<p><b>Example 2:</b><br>
+Calculate the live load (LL) that the bearer has to carry (contritbutary area is 5.4 &#215 3.6 m).  The applicable LL according to AS 1170 Part 1 (Dead and live load) is 1.5 kPa for residential application.<br>
+<FONT SIZE="-1"><b>Remember 1 kPa = 1 kN/m<SUP>2</SUP></b></FONT>
+<p><b>Solution:</b><br>
+Using the  formula LL = m <font size=-1>(length)</font> &#215 m <font size=-1> (width) </font> &#215  kN/m<SUP>2</SUP> </P>
+<CENTER>
+<TABLE CELLPADDING="2">
+<TR><TD>
+LL </TD><TD> = </TD><TD> 5.4 &#215 3.6 &#215 1.5 </TD></tr>
+<TR><TD ALIGN="RIGHT" COLSPAN="2"> = </TD><TD><b><u>29.16 kN</u></b></TD></TR>
+</TABLE>
+</CENTER>
+
+<p>You have studied hard <b>take a break </b>before you click <a href="load_calcu.htm">here</a> for more load calculations.</p>
+<p>
+</font>	
+</tr>
+</table>
+
+</body>
+</html>
